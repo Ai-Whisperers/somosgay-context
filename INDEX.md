@@ -142,14 +142,16 @@
 
 | File | Purpose | STATUS |
 |---|---|---|
-| `README.md` | Folder index | complete |
-| `STATUS.md` | Status dashboard | complete |
-| `01_datos_basicos.md` | Basic org data | draft |
-| `02_programas_detalle.md` | Program KPIs | draft |
-| `03_clinica_y_servicios.md` | Kunu'u services | draft |
-| `04_donantes_y_finanzas.md` | Funders + gaps | draft |
-| `05_audiencia_y_idiomas.md` | Audiences + languages | draft |
-| `06_website_objetivos.md` | Site goals | draft |
+| `README.md` | Folder index + pacing | complete |
+| `STATUS.md` | Status dashboard with coverage % | complete |
+| `01_identidad_y_gobierno.md` | Identidad legal, dirección, board, org chart (Q1 — sesión 1) | complete (Q1) |
+| `02_programas_detalle.md` | KPIs, staff, horarios de cada programa (Q2 — sesión 1) | complete (Q1) |
+| `03_clinica_kunuu_servicios.md` | Servicios, elegibilidad, booking, OPSEC clínica (Q3 — sesión 1) | complete (Q1) |
+| `04_donantes_y_finanzas.md` | Donantes, budget, funding mix, gaps (Q4 — sesión 2) | complete (Q2) |
+| `05_audiencia_y_idiomas.md` | Visitantes, audiencias, languages, a11y (Q5 — sesión 2) | complete (Q2) |
+| `06_objetivos_del_sitio.md` | Propósito, must-haves, no-haves, success metrics (Q6 — sesión 2) | complete (Q2) |
+| `07_compliance_y_opsec.md` | Legal, datos, seguridad, crisis (Q7 — sesión 3 opcional) | complete (Q3) |
+| `08_decisiones_criticas.md` | Engagement, languages, repo, hosting, CRM, booking, PWA, brand (Q8 — sesión 3 opcional) | complete (Q3) |
 
 ## docs/09_deliverables
 

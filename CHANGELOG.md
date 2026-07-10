@@ -25,9 +25,84 @@ Session-by-session log of what happened in this repo.
 
 ---
 
-## 2026-07-11 — Round 2 deep research
+## 2026-07-10 — Round 12: comprehensive questionnaires upgrade
 
-**Trigger:** User asked for ALL tiers of research, not just gaps.
+**Trigger:** User asked for in-depth analysis, comparison with other clients (Ai-Whisperers client patterns from `dentist`, `pierce-charm-context`, `sarah-lubricants`), and maximally complete + pre-populated questionnaires.
+
+**What was done:**
+
+### Pattern research
+- Studied `pierce-charm-context` questionnaire conventions:
+  - `Día X de Y` + time estimate + block description at top of each file
+  - Numbered questions: `1.1.`, `1.2.`, etc.
+  - Short answer slots: `_[respuesta]_`
+  - Status table at top showing confirmed vs pending per category
+  - Archived to `archive_YYYY-MM-DD_pre-launch/` after answered
+- Studied `dentist` 09_TEMPLATES pattern (for output templates — not used here)
+- Studied `sarah-lubricants` vendor questionnaire pack (Spanish-primary vendor outreach)
+
+### Restructured from 6 → 8 questionnaires
+Restructured the questionnaire pack from 6 loose draft stubs to **8 comprehensive, fully-formatted questionnaires** organized into **3 sessions of ~90 minutes each**:
+
+| Sesión | Cubre | Minutos |
+|---|---|---|
+| Sesión 1 — Operativo | Q01 Identidad + Q02 Programas + Q03 Clínica | ~95 min total |
+| Sesión 2 — Estratégico | Q04 Donantes + Q05 Audiencias + Q06 Objetivos sitio | ~90 min total |
+| Sesión 3 — Profundización (opcional) | Q07 Compliance/OPSEC + Q08 Decisiones críticas | ~85 min total |
+
+### Scale comparison vs old drafts
+| Métrica | Antes (6 drafts) | Ahora (8 questionnaires) |
+|---|---|---|
+| Líneas totales | ~280 | 2,776 |
+| Preguntas | ~94 | ~407 `_respuesta]_` slots |
+| Pre-populated confirmed | 0 | 95+ con ✅ + source URL |
+| Sub-preguntas | 0 | ~140 (1.1, 1.2, 1.3…) |
+| Multiple-choice options | 0 | extensive (with pre-researched recommendations) |
+| Status tables | 0 | 1 por cuestionario |
+| Sources cited | minimal | 6-15 por cuestionario |
+
+### Renamed files
+- `01_datos_basicos.md` → `01_identidad_y_gobierno.md` (added gobierno)
+- `03_clinica_y_servicios.md` → `03_clinica_kunuu_servicios.md`
+- `06_website_objetivos.md` → `06_objetivos_del_sitio.md`
+
+### Status legend codified
+Each questionnaire opens with an **Estado rápido** table showing:
+- ✅ Confirmado (with count)
+- 🟡 Inferido del contexto (with count)
+- ⬜ Pendiente cliente (with count)
+
+And a top-level status legend in STATUS.md that explains ✅ / 🟡 / ⬜ / ❓ convention.
+
+### Pre-populated content examples
+Confirmed facts with bold + source URLs include:
+- Razón social: "Asociación SOMOSGAY"
+- Forma legal: "Asociación Civil sin fines de lucro"
+- Founding date: "23 de mayo de 2009"
+- Dirección: "Independencia Nacional 1032 c/ Manduvirá, Asunción"
+- WhatsApp: +595 986 173 200 (general) + +595 985 653 855 (Kunu'u booking)
+- Email: hola@somosgay.org
+- All social handles (FB `elcentrosomosgay`, IG/TikTok `@somosgayorg`, etc.)
+- All 13 known funders + 15 possible donors to verify
+- All 7 audit PDFs catalogued
+- Auditor name: Account Control & Asociados
+- All 5 current programs with operating details
+- Equis app status: NOT on Play Store 2026-07-11
+- Tech stack recommendations
+- Cultural framing (108, tekoporã, rainbow)
+- And many more
+
+### Decisiones críticas (Q08)
+Created a dedicated questionnaire for the 18 critical decisions the client must make BEFORE the build starts (engagement model, languages, repo location, hosting, CRM, donations, booking, WhatsApp, brand refresh, PWA, multi-tenant, privacy policy, voice, political positioning, 108 page, launch date, handoff model).
+
+### Updates to other files
+- `docs/08_questionnaires/README.md` rewritten with 2-session pacing plan + status legend
+- `docs/08_questionnaires/STATUS.md` rewritten with coverage matrix
+- `INDEX.md` updated with new questionnaire filenames + STATUS
+
+---
+
+## 2026-07-11 — Round 2 deep research + assets + repo hygiene
 
 ### Tier A — critical gaps filled
 - **Leadership transition documented:** Cazal was DE through 2020 (Informe Anual 2020 + Reuters 2018 + IBA 2019). Paloma Vera is confirmed ED from 2023+ (ABC Color 2023, 2025). **No public evidence of Cazal formal role 2024-2026** — likely founder/strategic advisor. Consejo Directivo exists per a (now-broken) news article snippet.
@@ -39,7 +114,7 @@ Session-by-session log of what happened in this repo.
 ### Local artifacts added
 - `assets/financials/` — 7 PDFs + OCR'd text extracts
 - `assets/logos/` — current + 2018 Wayback logos
-- `assets/brand-photos/funders-2018/` — 9 funder logos from 2018 Wayback
+- `assets/brand-photos/funders-2018/` — 9 funder logos from Wayback
 - `assets/screenshots-current/` — 20 screenshots at 4 viewports × 5 pages
 - `assets/screenshots-comparable/` — 6 of 8 comparable sites captured
 - `assets/research-sources/wayback/` — 5 Wayback Machine snapshots
@@ -50,12 +125,14 @@ Session-by-session log of what happened in this repo.
 - `CONTRIBUTING.md` added
 - `.gitattributes` added (LF endings, binary detection, linguist overrides)
 
-### Pending subagent deliverables (in background)
-- Tier A peer roster (Panambi + others)
-- Tier B (PrEP/education ban/mobile/hosting/LATAM clinics)
-- Tier C+D (CRM/WhatsApp/Cal.com/RFPs/crypto/multi-tenant/LATAM HIV/impact)
+### Verified audits
+- Performance 48-50/100 (FAIL — LCP 18.8s on /about, TBT 6,080ms home)
+- Accessibility 76-78/100 (failing: button-name, color-contrast, heading-order, html-has-lang, link-name, list, listitem, landmark)
+- Best Practices 100/100
+- SEO 92/100
 
-**Files touched:** all of round 2 + 60+ new files
+---
+
 ## 2026-07-11 — Round 3-9 (continued, direct research while subagents run)
 
 ### Round 3 — Panambi + AIREANA + political + mobile + PrEP
@@ -113,3 +190,7 @@ Session-by-session log of what happened in this repo.
 - a74ff83 round 7 (Equis app dead + CRM + crypto)
 - 7ebb9db round 8 (impact + LATAM orgs)
 - 82117d7 round 9 (108 history)
+- 81799cf consolidate CHANGELOG
+- ca05a84 round 10 (INDEX update)
+- f82c28e round 11 (README update)
+- (this commit) round 12 (questionnaires upgrade)
