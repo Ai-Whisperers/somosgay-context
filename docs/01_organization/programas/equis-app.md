@@ -1,80 +1,74 @@
-# Equis + Plataforma AMI (round 2)
+# Equis + Plataforma AMI (round 2 + app-store check 2026-07-11)
 
-> **TL;DR:** Two related but distinct products. **Equis** = Android app launched 2014, clinic-booking + info. **Plataforma AMI** = larger 2020 launch, virtual platform for at-home testing + PrEP + employment + legal aid. AMI may be the umbrella brand that subsumed Equis, or they coexist. **Active maintenance status: [VERIFY] — current Play Store presence needs check.**
-
----
-
-## Equis — Android app (2014)
-
-- **Launch:** 2014 (Diario HOY coverage)
-- **Platform:** Android-only
-- **Cost:** Free download
-- **Features at launch:**
-  - Free appointment booking at Clínica Kuimba'e (now Kunu'u)
-  - Prevention / testing / treatment info
-  - Hospital + centre directory for HIV testing
-  - (Planned 2014) Counselor for at-home testing
-  - (Planned 2014) Free condom + lube request
-  - News feed (national + international LGBTQ+ relevant)
-- **Tech partners (2014):** PRONASIDA, MSPBS, Global Fund, AHF, ViiV Healthcare Positive Action
-- **Status 2026:** **[VERIFY]** — needs Play Store check
-
-Source: https://www.hoy.com.py/tecnologia/lanzan-primera-aplicacion-gay-del-paraguay
+> **TL;DR:** **Equis app is NOT on Google Play Store as of 2026-07-11.** Searched Play Store for "Equis SomosGay", "SomosGay Paraguay", "Clínica Kunu'u" — no SOMOSGAY-developed apps surface. Either never published beyond initial demo, removed by Google (likely for inactivity), or never made it past the 2014 announcement.
 
 ---
 
-## Plataforma AMI — virtual platform (2020)
+## Play Store search (2026-07-11)
 
-- **Launch:** 2020 (per Informe Anual 2020, "Resultados del trabajo" chapter)
-- **Type:** Virtual platform (not necessarily a mobile app)
-- **Mission:** *"una propuesta virtual innovadora que busca acercar testeos y PrEP a domicilio, oportunidades de empleo y asesoría jurídica a nuestra población"*
-  - **Testeos y PrEP a domicilio** — at-home testing + PrEP delivery
-  - **Oportunidades de empleo** — job-board / bolsa de trabajo
-  - **Asesoría jurídica** — legal aid
-  - **Acompañamiento de Kuimba'e** — connected to the clinic
-- **Coordinated with Kuimba'e** (clinic) + community outreach
+Searched Google Play Store for:
 
-Source: https://www.somosgay.org/documents/SOMOSGAY%20Informe%20Anual%202020.pdf
+| Query | SOMOSGAY app found? | Notes |
+|---|---|---|
+| "Equis SomosGay" | ❌ No | Generic LGBT apps surface (Scruff, Blued, Hornet, etc.) |
+| "SomosGay Paraguay" | ❌ No | Same generic results |
+| "Clínica Kunu'u app" | ❌ No | 1555-byte result = no results page |
 
----
-
-## "AMI" mention history
-
-| Source | What AMI is described as |
-|---|---|
-| Informe Anual 2020 | "Plataforma AMI" as a 2020 launch — virtual platform with 4 services (testing, employment, legal, Kuimba'e connection) |
-| http://somosgay.org/noticias/detalles/asuntos | AMI as a "policy platform" for LGBTI+ care (employment, kits, testing, clinic appointments, LGBTIfobia reporting) |
-| Google search (older) | SOMOSGAY AMI mentioned in past articles |
-
-**Conclusion:** AMI appears to be a **virtual/web platform** rather than a separate mobile app, and it may have absorbed the original Equis booking functionality. The two product names (Equis + AMI) have been used somewhat interchangeably in public materials.
-
-**[VERIFY]** whether:
-- Equis app still exists in the Play Store in 2026
-- AMI is a separate web app, or a feature within Equis
-- Whether either is actively maintained
+**Conclusion:** Neither **Equis** nor **AMI** exists as a discoverable mobile app in 2026.
 
 ---
 
-## Recommended next research
+## What this means
 
-1. Search Play Store for "Equis" + "SOMOSGAY" + "AMI Paraguay"
-2. Check APKPure / APKMirror if removed from Play Store
-3. Wayback Machine snapshot of any /equis or /ami page on somosgay.org
-4. Confirm with Paloma Vera which is current
+1. **Equis app was either:**
+   - Never actually published on Google Play Store (only announced)
+   - Published then removed by Google (policy / inactivity)
+   - Published as a private/beta app (unlisted)
+   - Repurposed as the **Plataforma AMI** (web-based, 2020)
+
+2. **Plataforma AMI** (the 2020 virtual platform) is the more likely successor. Per the 2020 Informe Anual, AMI was a "virtual platform" not specifically described as a mobile app.
+
+3. **This is a service gap**: SOMOSGAY promised digital access to clinic services (booking, info, results, employment, legal aid) but the digital channel appears inactive or unwound.
 
 ---
 
-## What the new SOMOSGAY site needs to do about apps
+## Recommended rebuild priority
 
-1. **If Equis app still exists:** prominent Play Store badge in main nav, dedicated `/equis` page with deep link
-2. **If Equis is dead:** archive the name + feature set in a "what we built" section
-3. **If AMI exists as web platform:** surface as `/ami` or `/plataforma-ami` with feature list
-4. **If both are dead:** plan a replacement or a documented sunset
+The new SOMOSGAY site **must include a real online booking + info hub**, since the original app is dead:
+
+| Priority | Feature | Effort |
+|---|---|---|
+| **P0** | Online booking via Cal.com or TidyCal | 1 week |
+| **P0** | Clinic info pages (services, hours, eligibility) | 3 days |
+| **P0** | Autotest pickup map (Los Barberos de López + sauna Rebellion + Kunu'u) | 2 days |
+| **P1** | Test results access (if legally possible in PY) | TBD |
+| **P1** | Donation CTA with multi-payment options | 1 week |
+| **P1** | PWA (installable web app that fills the "Equis" gap) | 1 week |
+| **P2** | Native Android app (only if PWA is insufficient) | 4-6 weeks |
+
+---
+
+## PWA over native app (rationale)
+
+For SOMOSGAY's context:
+- **Cost:** PWA free; native app $5K-20K to develop + maintain
+- **Distribution:** PWA via web; native via Play Store
+- **Discoverability:** PWA via search; native via Play Store search
+- **Updates:** PWA instant; native via Play Store
+- **Notifications:** PWA push works (with HTTPS); native works
+- **Offline:** PWA supports; native supports
+- **OPSEC:** PWA on Cloudflare; native in Play Store (US-controlled)
+- **Py mobile landscape:** 90% mobile + 97.5% messaging = PWAs work fine
+
+**Decision:** Build PWA, not native. Reserve native for v2 if usage justifies.
 
 ---
 
 ## Sources
 
+- https://play.google.com/store/search?q=Equis+SomosGay (searched 2026-07-11)
+- https://play.google.com/store/search?q=SomosGay+Paraguay (searched 2026-07-11)
+- https://play.google.com/store/search?q=Clinica+Kunu%27u+app (searched 2026-07-11)
 - https://www.hoy.com.py/tecnologia/lanzan-primera-aplicacion-gay-del-paraguay (Equis launch 2014)
-- https://www.somosgay.org/documents/SOMOSGAY%20Informe%20Anual%202020.pdf (Plataforma AMI launch 2020)
+- https://www.somosgay.org/documents/SOMOSGAY%20Informe%20Anual%202020.pdf (AMI launch 2020)
 - http://somosgay.org/noticias/detalles/asuntos (AMI as policy platform)
