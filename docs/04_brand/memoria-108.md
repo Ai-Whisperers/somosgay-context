@@ -1,5 +1,22 @@
 # Memoria 108 — 1959 raids, Bernardo Aranda, "Carta de un Amoral"
 
+> **🚨 [HUMAN REVIEW REQUIRED] (Round 15, 2026-07-10):** This document contains sensitive Paraguayan LGBTQ+ history. Per `AGENTS.md` Source confidence levels, LLM-generated historical content on foundational cultural traumas must be reviewed by a human (ideally a Paraguayan LGBTQ+ community member or historian) before any client-facing use. Specific fields requiring human verification:
+>
+> - **Names, dates, addresses** of victims (e.g. Bernardo Aranda Valdez address "Estados Unidos y Novena Proyectadas")
+> - **"Carta de un Amoral"** author identity (currently listed as "Anonymous" — verify if any scholar has identified the author)
+> - **Timeline of raids** (Sept 2-12 vs longer period — some sources say 10 days, others say the raids extended for years)
+> - **The "108" tally** — verify whether the actual number arrested was 108 or higher (some accounts cite 124)
+> - **Coordinates** (25°18′06″S 57°38′11″O) — verify against multiple sources
+> - **Police autopsy ruling** quote ("asfixia por sofocación debido a los gases en combustión") — verify exact wording
+>
+> **Do NOT publish this content to a client-facing deck, the website, or any external material without human sign-off.**
+>
+> Primary authoritative sources to consult:
+> - Augsten Szokol, "108 Ciento Ocho" (Arandura, 2013) — ISBN 978-99953-2-740-8
+> - Renate Costa, "108 Cuchillo de Palo" (documentary, 2010)
+> - https://es.wikipedia.org/wiki/Caso_108
+> - AIREANA + SOMOSGAY themselves for community memory verification
+
 > **TL;DR:** The **Caso 108** is the foundational trauma of the Paraguayan LGBTQ+ movement. Bernardo Aranda, a 25-year-old radio announcer, was murdered on **1 September 1959**. Police used his death as pretext for **10 days of raids** that tortured 108+ gay men. The number 108 was coined by a journalist, not by the state. The 108's anonymous response, *"Carta de un Amoral"* (30 Sept 1959), predates Stonewall by 10 years.
 
 ---

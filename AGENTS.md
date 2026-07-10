@@ -17,12 +17,33 @@ You are working on the **Ai-Whisperers/somosgay-context** repo — a context-onl
 
 ## Conventions
 
-- Folder numbering: `NN_name-with-hyphens` for top-level (`00_brief`, `01_organization`, …). Subfolders: `lowercase` (e.g., `01_organization/programas/`).
+- Folder numbering: `NN_name-with-hyphens` for top-level (`00_brief`, `01_organization`, …). Subfolders: `lowercase` (e.g. `01_organization/programas/`).
 - File naming: `kebab-case.md` for narrative files. `STATUS.md` for status dashboards. `YYYY-MM-DD_topic.md` for dated entries.
 - Per-folder `README.md`: every folder MUST have one. It indexes the folder's files in a 1-line-per-file table with a `STATUS` column.
 - Status flags used in `INDEX.md` and folder READMEs: `complete` / `draft` / `pending` / `archived` / `blocked`.
 - Source attribution: `[label](url)` inline, with the URL list deduplicated at the end of the file under `## Fuentes`.
 - Tense: present-tense narrative ("SOMOSGAY operates…"), past-tense for events ("was founded in 2009").
+
+## Canonical doc roles (no duplication)
+
+- **`INDEX.md`** is the **canonical** table of contents with current STATUS flags. One source of truth for "what is this repo".
+- **`CHANGELOG.md`** is the **session log**. Append-only history of what happened.
+- Do NOT duplicate round-by-round descriptions across both. `CHANGELOG.md` narrates sessions; `INDEX.md` indexes files.
+- Update rule: every session appends to `CHANGELOG.md`; `INDEX.md` STATUS flags change only when a file's status genuinely changes (not every session).
+
+## Commit batching policy
+
+- Group related changes into **one commit per logical session unit**, not one commit per file touched.
+- Anti-pattern: 14 commits in a single day with messages like "round 7: X", "round 8: X+1", "round 9: X+2" all touching the same area. That fragments history without adding signal.
+- Better: one commit per real session ("session: 2026-07-10 — round 14: live HTTP probe caught site 50% broken + corrections + cleanup" — covers 17 file changes in one logical unit).
+- Exception: if a session has clearly distinct phases (e.g. "research" then "implement" then "ship"), splitting is fine if each phase is independently meaningful.
+
+## Source confidence levels
+
+- `✅ Confirmado` — claim with primary source URL in this session.
+- `🟡 Default recomendado` — inference based on public research + best practices; **must be confirmed by client before acting**.
+- `⬜ Pendiente cliente` — only client can answer.
+- `[HUMAN REVIEW REQUIRED]` — sensitive content (LGBTQ+ Paraguayan history, OPSEC, legal risk) where LLM inference is NOT acceptable. Must be reviewed by a human before any client-facing use.
 
 ## What this repo is NOT
 

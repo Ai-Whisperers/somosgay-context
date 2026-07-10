@@ -65,15 +65,20 @@ somosgay-context/
 │   ├── 03_competitors-and-peers/   — 7 files: AIREANA, Panambi, LATAM orgs, regional compare,
 │   │                                 design patterns, comparable clinic sites
 │   ├── 04_brand/                   — 6 files: visual identity, voice, Guaraní glossary,
-│   │                                 estandartes, memoria-108 (NEW R9)
-│   ├── 05_website-audit/           — 7 markdown + 2 Lighthouse JSON reports
+│   │                                 estandartes, memoria-108 (NEW R9, +HUMAN REVIEW R15)
+│   ├── 05_website-audit/           — 8 markdown + 2 Lighthouse JSON reports
+│   │                                 (+mpox-context.md NEW R15)
 │   ├── 06_decisions/               — 14 entries (13 prior + DP-2026-07-10-14 emergency, R14)
 │   ├── 06_website_status/          — NEW R14: live HTTP probe results + script
-│   ├── 07_backlog/                 — prioritized TODO
+│   ├── 07_backlog/                 — prioritized TODO (restructured R15)
 │   ├── 08_questionnaires/          — 6 packs ready for first client session
+│   │                                 (+STATUS.md confidence caveat R15)
 │   ├── 09_deliverables/            — PACK_PARA_CLIENTE (engagement options)
+│   ├── 10_risk_assessment/         — NEW R15: Ai-Whisperers legal exposure (CLOUD Act, etc.)
 │   ├── HANDOFF/                    — Luana quickstart, engineer brief, round-1 summary
 │   └── _archive/2026-07-10_recon_inicial/  — first session dump
+├── scripts/
+│   └── probe-somosgay.sh           — NEW R15: live HTTP probe (text/JSON/alert modes)
 ```
 
 Numbering scheme follows `dentist` + `sarah-lubricants` + `pierce-charm-context` conventions.

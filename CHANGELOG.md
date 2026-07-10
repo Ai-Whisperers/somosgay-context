@@ -309,3 +309,70 @@ Every single question across all 8 questionnaires now has:
 - `README.md` — TL;DR + layout diagram
 - `INDEX.md` — scale + Round 14 row + new section
 - `CHANGELOG.md` — this entry
+
+---
+
+## 2026-07-10 — Round 15: roast follow-through (AGENTS conventions, risk assessment, mpox context, probe script, backlog restructure)
+
+**Trigger:** User asked to "work on all the issues etc" after round 14's roast surfaced tier-A and tier-B items.
+
+**What was done:**
+
+### Repo conventions (AGENTS.md — policy layer)
+- Added **Canonical doc roles** section: `INDEX.md` is canonical TOC; `CHANGELOG.md` is session log; no duplication between them.
+- Added **Commit batching policy**: anti-pattern is one-commit-per-file; preferred is one-commit-per-logical-session-unit. (This applies to round 14: 17 files in one commit.)
+- Added **Source confidence levels** formal section: `✅ Confirmado` / `🟡 Default recomendado` (must be confirmed by client) / `⬜ Pendiente cliente` / `[HUMAN REVIEW REQUIRED]` (sensitive content where LLM inference is unacceptable).
+
+### Risk assessment — NEW FOLDER `docs/10_risk_assessment/`
+- Created `docs/10_risk_assessment/README.md` (convention).
+- Created `docs/10_risk_assessment/ai-whisperers-legal-exposure.md` (R15 NEW). Three risk vectors:
+  - **R1: Data residency + CLOUD Act** — US CLOUD Act (2018) authorizes US law enforcement to compel US providers to hand over data, even from foreign servers. If SOMOSGAY's site is on Cloudflare Pages US infrastructure, patient IPs and browser fingerprints are subject to US access.
+  - **R2: Legal entity in Paraguay** — Ai-Whisperers brand visibility on a sensitive LGBTQ+ site has political implications.
+  - **R3: Funder compliance** — Global Fund + amfAR + UNAIDS require DPIAs on tech partners.
+- Document includes **"Don't build without legal review"** list (patient forms, telemedicine, auth, CRM, donor PII storage) and **"Safe to build"** list (static site, Plausible self-hosted, deep-link buttons, public info).
+- Recommendation: Phase 1 (Option B from PACK_PARA_CLIENTE) should be scoped to "safe to build" only. Defer anything from "don't build" list to Phase 2 pending legal sign-off.
+
+### Mpox context — NEW FILE
+- Created `docs/05_website-audit/mpox-context.md` (R15 NEW). Notes that `/mpox` appears as a top-nav page but is NOT one of SOMOSGAY's 5 named programs — it's a 2022 emergency response page from the global mpox outbreak, possibly stale 4 years later. Three options for the rebuild: keep / merge into `/salud` health hub (recommended) / remove.
+
+### Probe script — NEW FILE
+- Created `scripts/probe-somosgay.sh` (R15 NEW, executable). Three modes:
+  - `./scripts/probe-somosgay.sh` — text table (default)
+  - `./scripts/probe-somosgay.sh --json` — JSON output for piping
+  - `./scripts/probe-somosgay.sh --alert` — exit 1 on unexpected non-200
+- Re-runs confirmed: `/news` 500, `/nanderekora` 500, `/nangareko` 404, `/sitemap.xml` 404, **`/noticias/rss` 404 (NEW FINDING)** — RSS feed is broken too.
+- Updated `docs/06_website_status/alive-now.md` to reference the script and add the RSS finding.
+
+### Backlog restructure
+- `docs/07_backlog/backlog.md` (R15): P0 items from R1-9 (audit reports, screenshots, logo files) are now complete — moved to P3 history. New P0 items: DP-14 outreach timing decision, weekly probe cron setup, mpox page decision. New P1: legal review of risk doc, human review of memoria-108.
+
+### Cross-references + banners
+- `docs/04_brand/memoria-108.md` (R15): Added `[HUMAN REVIEW REQUIRED]` banner at top listing specific fields needing human verification (names, dates, addresses, "Carta de un Amoral" author identity, raid timeline, 108 tally, coordinates, autopsy wording).
+- `docs/08_questionnaires/STATUS.md` (R15): Added confidence caveat — 605/696 (87%) are 🟡 LLM inferences, not facts. "Do NOT present this STATUS as 'we already know the answers.'"
+- `docs/09_deliverables/PACK_PARA_CLIENTE.md` (R15): Cross-linked to DP-2026-07-10-01 — Option B recommendation unblocks DP-04, DP-06, DP-07, DP-13.
+
+### INDEX scale bump
+- `INDEX.md` (R15): 110+ → **120+ markdown files**, 9 → **10 numbered folders**, **+scripts/ folder**. Added round 15 row to round-by-round table. Added `docs/10_risk_assessment/`, `scripts/`, `docs/05_website-audit/mpox-context.md` sections.
+
+### Things NOT done (decision-gated, in backlog)
+- Live probe cron setup (P0; needs Ivan sign-off on `hermes cron` or GitHub Actions)
+- Legal review of risk doc (P1; needs Kiki to engage actual legal counsel)
+- Human review of memoria-108 (P1; needs a Paraguayan LGBTQ+ community member / historian)
+
+**Open follow-ups:**
+- Round 16: review tier-A items 4 (commit fragmentation — partially addressed in policy), 5 (questionnaire pre-fill caveat — addressed in R15)
+- Tier-B items B2, B3, B6 deferred to next session
+
+**Files touched (round 15):**
+- `AGENTS.md` — +3 policy sections
+- `docs/04_brand/memoria-108.md` — human review banner
+- `docs/05_website-audit/mpox-context.md` — NEW
+- `docs/06_website_status/alive-now.md` — script reference + RSS 404 finding
+- `docs/07_backlog/backlog.md` — restructure
+- `docs/08_questionnaires/STATUS.md` — confidence caveat
+- `docs/09_deliverables/PACK_PARA_CLIENTE.md` — cross-link to DP-01
+- `docs/10_risk_assessment/README.md` — NEW
+- `docs/10_risk_assessment/ai-whisperers-legal-exposure.md` — NEW
+- `INDEX.md` — scale + sections
+- `scripts/probe-somosgay.sh` — NEW (executable)
+- `CHANGELOG.md` — this entry

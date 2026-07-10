@@ -138,15 +138,32 @@ done
 Last run output:
 
 ```
-2026-07-10T14:35:00+00:00  /  200 14321B
-2026-07-10T14:35:00+00:00  /about  200 16645B
-2026-07-10T14:35:00+00:00  /mpox  200 40406B
-2026-07-10T14:35:00+00:00  /news  500 9992B
-2026-07-10T14:35:00+00:00  /nanderekora  500 9992B
-2026-07-10T14:35:00+00:00  /nangareko  404 9926B
-2026-07-10T14:35:00+00:00  /sitemap.xml  404 9926B
-2026-07-10T14:35:00+00:00  /robots.txt  200 70B
+PATH                      HTTP   BYTES      TIME(s)
+----                      ----   -----      -------
+/                         200    14321B     0.25
+/about                    200    16645B     0.23
+/news                     500    9992B      0.25
+/nanderekora              500    9992B      0.23
+/mpox                     200    40406B     0.29
+/nangareko                404    9926B      0.26
+/sitemap.xml              404    9926B      0.24
+/robots.txt               200    70B        0.21
+/noticias/rss             404    9926B      0.25
 ```
+
+> **Round 15 update:** Added `/noticias/rss` to the probe. Returns **404** — another dead link referenced from the site footer. Same Next.js 404 HTML page (9,926B). **The site's RSS feed is broken too.** Update `docs/05_website-audit/sitemap-actual.md` if needed.
+
+## Re-runnable script
+
+The inline script above is now extracted to [`scripts/probe-somosgay.sh`](../../scripts/probe-somosgay.sh) with three modes:
+
+```bash
+./scripts/probe-somosgay.sh           # text table (default)
+./scripts/probe-somosgay.sh --json    # JSON for piping into dashboards
+./scripts/probe-somosgay.sh --alert   # exit 1 if any unexpected non-200 detected
+```
+
+Recommended cadence: weekly cron + on-demand after any SOMOSGAY-side change. Log to `docs/06_website_status/probe-history.log` for trend analysis.
 
 ---
 

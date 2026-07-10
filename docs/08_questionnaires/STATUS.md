@@ -1,6 +1,10 @@
 # STATUS — Questionnaires
 
 > **Last updated:** 2026-07-10 (round 13 — all questionnaires fully pre-populated)
+>
+> **⚠️ Round 15 caveat:** 605/696 (87%) of "answers" below are **`🟡 Default recomendado`** — LLM inferences from public research + best practices. **These are NOT facts.** Per `AGENTS.md` Source confidence levels, every 🟡 answer must be confirmed by the client before acting on it. The remaining **91 ⬜ Pendiente cliente** items genuinely cannot be answered without Paloma Vera or a staff member.
+>
+> **Do NOT present this STATUS as "we already know the answers."** Present it as "we have a draft pack — please confirm or correct."
 
 | # | Cuestionario | STATUS | ✅ Confirmado | 🟡 Default recomendado | ⬜ Pendiente cliente | Total |
 |---|---|---|---|---|---|---|

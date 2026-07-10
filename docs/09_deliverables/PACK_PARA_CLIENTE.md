@@ -76,6 +76,8 @@
 
 ## Recommended: Option B (pro-bono partial + partner)
 
+> **Round 15 update:** Option B is the recommended default in `DP-2026-07-10-01` ([`docs/06_decisions/decisiones-pendientes.md`](../06_decisions/decisiones-pendientes.md)). Choosing an option here **unblocks** DP-04 (site repo location), DP-06 (hosting/domain), DP-07 (tech stack), DP-13 (internal handoff model).
+
 **Rationale:**
 - Aligns with SOMOSGAY's mission (grassroots, community-first)
 - Aligns with Ai-Whisperers' values (sensitive verticals, Paraguayan-first)

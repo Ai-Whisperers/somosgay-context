@@ -1,12 +1,12 @@
 # INDEX — full table of contents
 
-> **Last full pass: 2026-07-10 (round 14 — live HTTP probing caught site is currently 50% broken; cleanup + corrections)**
+> **Last full pass: 2026-07-10 (round 15 — roast follow-through: AGENTS conventions, risk assessment, mpox context, probe script, backlog restructure)**
 
 ## Repository scale
 
-- **115+ markdown files** across 9 numbered folders + root + assets
+- **120+ markdown files** across 10 numbered folders + root + assets + scripts
 - **50+ binary assets** (11 PDFs, 6 OCR'd text extracts, 7 logos, 9 funder logos, 20 site screenshots, 6 comparable-site screenshots, 5 Wayback snapshots, 2 Lighthouse JSON reports)
-- **14 commits** since round 1 (2026-07-10)
+- **15 commits** since round 1 (2026-07-10)
 - **Single branch:** `main`
 - **0/0 ahead/behind origin**
 
@@ -24,7 +24,8 @@
 | **R8** | 2026-07-10 | Per-patient ART cost $880 + extended LATAM orgs + positioning |
 | **R9** | 2026-07-10 | Deep 108 history (Bernardo Aranda + Carta de un Amoral pre-Stonewall) + memoria-108.md |
 | **R10-R13** | 2026-07-10 | Comprehensive INDEX + CHANGELOG + README + questionnaires upgrade |
-| **R14** | 2026-07-10 | **Live HTTP probe** → discovered `/news` + `/nanderekora` returning HTTP 500 and `/nangareko` returning 404. Created `docs/06_website_status/`. Added DP-2026-07-10-14 (urgent outreach timing decision). Cleaned up 5 empty TXT placeholders in `assets/financials/`. Fixed false "168 news pages" claim (now unverifiable). Updated sitemap-actual.md (5 → 6 pages). |
+| **R14** | 2026-07-10 | **Live HTTP probe** caught site 50% broken (`/news` + `/nanderekora` 500; `/nangareko` + `/sitemap.xml` 404). Created `docs/06_website_status/`. Added DP-2026-07-10-14 (urgent outreach timing decision). Cleaned up 5 empty TXT placeholders. Fixed false "168 news pages" claim. Updated sitemap-actual.md (5 → 6 pages). |
+| **R15** | 2026-07-10 | **Roast follow-through.** Added canonical-doc + commit-batching + source-confidence policies to `AGENTS.md`. Added `[HUMAN REVIEW REQUIRED]` banner to `memoria-108.md`. Added `08_questionnaires/STATUS.md` confidence caveat (87% pre-filled = inferences). Created `docs/10_risk_assessment/ai-whisperers-legal-exposure.md` (CLOUD Act + funder compliance + entity exposure). Created `docs/05_website-audit/mpox-context.md` (2022 outbreak response, not ongoing program). Created `scripts/probe-somosgay.sh` (3 modes: text / JSON / alert). Restructured `docs/07_backlog/backlog.md` (P0 items from R1-9 moved to P3 history). Cross-linked PACK ↔ decisiones-pendientes. |
 
 ## Root
 
@@ -32,14 +33,20 @@
 |---|---|---|
 | `README.md` | Entry point, status, nav | complete |
 | `start-here.md` | Persona-keyed "open this first" | complete |
-| `AGENTS.md` | AI-agent instructions | complete |
+| `AGENTS.md` | AI-agent instructions | complete *(R15: +canonical doc roles, commit batching, source confidence)* |
 | `CLAUDE.md` | Claude-specific notes | complete |
-| `INDEX.md` | This file | complete |
+| `INDEX.md` | This file | complete *(R15: scale bumped to 120+ files, scripts section)* |
 | `CHANGELOG.md` | Session-by-session log | complete |
 | `LICENSE` | MIT license | complete |
 | `CONTRIBUTING.md` | How to contribute | complete |
 | `.gitignore` | Standard Node + macOS + editor noise | complete |
 | `.gitattributes` | Line-ending + binary detection | complete |
+
+## scripts/
+
+| File | Purpose | STATUS |
+|---|---|---|
+| `probe-somosgay.sh` | Live HTTP probe (text/JSON/alert modes) | complete *(R15)* |
 
 ## docs/00_brief
 
@@ -110,20 +117,21 @@
 | `voz-y-tono.md` | Voice & tone guide | complete |
 | `guarani-terminology.md` | Glossary | complete |
 | `uso-de-estandartes.md` | R9: rainbow + 108 + Tekoporã usage rules | complete |
-| `memoria-108.md` | R9: NEW — full Caso 108 history + Bernardo Aranda + Carta de un Amoral | complete |
+| `memoria-108.md` | R9: Caso 108 history + Bernardo Aranda + Carta de un Amoral | complete *(R15: +[HUMAN REVIEW REQUIRED] banner)* |
 
 ## docs/05_website-audit
 
 | File | Purpose | STATUS |
 |---|---|---|
 | `README.md` | Folder index | complete |
-| `sitemap-actual.md` | Current sitemap (5 pages) | complete |
-| `whats-broken.md` | 29 broken issues | complete |
+| `sitemap-actual.md` | Current sitemap (6 pages, HTTP status column) | complete *(R14: 5 → 6 + HTTP column)* |
+| `whats-broken.md` | 29 broken issues + 3 live 500/404 (Cat 0) | complete *(R14: removed unverifiable "168 news" claim)* |
 | `seo-audit.md` | SEO + content audit | complete |
 | `analytics-audit.md` | Analytics (deprecated UA) | complete |
-| `performance-audit.md` | R2: real Lighthouse numbers (Perf 48-50) | complete |
+| `performance-audit.md` | R2 + R14: real Lighthouse numbers (Perf 48-50, TTI 35.8s) | complete |
 | `accessibility-audit.md` | R2: real Lighthouse a11y numbers (76-78) | complete |
 | `what-they-need.md` | 47 prioritized recommendations (P0-P4) | complete |
+| `mpox-context.md` | R15: 2022 outbreak response page — NOT a permanent program | complete *(R15 NEW)* |
 
 ## docs/06_decisions
 
@@ -131,28 +139,28 @@
 |---|---|---|
 | `README.md` | Folder index | complete |
 | `decisiones-tomadas.md` | Decisions made | complete |
-| `decisiones-pendientes.md` | **14** decisions pending Ivan/Kiki *(R14: added DP-2026-07-10-14 — site currently 500/404, outreach timing)* | complete |
+| `decisiones-pendientes.md` | **14** decisions pending Ivan/Kiki *(R14: +DP-2026-07-10-14 site currently 500/404, outreach timing)* | complete |
 
 ## docs/06_website_status — NEW R14
 
 | File | Purpose | STATUS |
 |---|---|---|
 | `README.md` | Folder index + probe convention | complete |
-| `alive-now.md` | Live HTTP probe results (2026-07-10) — 2 pages 500, 1 page 404, 1 sitemap 404, 4 pages 200 | complete |
+| `alive-now.md` | Live HTTP probe results (2026-07-10) — 2 pages 500, 3 pages 404, 4 pages 200 | complete *(R15: +RSS feed 404, +script reference)* |
 
 ## docs/07_backlog
 
 | File | Purpose | STATUS |
 |---|---|---|
 | `README.md` | Folder index | complete |
-| `backlog.md` | Prioritized TODO | complete |
+| `backlog.md` | Prioritized TODO *(R15: restructured, completed R1-9 P0 items moved to P3 history)* | complete |
 
 ## docs/08_questionnaires
 
 | File | Purpose | STATUS |
 |---|---|---|
 | `README.md` | Folder index + pacing | complete |
-| `STATUS.md` | Status dashboard with coverage % | complete |
+| `STATUS.md` | Status dashboard with coverage % *(R15: +confidence caveat)* | complete |
 | `01_identidad_y_gobierno.md` | Identidad legal, dirección, board, org chart (Q1 — sesión 1) | complete (Q1) |
 | `02_programas_detalle.md` | KPIs, staff, horarios de cada programa (Q2 — sesión 1) | complete (Q1) |
 | `03_clinica_kunuu_servicios.md` | Servicios, elegibilidad, booking, OPSEC clínica (Q3 — sesión 1) | complete (Q1) |
@@ -167,9 +175,16 @@
 | File | Purpose | STATUS |
 |---|---|---|
 | `README.md` | Folder index | complete |
-| `PACK_PARA_CLIENTE.md` | Engagement options | draft (needs Ivan/Kiki decision) |
+| `PACK_PARA_CLIENTE.md` | Engagement options *(R15: cross-linked to DP-2026-07-10-01)* | draft (needs Ivan/Kiki decision) |
 | `one-pager.md` | One-pager for client | pending |
 | `investor-summary.md` | Internal one-pager | pending |
+
+## docs/10_risk_assessment — NEW R15
+
+| File | Purpose | STATUS |
+|---|---|---|
+| `README.md` | Folder index + convention | complete *(R15 NEW)* |
+| `ai-whisperers-legal-exposure.md` | CLOUD Act + funder compliance + entity exposure | complete *(R15 NEW)* |
 
 ## docs/HANDOFF
 
@@ -182,16 +197,17 @@
 
 ## docs/_archive
 
-| Folder | What it holds |
-|---|---|
-| `2026-07-10_recon_inicial/` | First reconnaissance session dump |
+| Folder | What | STATUS |
+|---|---|---|
+| `README.md` | Archive convention + index | complete *(R14 NEW)* |
+| `2026-07-10_recon_inicial/` | First reconnaissance session dump | deprecated *(R14: flag added)* |
 
 ## assets/
 
 | Folder | What | STATUS |
 |---|---|---|
-| `financials/` | 7 audit/annual PDFs + 6 OCR'd text extracts | complete |
-| `logos/` | 5 logo files (current + 2018 Wayback) | complete |
+| `financials/` | 11 PDFs + 6 OCR'd text extracts (5 empty placeholders deleted R14) | complete |
+| `logos/` | 5 logo files (current + 2018 Wayback) + wb-logo-white | complete |
 | `brand-photos/funders-2018/` | 9 funder logos from 2018 | complete |
 | `screenshots-current/` | 20 current-site screenshots (4 viewports × 5 pages) | complete |
 | `screenshots-comparable/` | 6 comparable-site screenshots | complete |
@@ -206,17 +222,3 @@
 |---|---|---|
 | `home-lighthouse.json` | Lighthouse JSON for `/` (Perf 48, A11y 76, BP 100, SEO 92) | complete |
 | `about-lighthouse.json` | Lighthouse JSON for `/about` (Perf 50, A11y 78, BP 100, SEO 92) | complete |
-
-## docs/ATTRIBUTIONS.md
-
-- All third-party sources attributed; license notes
-
----
-
-## Reading order for new sessions
-
-1. `CHANGELOG.md` (what just happened)
-2. `start-here.md` (your role → which file)
-3. `docs/07_backlog/backlog.md` (open tasks)
-4. The folder you need
-5. For deep dives: `docs/02_research/` (12 files) + `docs/03_competitors-and-peers/` (7 files) + `docs/04_brand/` (6 files)
