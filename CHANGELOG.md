@@ -56,3 +56,60 @@ Session-by-session log of what happened in this repo.
 - Tier C+D (CRM/WhatsApp/Cal.com/RFPs/crypto/multi-tenant/LATAM HIV/impact)
 
 **Files touched:** all of round 2 + 60+ new files
+## 2026-07-11 — Round 3-9 (continued, direct research while subagents run)
+
+### Round 3 — Panambi + AIREANA + political + mobile + PrEP
+- Panambi Paraguay verified: http://www.panambi.org.py/, +595 991 676571
+- Disambiguated www.panambi.org (German reforestation org, unrelated)
+- AIREANA live: https://www.aireana.org.py/ (WordPress, feminist lesbian group)
+- Verified PrEP regulation: Resolución SG N.° 213/2025 (MSPBS campaign "Con la PrEP, prevení el VIH")
+- Verified Paraguay mobile/internet: 81.3% penetration, 90% mobile-only, 97.5% messaging
+- Verified Constitution Art. 49-52 + Civil Code Art. 140 blocks on marriage equality
+- Verified Santiago Peña 2017 flip-flop (supported then retracted marriage equality)
+- Verified Itaipú Resolución 6207/11 (2011) = first same-sex partner recognition in PY
+
+### Round 4 — regional compare + hosting/domain
+- Fundación Huésped full service breakdown
+- DIKÉ SV, MPact, RedLactrans, Hivos, ILGA-LAC
+- Cloudflare Pages recommended (free, PY-friendly, OPSEC)
+- Cloudflare Registrar recommended for domain
+- Cautionary precedents: Russia "extremist" 2023, Uganda 2016/2023
+
+### Round 5 — WhatsApp Business API + booking tools
+- Per-conversation pricing, BSP comparison matrix
+- Recommended: Zavu (cheapest) or respond.io (best features) for API
+- Cal.com self-hosted recommended for booking (vs TidyCal or Calendly)
+
+### Round 6 — active RFPs + multi-tenant architecture
+- amfAR (Aug 24 2026 deadline, up to $480K), EJAF, Global Fund, ViiV, OSF, AstraZeneca, Levi Strauss, Robert Carr Fund
+- Multi-tenant 3-phase recommendation: standalone first, subdomain expansion, federation if AIREANA + Panambi opt in
+
+### Round 7 — Equis app dead + donor CRM + crypto
+- Verified Equis app is NOT on Google Play Store 2026-07-11 (searched)
+- Decision: build PWA, not native app
+- HubSpot for Nonprofits free tier recommended
+- Crypto donations NOT in v1 rebuild (OPSEC + demographic)
+
+### Round 8 — impact + cost + extended LATAM orgs
+- Per-patient ART cost $880/yr (2009 USD), PrEP $30-150/yr
+- Extended LATAM list: Huésped AR, Casa Diversa/Panambi PY, AIREANA PY, Red GayLatino/RedLactrans/ILGA-LAC
+- Positioning: "Asunción's Fundación Huésped"
+
+### Round 9 — deep 108 history
+- Bernardo Aranda (25, Radio Comuneros) murdered 1 Sept 1959
+- 10-day police raids; "108" coined by El País journalist
+- "Carta de un Amoral" (30 Sept 1959) = pre-Stonewall by 10 years
+- Documentary "108 Cuchillo de Palo" (Renate Costa 2010)
+- Book "108 Ciento Ocho" (Erwing Augsten Szokol 2013)
+- September = Mes de las Memorias 108
+- docs/04_brand/memoria-108.md: NEW dedicated file
+
+### Total commits this session
+- 6547011 round 2 (assets + audits)
+- 2593607 round 3 (Panambi + Aireana + political + mobile + PrEP)
+- 61005e5 round 4 (regional compare + hosting/domain)
+- 260eaec round 5 (WhatsApp + booking tools)
+- 6f8dd0b round 6 (RFPs + multi-tenant)
+- a74ff83 round 7 (Equis app dead + CRM + crypto)
+- 7ebb9db round 8 (impact + LATAM orgs)
+- 82117d7 round 9 (108 history)
