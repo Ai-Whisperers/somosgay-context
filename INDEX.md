@@ -1,6 +1,23 @@
 # INDEX — full table of contents
 
-> Last full pass: 2026-07-10 (initial reconnaissance)
+## Last full pass: 2026-07-11 (round 2 — deep research + assets)
+
+## Round 2 additions
+
+| File | Purpose | STATUS |
+|---|---|---|
+| `LICENSE` | MIT license | complete |
+| `CONTRIBUTING.md` | How to contribute | complete |
+| `.gitattributes` | Line-ending + binary detection | complete |
+| `docs/05_website-audit/home-lighthouse.json` | Lighthouse JSON for `/` | complete |
+| `docs/05_website-audit/about-lighthouse.json` | Lighthouse JSON for `/about` | complete |
+| `assets/financials/*.pdf` (7 files) | Audit + annual report PDFs | complete |
+| `assets/financials/*.txt` (6 files) | OCR'd + native text extracts | complete |
+| `assets/logos/*.png` (5 files) | Current + 2018 Wayback logos | complete |
+| `assets/brand-photos/funders-2018/*.png` (9 files) | Funder logos from 2018 | complete |
+| `assets/screenshots-current/*.png` (20 files) | Current site at 4 viewports × 5 pages | complete |
+| `assets/screenshots-comparable/*.png` (6 files) | Comparable sites desktop screenshots | complete |
+| `assets/research-sources/wayback/*.html` (5 files) | Wayback snapshots 2019-2024 | complete |
 
 ## Root
 

@@ -1,0 +1,807 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=2N_sDSC0" charset="utf-8"></script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=o9P2E1FK" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://somosgay.org/","20190328005026","http://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1553734226");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" />
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+<!-- End Wayback Rewrite JS Include -->
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="icon" type="image/png" href="http://web.archive.org/web/20190328005026im_/http://somosgay.org/gfx/favicon.png">
+	<link rel="stylesheet" href="http://web.archive.org/web/20190328005026cs_/http://somosgay.org/css/sg.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link href="http://web.archive.org/web/20190328005026cs_/http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+	<link href="http://web.archive.org/web/20190328005026cs_/http://fonts.googleapis.com/css?family=Crete+Round:400,400italic" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="http://web.archive.org/web/20190328005026cs_/http://somosgay.org/css/skin/skin.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<script src="http://web.archive.org/web/20190328005026js_/http://somosgay.org/js/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>	
+	<script src="http://web.archive.org/web/20190328005026js_/http://somosgay.org/js/jquery.jcarousel.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	jQuery(document).ready(function($) {
+	    $('#areas').jcarousel();
+	    $('#para_guay').jcarousel();
+	});
+	</script>
+	<script src="http://web.archive.org/web/20190328005026js_/http://somosgay.org/js/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://web.archive.org/web/20190328005026js_/http://somosgay.org/js/main.js"></script>
+	<title>SOMOSGAY</title>
+<link rel="stylesheet" href="/web/20190328005026cs_/http://somosgay.org/css/nivo-slider.css" type="text/css" media="screen" title="no title" charset="utf-8">
+<link rel="stylesheet" href="/web/20190328005026cs_/http://somosgay.org/gfx/themes/default/default.css" type="text/css" media="screen" title="no title" charset="utf-8">
+<script src="/web/20190328005026js_/http://somosgay.org/js/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/web/20190328005026js_/http://somosgay.org/js/jquery.nivo.slider.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+
+
+// Grayscale w canvas method
+function grayscale(src){
+    var canvas = document.createElement('canvas');
+    var ctx = canvas.getContext('2d');
+    var imgObj = new Image();
+    imgObj.src = src;
+    canvas.width = imgObj.width;
+    canvas.height = imgObj.height; 
+    ctx.drawImage(imgObj, 0, 0); 
+    var imgPixels = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    for(var y = 0; y < imgPixels.height; y++){
+        for(var x = 0; x < imgPixels.width; x++){
+            var i = (y * 4) * imgPixels.width + x * 4;
+            var avg = (imgPixels.data[i] + imgPixels.data[i + 1] + imgPixels.data[i + 2]) / 3;
+            imgPixels.data[i] = avg; 
+            imgPixels.data[i + 1] = avg; 
+            imgPixels.data[i + 2] = avg;
+        }
+    }
+    ctx.putImageData(imgPixels, 0, 0, 0, 0, imgPixels.width, imgPixels.height);
+    return canvas.toDataURL();
+}
+
+$(window).load(function() {
+		var control = true;
+		var text = $('.logos ul');
+		var fadeTime = 800;
+		if (text.length>1) {
+			text.hover(function(){
+				control = false;
+			},function(){
+				control = true;
+			});
+		
+			text.hide();
+			$(text.get(0)).show();
+			var i = 0;
+			setInterval(function(){
+				if (control) {$(text.get(i)).fadeOut(fadeTime,function(){}); i++;
+					if (text.length>i) {$(text.get(i)).fadeIn(fadeTime,function(){});
+					} else {
+						i=0;
+						$(text.get(i)).fadeIn(fadeTime,function(){});}					
+				}
+			}, 6000);
+		}
+	
+	$('#slider').nivoSlider({
+		effect: 'fade', // Specify sets like: 'fold,fade,sliceDown'
+		slices: 15, // For slice animations
+		boxCols: 8, // For box animations
+		boxRows: 4, // For box animations
+		animSpeed: 500, // Slide transition speed
+		pauseTime: 3000, // How long each slide will show
+		startSlide: 0, // Set starting Slide (0 index)
+		directionNav: true, // Next & Prev navigation
+		directionNavHide: true, // Only show on hover
+		controlNav: true, // 1,2,3... navigation
+		controlNavThumbs: false, // Use thumbnails for Control Nav
+		pauseOnHover: true, // Stop animation while hovering
+		manualAdvance: false, // Force manual transitions
+		prevText: 'Prev', // Prev directionNav text
+		nextText: 'Next', // Next directionNav text
+		randomStart: false, // Start on a random slide
+		beforeChange: function(){}, // Triggers before a slide transition
+		afterChange: function(){}, // Triggers after a slide transition
+		slideshowEnd: function(){}, // Triggers after all slides have been shown
+		lastSlide: function(){}, // Triggers when last slide is shown
+		afterLoad: function(){} // Triggers when slider has loaded
+	});
+	
+	$('.logos img').each(function(){
+	        var el = $(this);
+	        el.css({"position":"absolute"}).wrap("<div class='img_wrapper' style='display: inline-block'>").clone().addClass('img_grayscale').css({"position":"absolute","z-index":"998","opacity":"0"}).insertBefore(el).queue(function(){
+	            var el = $(this);
+	            el.parent().css({"width":this.width,"height":this.height});
+	            el.dequeue();
+	        });
+	        this.src = grayscale(this.src);
+	    });
+	
+	    // Fade image 
+	    $('.logos img').mouseover(function(){$(this).parent().find('img:first').stop().animate({opacity:1}, 1000);
+	    })
+	    $('.img_grayscale').mouseout(function(){$(this).stop().animate({opacity:0}, 1000);
+	    });
+	
+});
+
+</script>
+</head>
+<body>
+	<div class="wraper">
+		<div id="header">
+			<div id="logo">
+	<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/"><img src="/web/20190328005026im_/http://somosgay.org/gfx/logo.png" width="302" height="75" alt="Logo"></a>
+</div>
+<div id="social">
+	<ul class="head_social">
+		<li><a href="http://web.archive.org/web/20190328005026/http://www.youtube.com/user/SOMOSGAYorg" target="_blank"><img src="/web/20190328005026im_/http://somosgay.org/gfx/ico/head_youtube.png" width="25" height="49" alt="Head Youtube"></a></li>
+		<li><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/noticias/feed" target="_blank"><img src="/web/20190328005026im_/http://somosgay.org/gfx/ico/head_rss.png" width="25" height="49" alt="Head Rss"></a></li>
+		<li><a href="http://web.archive.org/web/20190328005026/https://www.periscope.tv/somosgay" target="_blank"><img src="/web/20190328005026im_/http://somosgay.org/gfx/ico/head_periscope.jpg" width="25" height="50" alt="Head Periscope"></a></li>
+		<li><a href="http://web.archive.org/web/20190328005026/https://twitter.com/somosgay" target="_blank"><img src="/web/20190328005026im_/http://somosgay.org/gfx/ico/head_twitter.png" width="25" height="49" alt="Head Twitter"></a></li>
+		<li><a href="http://web.archive.org/web/20190328005026/https://www.facebook.com/elcentrosomosgay" target="_blank"><img src="/web/20190328005026im_/http://somosgay.org/gfx/ico/head_facebook.png" width="25" height="49" alt="Head Facebook"></a></li>
+		<li id="wa" style="display:none"><a href="http://web.archive.org/web/20190328005026/tel:+595986173200" target="_blank">WHATSAPP</a></li>
+		<li><a href="/web/20190328005026/http://somosgay.org/en">See the site in English</a></li>
+	</ul>
+	<div id="newsletter">
+		<h2>REGISTRATE A NUESTRO NEWSLETTER</h2>
+    <form method="post" action="http://web.archive.org/web/20190328005026/http://kaizen.teixido.co/box.php">
+      <input name="email" type="text" placeholder="Dirección de e-mail"/>
+    	<input type="hidden" name="field[]"/>
+    	<input type="hidden" name="nlbox[]" value="23"/>
+       	<input type="hidden" name="funcml" value="add"/>
+    	<input type="hidden" name="p" value="1008"/>
+    	<input type="hidden" name="_charset" value="utf-8"/>
+    </form>
+	</div>
+</div>
+<div id="menu">
+	<ul>
+		<li id="inicio"><a class="active" href="http://web.archive.org/web/20190328005026/http://somosgay.org/">INICIO</a></li>
+		<li id="quienes_somos"><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/quienes-somos">QUIENES SOMOS</a></li>
+		<li id="centro"><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/el-centro">EL CENTRO</a></li>
+		<li id="noticias"><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias">NOTICIAS</a></li>
+		<li id="campanas"><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/campanas">CAMPAÑAS</a></li>
+		<li id="publicaciones"><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/publicaciones">PUBLICACIONES</a></li>
+		<li id="paraguay"><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/paraguay">PARAGUAY</a></li>
+		<li id="contacto"><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/contacto/">CONTACTO</a></li>
+		<li id="donaciones"><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/donaciones">DONACIONES</a></li>
+	</ul>
+</div>
+
+		</div>
+		<div id="content">			
+			<div class="slider-wrapper theme-default">
+	<span class="left"></span>
+	<div id="slider" class="nivoSlider">
+		
+  		
+  		<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/somosgay-repudia-ataques-al-patrimonio-el-conocimiento-las-artes-y-la-cienc"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/1042/somosgayrepudiaataquesa_patrimonio__slide.jpg" alt="SOMOSGAY repudia ataques al patrimonio, conocimiento, arte y ciencia en Paraguay" title="#nivocap-1042"></a>
+  		
+		
+  		
+  		<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/somosgay-y-kuimbae-brindan-tests-gratuitos-de-vih-e-its-en-la-laguna-de-ita"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/1043/testeoita__slide.jpg" alt="SOMOSGAY y Kuimba’e brindan tests gratuitos de VIH e ITS en la Laguna de Itá" title="#nivocap-1043"></a>
+  		
+		
+  		
+  		<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/somosgay-desea-un-2019-con-un-paraguay-que-abrace-la-diversidad-y-los-derec"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/1040/somosgay2019__slide.jpg" alt="SOMOSGAY desea un 2019 con un Paraguay que abrace la diversidad y los derechos de todas las personas" title="#nivocap-1040"></a>
+  		
+		
+  		
+  		<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/visibilidad-lgbt-y-cine-paraguayo-somosgay-invita-a-charla-con-marcelo-mart"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/1038/somosgay-m.martinessi-a.brun-at-the-buen-pastor-prison__slide.jpg" alt="Visibilidad LGBT y Cine Paraguayo: SOMOSGAY invita a charla con Marcelo Martinessi y “Las Herederas”" title="#nivocap-1038"></a>
+  		
+		
+  		
+  		<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/somosgay-y-kuimbae-brindan-tests-gratuitos-de-vih-en-el-lago-de-la-republic"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/1037/testeo-lago-cde-dic-1__slide.jpg" alt="SOMOSGAY y Kuimba’e brindan tests gratuitos de VIH en el Lago de la República CDE" title="#nivocap-1037"></a>
+  		
+		
+  		
+  		<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/somosgay-participa-de-la-charla-actualizacion-del-tratamiento-del-vih-en-la"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/1036/charla-upap-cde-3__slide.jpg" alt="SOMOSGAY participa de la charla “Actualización del Tratamiento del VIH” en la UPAP CDE" title="#nivocap-1036"></a>
+  		
+		
+  		
+  		<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/denunciamos-la-persecucion-estatal-al-colectivo-lgbt-en-paraguay"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/1032/brunojuicio__slide.jpg" alt="Denunciamos la persecución estatal al colectivo LGBT en Paraguay" title="#nivocap-1032"></a>
+  		
+		
+  		
+  		<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/festival-del-lazo-rojo-2018-por-un-paraguay-con-vih-indetectable"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/1031/lazorojo2018__slide.jpg" alt="Festival del Lazo Rojo 2018 por un Paraguay con VIH indetectable" title="#nivocap-1031"></a>
+  		
+		
+  		
+  		<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/somosgay-desarrolla-capacitacion-a-consejeros-de-salud-comunitaria-en-alto"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/1034/capacitacion-consejeria-cde-1__slide.jpg" alt="SOMOSGAY desarrolla capacitación a consejeros de salud comunitaria en Alto Paraná" title="#nivocap-1034"></a>
+  		
+		
+  		
+  		<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/somosgay-se-une-a-la-condena-mundial-contra-la-violacion-de-derechos-lgbti"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/1028/tanzania__slide.jpg" alt="SOMOSGAY se une a la condena mundial contra la violación de derechos LGBTI+ en Tanzania" title="#nivocap-1028"></a>
+  		
+		
+  		
+  		<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/campamento-y-4to-congreso-lgbti-paraguay-2018-una-respuesta-desde-la-espera"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/1027/campamento_2018__slide.jpg" alt="Campamento y 4to Congreso LGBTI+ Paraguay 2018: Una respuesta desde la esperanza" title="#nivocap-1027"></a>
+  		
+		
+  		
+  		<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/somosgay-expande-la-provision-de-tests-gratuitos-de-vih-en-ciudad-del-este"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/1035/test-lago-nov-1__slide.jpg" alt="SOMOSGAY expande la provisión de tests gratuitos de VIH en Ciudad del Este" title="#nivocap-1035"></a>
+  		
+		
+  		
+  		<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/ciudad-de-villeta-estrena-nuevo-centro-comunitario-lgbti-en-paraguay"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/1026/centrovilleta__slide.jpg" alt="Ciudad de Villeta estrena nuevo Centro Comunitario LGBTI en Paraguay" title="#nivocap-1026"></a>
+  		
+		
+  		
+  		<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/somosgay-denuncia-el-aumento-de-odio-discriminacion-y-asesinatos-de-las-muj"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/1025/trans_py__slide.jpg" alt="SOMOSGAY denuncia el aumento de odio, discriminación y asesinatos de las mujeres trans en Paraguay" title="#nivocap-1025"></a>
+  		
+		
+  		
+  		<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/108-investigadores-extranjeros-analizan-la-represion-al-colectivo-lgbti-en"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/1024/108__slide.jpg" alt="108: Investigadores extranjeros analizan la represión al colectivo LGBTI + en Paraguay" title="#nivocap-1024"></a>
+  		
+		
+  		
+  		<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/los-derechos-de-la-ninez-lgbti"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/1023/derechosninezlgbti__slide.jpg" alt="Los derechos de la niñez LGBTI+" title="#nivocap-1023"></a>
+  		
+		
+  		
+  		<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/parada-2018-por-un-paraguay-con-derechos-para-todas-las-personas-y-las-fami"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/1018/parada2018__slide.jpg" alt="Parada 2018: Orgullo por un Paraguay con derechos para todas las personas y las familias" title="#nivocap-1018"></a>
+  		
+		
+  		
+  		<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/somosgay-cumple-9-anos-avanzando-hacia-un-paraguay-igualitario"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/1015/somosgay9__slide.jpg" alt="SOMOSGAY cumple 9 años avanzando hacia un Paraguay igualitario" title="#nivocap-1015"></a>
+  		
+		
+  		
+  		<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/festival-besaton-2018-celebrando-el-amor-y-la-igualdad-en-paraguay-para-tod"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/1013/besaton2018__slide.jpg" alt="Festival Besatón 2018 celebrando el amor y la igualdad en Paraguay para todas las familias" title="#nivocap-1013"></a>
+  		
+		
+  		
+  		<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/aumenta-el-odio-a-mujeres-y-al-colectivo-lgbt-en-la-clase-politica-paraguay"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/1010/politica_odia_a_mujeres_y_lgbt__slide.jpg" alt="Aumenta el odio a mujeres y al colectivo LGBT en la clase política paraguaya" title="#nivocap-1010"></a>
+  		
+		
+  		
+  		<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/transfobia-y-dictadura-nunca-mas-en-paraguay"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/1005/transfobia_py__slide.jpg" alt="Transfobia y dictadura nunca más en Paraguay" title="#nivocap-1005"></a>
+  		
+		
+  		
+  		<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/paremos-la-pelota-al-abuso-de-poder"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/1004/paremos_la_pelota__slide.jpg" alt="Paremos la pelota al abuso de poder" title="#nivocap-1004"></a>
+  		
+		
+	</div>
+	
+	<div id="nivocap-1042" class="caption nivo-html-caption">
+		
+		<h1>SOMOSGAY repudia ataques al patrimonio, conocimiento, arte y ciencia en&#8230;</h1>
+
+	</div>
+	
+	<div id="nivocap-1043" class="caption nivo-html-caption">
+		
+		<h1>SOMOSGAY y Kuimba’e brindan tests gratuitos de VIH e ITS en la Laguna&#8230;</h1>
+
+	</div>
+	
+	<div id="nivocap-1040" class="caption nivo-html-caption">
+		
+		<h1>SOMOSGAY desea un 2019 con un Paraguay que abrace la diversidad y los derechos&#8230;</h1>
+
+	</div>
+	
+	<div id="nivocap-1038" class="caption nivo-html-caption">
+		
+		<h1>Visibilidad LGBT y Cine Paraguayo: SOMOSGAY invita a charla con Marcelo&#8230;</h1>
+
+	</div>
+	
+	<div id="nivocap-1037" class="caption nivo-html-caption">
+		
+		<h1>SOMOSGAY y Kuimba’e brindan tests gratuitos de VIH en el Lago de la República&#8230;</h1>
+
+	</div>
+	
+	<div id="nivocap-1036" class="caption nivo-html-caption">
+		
+		<h1>SOMOSGAY participa de la charla &#8220;Actualización del Tratamiento del&#8230;</h1>
+
+	</div>
+	
+	<div id="nivocap-1032" class="caption nivo-html-caption">
+		
+		<h1>Denunciamos la persecución estatal al colectivo LGBT en Paraguay</h1>
+
+	</div>
+	
+	<div id="nivocap-1031" class="caption nivo-html-caption">
+		
+		<h1>Festival del Lazo Rojo 2018 por un Paraguay con VIH indetectable</h1>
+
+	</div>
+	
+	<div id="nivocap-1034" class="caption nivo-html-caption">
+		
+		<h1>SOMOSGAY desarrolla capacitación a consejeros de salud comunitaria en&#8230;</h1>
+
+	</div>
+	
+	<div id="nivocap-1028" class="caption nivo-html-caption">
+		
+		<h1>SOMOSGAY se une a la condena mundial contra la violación de derechos LGBTI+&#8230;</h1>
+
+	</div>
+	
+	<div id="nivocap-1027" class="caption nivo-html-caption">
+		
+		<h1>Campamento y 4to Congreso LGBTI+ Paraguay 2018: Una respuesta desde la&#8230;</h1>
+
+	</div>
+	
+	<div id="nivocap-1035" class="caption nivo-html-caption">
+		
+		<h1>SOMOSGAY expande la provisión de tests gratuitos de VIH en Ciudad del&#8230;</h1>
+
+	</div>
+	
+	<div id="nivocap-1026" class="caption nivo-html-caption">
+		
+		<h1>Ciudad de Villeta estrena nuevo Centro Comunitario LGBTI en Paraguay</h1>
+
+	</div>
+	
+	<div id="nivocap-1025" class="caption nivo-html-caption">
+		
+		<h1>SOMOSGAY denuncia el aumento de odio, discriminación y asesinatos de las&#8230;</h1>
+
+	</div>
+	
+	<div id="nivocap-1024" class="caption nivo-html-caption">
+		
+		<h1>108: Investigadores extranjeros analizan la represión al colectivo LGBTI&#8230;</h1>
+
+	</div>
+	
+	<div id="nivocap-1023" class="caption nivo-html-caption">
+		
+		<h1>Los derechos de la niñez LGBTI+</h1>
+
+	</div>
+	
+	<div id="nivocap-1018" class="caption nivo-html-caption">
+		
+		<h1>Parada 2018: Orgullo por un Paraguay con derechos para todas las personas&#8230;</h1>
+
+	</div>
+	
+	<div id="nivocap-1015" class="caption nivo-html-caption">
+		
+		<h1>SOMOSGAY cumple 9 años avanzando hacia un Paraguay igualitario</h1>
+
+	</div>
+	
+	<div id="nivocap-1013" class="caption nivo-html-caption">
+		
+		<h1>Festival Besatón 2018 celebrando el amor y la igualdad en Paraguay para&#8230;</h1>
+
+	</div>
+	
+	<div id="nivocap-1010" class="caption nivo-html-caption">
+		
+		<h1>Aumenta el odio a mujeres y al colectivo LGBT en la clase política paraguaya</h1>
+
+	</div>
+	
+	<div id="nivocap-1005" class="caption nivo-html-caption">
+		
+		<h1>Transfobia y dictadura nunca más en Paraguay</h1>
+
+	</div>
+	
+	<div id="nivocap-1004" class="caption nivo-html-caption">
+		
+		<h1>Paremos la pelota al abuso de poder</h1>
+
+	</div>
+	
+	<span class="right"></span>
+</div>
+			<div class="intro">
+				<p>SOMOSGAY trabaja para construir una sociedad paraguaya solidaria, plural, democrática, equitativa y sin exclusiones, en la que las personas lesbianas, gay, bisexuales y trans vivan felices en plena igualdad en sus hogares, sus escuelas y sus lugares de trabajo</p>
+				<div class="actionpurple">
+					<h2><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/donaciones">DONÁ A NUESTRA CAUSA</a></h2>
+				</div>
+				<div class="actionblue">
+					<h2><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/contacto">UNITE A SOMOSGAY</a></h2>
+				</div>
+			</div>
+
+			<div class="allcols">
+				<div class="twocols noticias mr">
+					<h1 class="title">NOTICIAS DESTACADAS</h1>
+					<div id="noticias_scroll">
+					
+					<div class="post mostaza">
+						<div class="post_img">
+							
+							<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/preparan-plan-de-ciudadania-lgbti-2019-durante-el-4to-congreso-de-activista"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/1033/4tocongreso__noticia_small.jpg" alt="Preparan Plan de Ciudadanía LGBTI+ 2019 durante el 4to Congreso de activistas en Paraguay"></a>	
+									
+							
+						</div>
+						<div class="post_text">
+							<h2><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/preparan-plan-de-ciudadania-lgbti-2019-durante-el-4to-congreso-de-activista" title="Preparan Plan de Ciudadanía LGBTI+ 2019 durante el 4to Congreso de activistas en Paraguay">Preparan Plan de&#8230;</a></h2>
+							<p>En el marco de la semana del Lazo Rojo en el Paraguay, activistas&#8230;</p>
+						</div>
+					</div>
+					
+					<div class="post verde">
+						<div class="post_img">
+							
+							<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/embajador-britanico-hablara-en-somosgay-contra-la-discriminacion"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/1029/embajador_britanico__noticia_small.jpg" alt="Embajador Británico hablará en SOMOSGAY en defensa de la diversidad y la inclusión"></a>	
+									
+							
+						</div>
+						<div class="post_text">
+							<h2><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/embajador-britanico-hablara-en-somosgay-contra-la-discriminacion" title="Embajador Británico hablará en SOMOSGAY en defensa de la diversidad y la inclusión">Embajador Británico&#8230;</a></h2>
+							<p>“Combatiendo la discriminación: experiencia del Reino Unido&#8230;</p>
+						</div>
+					</div>
+					
+					<div class="post celeste">
+						<div class="post_img">
+							
+							<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/la-parada-2018-del-orgullo-marco-un-hito-por-un-paraguay-igualitario-y-femi"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/1020/la_parada_2018marcha__noticia_small.jpg" alt="La Parada 2018 del Orgullo marcó un hito por un Paraguay igualitario y feminista"></a>	
+									
+							
+						</div>
+						<div class="post_text">
+							<h2><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/la-parada-2018-del-orgullo-marco-un-hito-por-un-paraguay-igualitario-y-femi" title="La Parada 2018 del Orgullo marcó un hito por un Paraguay igualitario y feminista">La Parada 2018 del&#8230;</a></h2>
+							<p>La multitudinaria marcha del Día Internacional del Orgullo LGBTI+&#8230;</p>
+						</div>
+					</div>
+					
+					<div class="post rosado">
+						<div class="post_img">
+							
+							<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/somosgay-acompana-audiencia-y-lanzamiento-del-manual-de-comunicacion-gaylat"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/1014/manual-gaylatino-brasil-3__noticia_small.jpg" alt="SOMOSGAY en el lanzamiento del Manual de Comunicación LGBTI+ en el Senado Federal de Brasil"></a>	
+									
+							
+						</div>
+						<div class="post_text">
+							<h2><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/somosgay-acompana-audiencia-y-lanzamiento-del-manual-de-comunicacion-gaylat" title="SOMOSGAY en el lanzamiento del Manual de Comunicación LGBTI+ en el Senado Federal de Brasil">SOMOSGAY en el lanzamiento&#8230;</a></h2>
+							<p>Curitiba, 17 de mayo de 2018. Durante el mes de lucha contra&#8230;</p>
+						</div>
+					</div>
+					
+					<div class="post mostaza">
+						<div class="post_img">
+							
+							<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/exigimos-a-la-proxima-presidencia-de-paraguay-la-garantia-de-los-derechos-p"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/1007/palacio_garantia-2__noticia_small.jpg" alt="Exigimos a la próxima Presidencia de Paraguay la garantía de los derechos para todas las personas"></a>	
+									
+							
+						</div>
+						<div class="post_text">
+							<h2><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/exigimos-a-la-proxima-presidencia-de-paraguay-la-garantia-de-los-derechos-p" title="Exigimos a la próxima Presidencia de Paraguay la garantía de los derechos para todas las personas">Exigimos a la próxima&#8230;</a></h2>
+							<p>Políticas públicas claves dependen de la Presidencia y desde&#8230;</p>
+						</div>
+					</div>
+					
+					<div class="post verde">
+						<div class="post_img">
+							
+							<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/corte-interamericana-insta-aprobar-matrimonio-igualitario-y-derechos-de-per"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/1003/matrimonio_en_py__noticia_small.jpg" alt="Corte Interamericana insta aprobar Matrimonio Igualitario y derechos de personas Trans en Paraguay"></a>	
+									
+							
+						</div>
+						<div class="post_text">
+							<h2><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/corte-interamericana-insta-aprobar-matrimonio-igualitario-y-derechos-de-per" title="Corte Interamericana insta aprobar Matrimonio Igualitario y derechos de personas Trans en Paraguay">Corte Interamericana&#8230;</a></h2>
+							<p>La Corte Interamericana de Derechos Humanos emitió una Opinión&#8230;</p>
+						</div>
+					</div>
+					
+					<div class="post celeste">
+						<div class="post_img">
+							
+							<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/relacionar-la-pedofilia-con-la-comunidad-lgbt-es-homofobia"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/983/homofobia__noticia_small.jpg" alt="Relacionar la pedofilia con la comunidad LGBT es homofobia"></a>	
+									
+							
+						</div>
+						<div class="post_text">
+							<h2><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/relacionar-la-pedofilia-con-la-comunidad-lgbt-es-homofobia" title="Relacionar la pedofilia con la comunidad LGBT es homofobia">Relacionar la pedofilia&#8230;</a></h2>
+							<p>Las estadísticas evidencian que la mayoría de los abusadores&#8230;</p>
+						</div>
+					</div>
+					
+					<div class="post rosado">
+						<div class="post_img">
+							
+							<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/prep-conceptos-basicos"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/943/prep_noticia_portada__noticia_small.jpg" alt="PrEP: Conceptos Básicos"></a>	
+									
+							
+						</div>
+						<div class="post_text">
+							<h2><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/prep-conceptos-basicos" title="PrEP: Conceptos Básicos">PrEP: Conceptos&#8230;</a></h2>
+							<p>La profilaxis Pre-exposición (PrEP, siglas en inglés) es una&#8230;</p>
+						</div>
+					</div>
+					
+					<div class="post mostaza">
+						<div class="post_img">
+							
+							<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/gays-de-latinoamerica-se-unen"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/764/img_9676-2__noticia_small.jpg" alt="Gays de Latinoamérica se unen"></a>	
+									
+							
+						</div>
+						<div class="post_text">
+							<h2><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/gays-de-latinoamerica-se-unen" title="Gays de Latinoamérica se unen">Gays de Latinoamérica&#8230;</a></h2>
+							<p>Durante tres días del presente mes se dieron cita en la ciudad&#8230;</p>
+						</div>
+					</div>
+					
+					<div class="post verde">
+						<div class="post_img">
+							
+							<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/somosgay-presente-en-la-junta-directiva-del-fondo-mundial"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/753/sergio-gf1__noticia_small.jpg" alt="SOMOSGAY electa representante juvenil de LAC frente a la Junta Directiva del Fondo Mundial"></a>	
+									
+							
+						</div>
+						<div class="post_text">
+							<h2><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/somosgay-presente-en-la-junta-directiva-del-fondo-mundial" title="SOMOSGAY electa representante juvenil de LAC frente a la Junta Directiva del Fondo Mundial">SOMOSGAY electa&#8230;</a></h2>
+							<p>El pasado lunes 16 de noviembre, se desarrolló la 34º Reunión&#8230;</p>
+						</div>
+					</div>
+					
+					<div class="post celeste">
+						<div class="post_img">
+							
+							<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/jovenes-de-america-latina-y-el-caribe-en-el-primer-encuentro-de-escuela-de"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/713/escuela_14__noticia_small.jpg" alt="Jóvenes de América Latina y el Caribe en el primer encuentro de “Escuela de Perras”"></a>	
+									
+							
+						</div>
+						<div class="post_text">
+							<h2><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/jovenes-de-america-latina-y-el-caribe-en-el-primer-encuentro-de-escuela-de" title="Jóvenes de América Latina y el Caribe en el primer encuentro de “Escuela de Perras”">Jóvenes de América&#8230;</a></h2>
+							<p>Del 3 al 6 de agosto se realizó en la ciudad de Asunción el&#8230;</p>
+						</div>
+					</div>
+					
+					<div class="post rosado">
+						<div class="post_img">
+							
+							<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/repercusion-de-la-invitacion-del-papa-francisco-a-somosgay-en-medios-nacion"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/712/papa_noticias_04__noticia_small.jpg" alt="Repercusión de la invitación del Papa Francisco a SOMOSGAY en medios nacionales e internacionales"></a>	
+									
+							
+						</div>
+						<div class="post_text">
+							<h2><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infodetalle/repercusion-de-la-invitacion-del-papa-francisco-a-somosgay-en-medios-nacion" title="Repercusión de la invitación del Papa Francisco a SOMOSGAY en medios nacionales e internacionales">Repercusión de&#8230;</a></h2>
+							<p>Durante la visita del Papa Francisco a Paraguay, la invitación&#8230;</p>
+						</div>
+					</div>
+					
+					</div>
+				</div>
+
+				<div class="twocols entrevistas mr">
+					<h1 class="title">
+						<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infoentrevistas">
+							ENTREVISTAS SOMOSGAY
+						</a>
+					</h1>
+					
+					<div class="post">
+						<div class="post_img">
+							
+							<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/entredetalle/mario-ferreiro"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/866/mario_ferreiro_entrevista_portada__entrevista_small.jpg" alt="Mario Ferreiro"></a>
+							
+						</div>
+						<div class="post_text">
+							<p>"Entre ideales y acciones concretas, entre la esperanza de un&#8230;"</p>
+							<h2>Mario Ferreiro</h2>
+							<span><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/entredetalle/mario-ferreiro">Ver</a></span>
+						</div>
+					</div>
+										
+					<div class="post">
+						<div class="post_img">
+							
+							<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/entredetalle/luis-bareiro1"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/715/luis_bareiro__entrevista_small.jpg" alt="Luis Bareiro"></a>
+							
+						</div>
+						<div class="post_text">
+							<p>"“En nuestro país se están abriendo espacios de discusión.&#8230;"</p>
+							<h2>Luis Bareiro</h2>
+							<span><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/entredetalle/luis-bareiro1">Ver</a></span>
+						</div>
+					</div>
+					            <div class="clear">&nbsp;</div>
+										
+					<div class="post">
+						<div class="post_img">
+							
+							<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/entredetalle/menchi-barriocanal"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/465/menchi_barriocanal__entrevista_small.jpg" alt="Menchi Barriocanal"></a>
+							
+						</div>
+						<div class="post_text">
+							<p>"“Todavía hay una deuda pendiente de parte de los medios en&#8230;"</p>
+							<h2>Menchi Barriocanal</h2>
+							<span><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/entredetalle/menchi-barriocanal">Ver</a></span>
+						</div>
+					</div>
+										
+					<div class="post">
+						<div class="post_img">
+							
+							<a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/entredetalle/oscar-acosta"><img src="http://web.archive.org/web/20190328005026im_/http://somosgay.org/uploaded_images/646/oscar_acosta__entrevista_small.jpg" alt="Oscar Acosta"></a>
+							
+						</div>
+						<div class="post_text">
+							<p>"Un hombre apegado a la libertad"</p>
+							<h2>Oscar Acosta</h2>
+							<span><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/entredetalle/oscar-acosta">Ver</a></span>
+						</div>
+					</div>
+										
+				</div>
+
+				<div class="twocols twitter">
+					<h1 class="title">SOMOSGAY EN TWITTER</h1>
+					<a class="twitter-timeline" href="http://web.archive.org/web/20190328005026/https://twitter.com/search?q=somosgay" data-widget-id="344842089156190211">Tweets about "somosgay"</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+				</div>
+			</div>
+
+			<div class="allcols ribbon">
+				<span class="left"></span>
+				<div class="twocols mr">
+					<div class="onecol mr">
+						<h2 class="uppercase"><a class="green first_index" href="http://web.archive.org/web/20190328005026/http://somosgay.org/publicaciones/revista-equis">Equis Magazine</a></h2>
+					</div>
+					<div class="onecol mt relative">
+						<p>Revista de interés general con información sobre un Paraguay diverso.</p>
+						<span class="leermas"><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/publicaciones/revista-equis">VER MAS</a></span>
+					</div>
+				</div>
+				
+				<div class="twocols mr">
+					<div class="onecol mr">
+						<h2 class="uppercase"><a class="blue" href="http://web.archive.org/web/20190328005026/http://somosgay.org/publicaciones/testeo-nacional-de-vih" title="Testeo Nacional de VIH">Testeo Nacional de VIH</a></h2>
+					</div>
+					<div class="onecol mt relative">
+						<p></p>
+						<span class="leermas"><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/publicaciones/testeo-nacional-de-vih">VER MAS</a></span>
+					</div>
+				</div>
+				
+				<div class="twocols">
+					<div class="onecol mr">
+						<h2 class="uppercase"><a class="orange" href="http://web.archive.org/web/20190328005026/http://somosgay.org/publicaciones/manual-contra-la-homofobia" title="Manual contra la Homofobia">Manual contra la Homofobia</a></h2>
+					</div>
+					<div class="onecol mt relative">
+						<p></p>
+						<span class="leermas"><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/publicaciones/manual-contra-la-homofobia">VER MAS</a></span>
+					</div>
+				</div>
+				
+				<span class="right"></span>
+			</div>
+
+			<div class="allcols center">
+				<h1 class="title">SOMOS SOCIOS DE:</h1>
+				<div class="logos">
+					<ul class="li">
+						<li><a href="http://web.archive.org/web/20190328005026/http://www.aidshealth.org/" target="_blank"><img src="/web/20190328005026im_/http://somosgay.org/gfx/logos/ahf2.png"></a></li>
+						<li><a href="http://web.archive.org/web/20190328005026/http://www.theglobalfund.org/en/" target="_blank"><img src="/web/20190328005026im_/http://somosgay.org/gfx/logos/globalfound.png"></a></li>
+						<li><a href="http://web.archive.org/web/20190328005026/http://www.fundaciontriangulo.org/" target="_blank"><img src="/web/20190328005026im_/http://somosgay.org/gfx/logos/triangulo2.png"></a></li>
+						<li><a href="http://web.archive.org/web/20190328005026/http://www.lgbt-education.info/" target="_blank"><img src="/web/20190328005026im_/http://somosgay.org/gfx/logos/gale.png"></a></li>
+						<li><a href="http://web.archive.org/web/20190328005026/http://www.gay-latino.org/" target="_blank"><img src="/web/20190328005026im_/http://somosgay.org/gfx/logos/gaylatino.png"></a></li>
+						<li><a href="http://web.archive.org/web/20190328005026/https://www.facebook.com/jovenesposlac/" target="_blank"><img src="/web/20190328005026im_/http://somosgay.org/gfx/logos/jovenes.png"></a></li>
+					</ul>            
+					<ul class="li"> 
+						<li><a href="http://web.archive.org/web/20190328005026/http://www.laccaso.net/" target="_blank"><img src="/web/20190328005026im_/http://somosgay.org/gfx/logos/lacasso.png"></a></li>
+						<li><a href="http://web.archive.org/web/20190328005026/http://www.menengage.org/" target="_blank"><img src="/web/20190328005026im_/http://somosgay.org/gfx/logos/menengage.png"></a></li>
+						<li><a href="http://web.archive.org/web/20190328005026/http://www.msmgf.org/" target="_blank"><img src="/web/20190328005026im_/http://somosgay.org/gfx/logos/msm.png"></a></li>
+						<li><a href="http://web.archive.org/web/20190328005026/http://www.unaidspcbngo.org/" target="_blank"><img src="/web/20190328005026im_/http://somosgay.org/gfx/logos/ngo2.png"></a></li>
+						<li><a href="http://web.archive.org/web/20190328005026/http://www.robertcarrfund.org/" target="_blank"><img src="/web/20190328005026im_/http://somosgay.org/gfx/logos/rcnf.png"></a></li>
+						<li><a href="http://web.archive.org/web/20190328005026/https://company.podio.com/project-management-software" target="_blank"><img src="/web/20190328005026im_/http://somosgay.org/gfx/logos/podio2.png"></a></li>
+					</ul>
+					<ul class="li">
+						<li><a href="http://web.archive.org/web/20190328005026/https://www.viivhealthcare.com/community-partnerships/positive-action-for-msm-transgender/about.aspx" target="_blank"><img src="/web/20190328005026im_/http://somosgay.org/gfx/logos/positive.png"></a></li>
+						<li><a href="http://web.archive.org/web/20190328005026/http://www.unaids.org/" target="_blank"><img src="/web/20190328005026im_/http://somosgay.org/gfx/logos/unaids.png"></a></li>
+						<li><a href="http://web.archive.org/web/20190328005026/http://www.ilga.org/" target="_blank"><img src="/web/20190328005026im_/http://somosgay.org/gfx/new_ilga.png"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="footer">
+			<div class="sitemap">
+	<h2>MAPA DEL SITIO</h2>
+	<ul>
+		<li><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/">INICIO</a></li>
+		<li><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/quienes-somos">QUIENES SOMOS</a></li>
+		<li><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/el-centro">EL CENTRO</a></li>
+		<li><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias">NOTICIAS</a></li>
+		<li><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/campanas">CAMPAÑAS</a></li>
+		<li><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/publicaciones">PUBLICACIONES</a></li>
+		<li><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/infonoticias/infoentrevistas">ENTREVISTAS</a></li>
+		<li><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/paraguay">PARAGUAY</a></li>
+		<li><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/contacto">CONTACTO</a></li>
+		<li><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/donaciones">DONACIONES</a></li>
+	</ul>
+</div>
+<div class="redessociales">
+	<h2>SEGUINOS</h2>	
+	<ul>
+		<li id="yt"><a href="http://web.archive.org/web/20190328005026/http://www.youtube.com/user/SOMOSGAYorg" target="_blank">YOUTUBE</a></li>
+		<li id="rss"><a href="http://web.archive.org/web/20190328005026/http://somosgay.org/noticias/rss" target="_blank">RSS</a></li>
+		<li id="gp" class="prscp"><a href="http://web.archive.org/web/20190328005026/https://www.periscope.tv/somosgay" target="_blank">PERISCOPE</a></li>		
+		<li id="tw"><a href="http://web.archive.org/web/20190328005026/https://twitter.com/somosgay" target="_blank">TWITTER</a></li>
+		<li id="fb"><a href="http://web.archive.org/web/20190328005026/https://www.facebook.com/elcentrosomosgay" target="_blank">FACEBOOK</a></li>
+		<li id="wa" class="wafoot"><a href="http://web.archive.org/web/20190328005026/tel:+595986173200" target="_blank">WHATSAPP</a></li>
+	</ul>
+</div>
+<div class="contacto">
+	<h2>CONTACTOS</h2>
+	<ul>
+		<li id="phone">TEL/FAX. (595 21) 495 802</li>
+		<li id="email"><a href="http://web.archive.org/web/20190328005026/mailto:hola@somosgay.org">HOLA@SOMOSGAY.ORG</a></li>
+		<li id="address">DIR. INDEPENDENCIA NACIONAL 1032 CASI MANDUVIRÁ.</li>
+		<li id="postal">CÓDIGO POSTAL 1250</li>
+		<li id="wa" class="wafoot2"><a href="http://web.archive.org/web/20190328005026/tel:+595986173200" target="_blank">+595986173200</a></li>
+	</ul>
+</div>
+<div class="develop">
+	<ul>
+		<li>© SOMOSGAY</li>
+		<li><a href="http://web.archive.org/web/20190328005026/http://teixido.co/"><img src="/web/20190328005026im_/http://somosgay.org/gfx/logo_txd.png" width="100" height="22" alt="Teixido"/></a></li>
+	</ul>
+</div>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39595174-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'http://web.archive.org/web/20190328005026/https://ssl' : 'http://web.archive.org/web/20190328005026/http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setCookieDomain", "*.somosgay.org"]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+  (function() {
+    var u="//web.archive.org/web/20190328005026/http://stats.cerocin.co/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", 93]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0];
+    g.type="text/javascript"; g.async=true; g.defer=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//web.archive.org/web/20190328005026im_/http://stats.cerocin.co/piwik.php?idsite=93" style="border:0;" alt=""/></p></noscript>
+<!-- End Piwik Code --> 
+		</div>
+	</div>
+</body>
+</html><!--
+     FILE ARCHIVED ON 00:50:26 Mar 28, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 13:25:18 Jul 10, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.372
+  exclusion.robots: 0.028
+  exclusion.robots.policy: 0.019
+  esindex: 0.008
+  cdx.remote: 19.088
+  LoadShardBlock: 5156.408 (3)
+  PetaboxLoader3.resolve: 5177.872 (4)
+  PetaboxLoader3.datanode: 105.913 (4)
+  load_resource: 133.913
+-->

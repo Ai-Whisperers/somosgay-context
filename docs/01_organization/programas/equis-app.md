@@ -1,81 +1,80 @@
-# Equis — Android app
+# Equis + Plataforma AMI (round 2)
 
-> **TL;DR:** "Equis" — first "gay app" in Paraguay, launched 2014. Allows booking free appointments at Clínica Kuimba'e (now Kunu'u), provides prevention/testing/treatment info, lists hospitals + centres for HIV testing, and (planned) lets users order free condoms + lube. Built with PRONASIDA + MSPBS + Global Fund + AHF + ViiV Healthcare Positive Action.
-
----
-
-## Launch
-
-- **2014** (Diario HOY coverage: "Lanzan primera aplicación 'gay' del Paraguay")
-- Android-only
-- Free download
-- Source: https://www.hoy.com.py/tecnologia/lanzan-primera-aplicacion-gay-del-paraguay
+> **TL;DR:** Two related but distinct products. **Equis** = Android app launched 2014, clinic-booking + info. **Plataforma AMI** = larger 2020 launch, virtual platform for at-home testing + PrEP + employment + legal aid. AMI may be the umbrella brand that subsumed Equis, or they coexist. **Active maintenance status: [VERIFY] — current Play Store presence needs check.**
 
 ---
 
-## Features at launch
+## Equis — Android app (2014)
 
-- **Appointment booking** for free consultations at Clínica Kuimba'e
-- **Information** on HIV prevention, testing, and treatment
-- **Hospital + centre directory** for HIV testing
-- **Coming soon (2014):**
-  - Request a counselor for at-home testing
-  - Request free condoms + lubricant
-- News feed: national + international LGBTQ+ relevant articles
+- **Launch:** 2014 (Diario HOY coverage)
+- **Platform:** Android-only
+- **Cost:** Free download
+- **Features at launch:**
+  - Free appointment booking at Clínica Kuimba'e (now Kunu'u)
+  - Prevention / testing / treatment info
+  - Hospital + centre directory for HIV testing
+  - (Planned 2014) Counselor for at-home testing
+  - (Planned 2014) Free condom + lube request
+  - News feed (national + international LGBTQ+ relevant)
+- **Tech partners (2014):** PRONASIDA, MSPBS, Global Fund, AHF, ViiV Healthcare Positive Action
+- **Status 2026:** **[VERIFY]** — needs Play Store check
 
----
-
-## Tech partners (2014)
-
-- **PRONASIDA** (Programa Nacional de Control de VIH/Sida/ITS) — public-sector
-- **Ministerio de Salud Pública y Bienestar Social (MSPBS)** — public-sector
-- **Global Fund** — international
-- **AIDS Healthcare Foundation (AHF)** — US-based NGO
-- **ViiV Healthcare** via **Positive Action** — pharma CSR program
+Source: https://www.hoy.com.py/tecnologia/lanzan-primera-aplicacion-gay-del-paraguay
 
 ---
 
-## Status as of 2026
+## Plataforma AMI — virtual platform (2020)
 
-**[VERIFY]:**
-- Is the app still live in the Play Store?
-- Still actively maintained?
-- Have the "coming soon" features shipped?
-- Does it integrate with Clínica Kunu'u's current booking system?
+- **Launch:** 2020 (per Informe Anual 2020, "Resultados del trabajo" chapter)
+- **Type:** Virtual platform (not necessarily a mobile app)
+- **Mission:** *"una propuesta virtual innovadora que busca acercar testeos y PrEP a domicilio, oportunidades de empleo y asesoría jurídica a nuestra población"*
+  - **Testeos y PrEP a domicilio** — at-home testing + PrEP delivery
+  - **Oportunidades de empleo** — job-board / bolsa de trabajo
+  - **Asesoría jurídica** — legal aid
+  - **Acompañamiento de Kuimba'e** — connected to the clinic
+- **Coordinated with Kuimba'e** (clinic) + community outreach
 
-The Facebook page for Clínica Kunu'u exists (https://www.facebook.com/clinicakunuu/, 139 likes as of last check) but is sparse.
-
----
-
-## "AMI" — separate app?
-
-Some sources (including earlier internal notes) mention an "AMI" app for HIV services + discrimination reporting + job board + kits. **The web-search returns for "AMI" return no current evidence of an active app under that name.** It may be:
-- A planned/never-shipped feature
-- A different name for Equis
-- A platform/web product rather than mobile app
-
-**[VERIFY: does AMI exist separately?]**
-
-The org's own page http://somosgay.org/noticias/detalles/asuntos describes an AMI-like concept:
-
-> *"creamos AMI, una aplicación que responde a toda una política pública de cuidado de las personas LGBTI+, enfocada en la protección de los derechos de la comunidad, garantizando el acceso a los mismos mediante una plataforma que facilite y promueva la búsqueda trabajo dentro de la comunidad, así como el acceso a kits, testeos, citas para la clínica o denuncias por discriminación y LGBTIfobia."*
-
-So AMI as a concept exists. Whether it shipped as a separate app, or was renamed to/merged with Equis, is **[VERIFY]**.
+Source: https://www.somosgay.org/documents/SOMOSGAY%20Informe%20Anual%202020.pdf
 
 ---
 
-## What this needs from the new website
+## "AMI" mention history
 
-1. **Prominent Equis download CTA** — current site doesn't surface it; Equis is the #1 utility for users
-2. **App store badges** (Google Play badge, Apple badge if/when iOS)
-3. **In-page feature list** — what Equis does, screenshots
-4. **Dedicated /equis page** with deep-link to the Play Store
-5. **Status indicator** — if Equis is no longer maintained, this needs urgent attention (web replacement or app revival)
+| Source | What AMI is described as |
+|---|---|
+| Informe Anual 2020 | "Plataforma AMI" as a 2020 launch — virtual platform with 4 services (testing, employment, legal, Kuimba'e connection) |
+| http://somosgay.org/noticias/detalles/asuntos | AMI as a "policy platform" for LGBTI+ care (employment, kits, testing, clinic appointments, LGBTIfobia reporting) |
+| Google search (older) | SOMOSGAY AMI mentioned in past articles |
+
+**Conclusion:** AMI appears to be a **virtual/web platform** rather than a separate mobile app, and it may have absorbed the original Equis booking functionality. The two product names (Equis + AMI) have been used somewhat interchangeably in public materials.
+
+**[VERIFY]** whether:
+- Equis app still exists in the Play Store in 2026
+- AMI is a separate web app, or a feature within Equis
+- Whether either is actively maintained
+
+---
+
+## Recommended next research
+
+1. Search Play Store for "Equis" + "SOMOSGAY" + "AMI Paraguay"
+2. Check APKPure / APKMirror if removed from Play Store
+3. Wayback Machine snapshot of any /equis or /ami page on somosgay.org
+4. Confirm with Paloma Vera which is current
+
+---
+
+## What the new SOMOSGAY site needs to do about apps
+
+1. **If Equis app still exists:** prominent Play Store badge in main nav, dedicated `/equis` page with deep link
+2. **If Equis is dead:** archive the name + feature set in a "what we built" section
+3. **If AMI exists as web platform:** surface as `/ami` or `/plataforma-ami` with feature list
+4. **If both are dead:** plan a replacement or a documented sunset
 
 ---
 
 ## Sources
 
-- https://www.hoy.com.py/tecnologia/lanzan-primera-aplicacion-gay-del-paraguay
-- http://somosgay.org/noticias/detalles/asuntos
-- https://www.facebook.com/clinicakunuu/
+- https://www.hoy.com.py/tecnologia/lanzan-primera-aplicacion-gay-del-paraguay (Equis launch 2014)
+- https://www.somosgay.org/documents/SOMOSGAY%20Informe%20Anual%202020.pdf (Plataforma AMI launch 2020)
+- http://somosgay.org/noticias/detalles/asuntos (AMI as policy platform)

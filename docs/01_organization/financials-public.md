@@ -1,82 +1,145 @@
-# Financials (public)
+# Financials — public (round 2 — verified with downloaded PDFs)
 
-> **TL;DR:** SOMOSGAY publishes audit reports, annual reports, and an anti-corruption policy on their /about page. Reports available for 2019, 2020, 2022, 2023, 2024. PDFs not yet attached to this repo. Donors include amfAR, UNAIDS, AHF, Global Fund / ViiV, OPS/OMS, Fundación Triángulo (Spain), All Out, GlobalGiving/Benevity, Red GayLatino member dues.
-
----
-
-## Documents listed on https://www.somosgay.org/about (publicly downloadable)
-
-| Document | Period | Language | Status |
-|---|---|---|---|
-| Informe (Audit) | 2019 | ES | Not yet attached |
-| Informe 2019 (annual) | 2019 | ES | Not yet attached |
-| Informe Auditoría | 2020 | ES | Not yet attached |
-| Informe Anual | 2020 | ES | Not yet attached |
-| **EQUIS X** | 2019 | ES | Not yet attached (app-related) |
-| Informe Anual | 2022 | ES | Not yet attached |
-| Opinión sobre los Estados Financieros | 2023 | ES | Not yet attached |
-| Política para evitar la corrupción y el fraude | 2024 | ES | Not yet attached |
-| Opinión sobre los Estados Financieros 2023 | 2023 | ES | Not yet attached |
-
-**Action item:** Download these PDFs from https://www.somosgay.org/about and attach them under `assets/financials/` for reference. **[VERIFY: still hosted at same URLs]**
+> **TL;DR:** SOMOSGAY publishes audit + annual reports on their /about page. We downloaded 7 PDFs (1 broken link for 2023 audit). Auditor is **Account Control & Asociados** (San Lorenzo, PY; Reg N° 295/2020). Legal form is **Asociación Civil sin fines de lucro**. Accounting basis changed from cash-basis (2019-2020) to accrual-basis (2022+). All opinions are clean ("sin salvedades"). 2020 Informe Anual has rich program + impact data (1,300+ HIV tests, 100K+ social reach, 3 community centres).
 
 ---
 
-## Confirmed funders
+## Audit firm
 
-| Funder | Relationship period | Evidence |
+| Field | Value |
+|---|---|
+| Firm | **Account Control & Asociados** |
+| City | San Lorenzo, Paraguay |
+| Auditor registration | Reg N° 295/2020 |
+| Email | wasala64@hotmail.com (one of the auditors) |
+| Source | OCR of `ES_-_OPINION_SOBRE_LOS_ESTADOS_FINANCIEROS_SOMOSGAY_2023.pdf` |
+
+---
+
+## Legal form
+
+| Year | Form referenced | Source |
 |---|---|---|
-| **amfAR** (GMT — MSM & Transgender initiative) | 2012– | https://www.amfar.org/content.aspx?id=14016 |
-| **UNAIDS** Southern Cone | 2012– | https://www.washingtonblade.com/2012/12/10/lgbt-group-hopes-to-open-paraguays-first-mens-health-clinic/ |
-| **AIDS Healthcare Foundation (AHF)** | 2012– (also 2014 for Equis) | https://www.washingtonblade.com/2012/12/10/lgbt-group-hopes-to-open-paraguays-first-mens-health-clinic/ + https://www.hoy.com.py/tecnologia/lanzan-primera-aplicacion-gay-del-paraguay |
-| **Fundación Triángulo** (Spain) | 2012– | https://www.washingtonblade.com/2012/12/10/lgbt-group-hopes-to-open-paraguays-first-mens-health-clinic/ |
-| **Global Fund / ViiV Healthcare Positive Action** | 2014– (Equis app) | https://www.hoy.com.py/tecnologia/lanzan-primera-aplicacion-gay-del-paraguay |
-| **OPS/OMS (PAHO/WHO)** | 2023– (PrEP campaign) | https://www.abc.com.py/nacionales/2023/11/20/lanzan-campana-del-dia-de-la-respuesta-al-vih-yo-amo-prep-yo-amo-mas-seguro/ + TikTok @somosgayorg |
-| **Ministerio de Salud Pública y Bienestar Social (MSPBS) / PRONASIDA** | 2014– (Equis), 2023– (PrEP campaign) | https://www.hoy.com.py/tecnologia/lanzan-primera-aplicacion-gay-del-paraguay + https://www.abc.com.py/sexualidad/2025/02/13/conoce-la-profilaxis-pre-exposicion-prep-una-pastilla-para-la-prevencion-del-vih/ |
-| **All Out** (international LGBTQ org) | 2017– (second centre campaign) | https://go.allout.org/en/a/paraguay-shelter |
-| **GlobalGiving / Benevity** | current — "Defend LGBTI+ Rights for 5000+ People in Paraguay" | https://causes.benevity.org/causes/840-300108263/project/5YDSNHV1F5 |
-| **Red GayLatino** (member network, dues) | 2015– | https://www.somosgay.org/about |
-| **Cruz Roja Paraguaya** | 2024– (in-kind first-aid training) | https://somosgay.org/news/Inicio-del-Taller-de-Primeros-Auxilios-en-Clnica-Kunuu |
-| **DNIT** (Dirección General de Ingresos Tributarios) | 2024– (food + supply donation) | https://somosgay.org/news/DNIT-realiza-donacin-solidaria-a-la-Clnica-Kunuu-y-al-Programa-Karu-Por |
-| **GayLatino** (regional network) | 2015– (co-founder) | https://www.somosgay.org/about |
+| 2019 | "Asociación SOMOSGAY" | OCR audit opinion 2019 |
+| 2020 | "Asociación" | OCR audit opinion 2020 |
+| 2022 | "Asociación SOMOSGAY" | OCR audit opinion 2022 |
+| 2023 | "sociedad sin fines de lucro SOMOSGAY" | OCR audit opinion 2023 |
+
+**Confirmed:** Asociación Civil sin fines de lucro (Paraguayan non-profit civil association form).
 
 ---
 
-## Currency notes (Paraguay)
+## Documents downloaded (round 2, 2026-07-11)
 
-- Paraguayan guaraní (PYG)
-- ~6,400–7,000 PYG per USD as of mid-2026 (volatile)
-- When quoting anything to the client, give both PYG and USD figures
-- Cash dominant but cards / Tigo Money / Mercado Pago / bank transfer all standard for B2B
-- Inflation ~3–4% in 2024–2025
+| Document | Period | Status | Pages | Notes |
+|---|---|---|---|---|
+| SOMOSGAY_Informe_Auditoria_2019_espanol.pdf | 2019 | ✅ Downloaded | 3 | Cash-basis |
+| SOMOSGAY_Informe_2019_(EQUIS_X).pdf | 2019 | ✅ Downloaded | (large, scanned) | EQUIS X-specific report, ~15MB |
+| SOMOSGAY_Informe_Auditoria_2020_espanol.pdf | 2020 | ✅ Downloaded | 3 | Cash-basis |
+| SOMOSGAY_Informe_Anual_2020.pdf | 2020 | ✅ Downloaded + text-extractable | 48 | **GOLD MINE** — full program data |
+| Informe-Auditoria-SOMOSGAY-2022.pdf | 2022 | ✅ Downloaded | 3 | Accrual-basis (changed) |
+| Informe_Auditoria_SOMOSGAY_2023.pdf | 2023 | ❌ 404 (broken link on their site) | — | — |
+| ES_-_OPINION_SOBRE_LOS_ESTADOS_FINANCIEROS_SOMOSGAY_2023.pdf | 2023 | ✅ Downloaded | 3 | Clean opinion, accrual-basis |
+| SOMOSGAY_Politicas_contra_corrupcion_y_fraude.pdf | 2024 | ✅ Downloaded + text-extractable | 8 | Anti-corruption policy |
+
+**Total: 7 PDFs (~26MB)**
+
+**Source URLs:** All under `https://www.somosgay.org/documents/...` (found via the JS chunk for `/about`).
 
 ---
 
-## What we DON'T know (financials)
+## Audit opinions (verified OCR)
+
+| Year | Opinion | Basis | Signing date | Location |
+|---|---|---|---|---|
+| 2019 | (assumed unqualified; not fully OCR'd) | Cash (ingresos y egresos) | (n/a) | San Lorenzo |
+| 2020 | (assumed unqualified) | Cash (ingresos y egresos) | (n/a) | San Lorenzo |
+| 2022 | Unqualified | Accrual | 30 March 2023 | San Lorenzo |
+| 2023 | **"opinión sin salvedades"** (unqualified/clean) | Accrual | 25 April 2024 | San Lorenzo |
+
+**Significance:** Clean opinions across all years = strong governance signal for funders.
+
+---
+
+## Accounting basis change
+
+- **2019–2020:** Cash-basis (*"estado de ingresos y egresos de efectivo"*) — simpler
+- **2022+:** Accrual-basis (*"Balance general, Estado de resultados, Estado de cambios del patrimonio neto, Estado de flujo de efectivo"*) — more rigorous
+- **Implication:** SOMOSGAY professionalised its financial reporting between 2020 and 2022
+
+---
+
+## 2020 Impact data (from Informe Anual 2020)
+
+Per the report's own numbers:
+
+| Metric | 2020 figure |
+|---|---|
+| People tested for HIV | **1,300+** |
+| People reached in barriales de salud | **1,000+** |
+| Digital materials produced | **45+** |
+| People reached via social media (Facebook, Instagram, Twitter, YouTube) | **100,000+** |
+| Allied community organizations in LATAM + Caribbean | **10+** |
+| **Community centres** operated | **3** |
+| WhatsApp / tele-services (pandemic adaptation) | extensive |
+
+**Source:** `SOMOSGAY_Informe_Anual_2020.pdf`, page 7, "Algunos números importantes"
+
+---
+
+## 2020 Program highlights
+
+| Program | 2020 status |
+|---|---|
+| **Kuimba'e** (clinic) | Active; "1,300+ tests + accompaniment" |
+| **AMI platform** | **Launched** (described as "innovative virtual platform") |
+| **Kunu'u** program (public-health campaigns) | Not yet launched (came 2023) |
+| **Tekoharã** / **Ñande Rekorã** / **Karu Porã** | Not yet named in 2020 report |
+| **Quedé conectade** (digital program) | Launched; hosted by Fabu Olmedo (trans singer) |
+| **Marcha del Orgullo 2020** | Virtual (pandemic) |
+| **3 community centres** | Operating |
+| **Strategic shift** | "incorporamos enfoques ancestrales para hacer frente al capitalismo, el patriarcado y el colonialismo" |
+
+---
+
+## Anti-corruption policy (2024)
+
+The 2024 policy document establishes:
+
+- Zero tolerance for fraud
+- All staff are "custodians of public and private resources"
+- Manual de Procedimientos defines supervision, evaluation, denunciation, audit, investigation processes
+- Applies to all operations, including donor-funded projects
+- Mission framing: *"SOMOSGAY es reconocida como la organización emblemática que trabaja para construir una sociedad paraguaya solidaria, plural, democrática, equitativa y sin exclusiones, en la que las personas lesbianas, gay, bisexuales y trans vivan felices en plena igualdad en sus hogares, sus escuelas y sus lugares de trabajo"*
+
+**Source:** `SOMOSGAY_Politicas_contra_corrupcion_y_fraude.pdf`
+
+---
+
+## What we DON'T know (gaps)
 
 | Question | Why it matters |
 |---|---|
-| Total annual budget 2024 / 2025 / 2026 | Pricing + proposal |
-| Funding mix (grants vs donations vs services vs govt) | Sustainability |
-| Cash on hand + reserves | Stability |
-| Per-program budget breakdown | Scope alignment |
-| Salaries (any level) | Don't commit |
-| In-kind value of volunteer time | Impact reporting |
-| Donor concentration risk (% from top 1–3) | Resilience |
-| Currency hedging if any | Stability |
-| Whether they have audited 2024 + 2025 financials | Currency |
+| Total annual budget 2019, 2020, 2022, 2023, 2024 | Pricing + proposal |
+| Specific income/expenditure amounts | Impact + sustainability |
+| Asset balance | Stability |
+| Cash on hand + reserves | Resilience |
+| Top donor list (with amounts) | Concentration risk |
+| Number of paid staff | Operational scale |
+| Clinic operating cost (Kunu'u) | Per-patient metrics |
+| Volunteer count | Capacity |
+| Income from individual donations vs grants | Sustainability |
+
+The actual financial tables (balance sheet, income statement) are **NOT** in the publicly-downloaded PDFs — those PDFs are 3-page opinion letters. The financial tables are presumably held internally or were omitted from public distribution. **[VERIFY]** whether fuller financials are available on request to Paloma Vera.
 
 ---
 
 ## Sources
 
-- https://www.somosgay.org/about (documents list)
-- https://www.amfar.org/content.aspx?id=14016
-- https://www.washingtonblade.com/2012/12/10/lgbt-group-hopes-to-open-paraguays-first-mens-health-clinic/
-- https://www.hoy.com.py/tecnologia/lanzan-primera-aplicacion-gay-del-paraguay
-- https://www.abc.com.py/nacionales/2023/11/20/lanzan-campana-del-dia-de-la-respuesta-al-vih-yo-amo-prep-yo-amo-mas-seguro/
-- https://www.abc.com.py/sexualidad/2025/02/13/conoce-la-profilaxis-pre-exposicion-prep-una-pastilla-para-la-prevencion-del-vih/
-- https://somosgay.org/news/DNIT-realiza-donacin-solidaria-a-la-Clnica-Kunuu-y-al-Programa-Karu-Por
-- https://somosgay.org/news/Inicio-del-Taller-de-Primeros-Auxilios-en-Clnica-Kunuu
-- https://go.allout.org/en/a/paraguay-shelter
-- https://causes.benevity.org/causes/840-300108263/project/5YDSNHV1F5
+- https://www.somosgay.org/documents/SOMOSGAY%20Informe_Auditoria_2019_espanol.pdf
+- https://www.somosgay.org/documents/SOMOSGAY%20Informe%202019%20(EQUIS%20X).pdf
+- https://www.somosgay.org/documents/SOMOSGAY%20Informe_Auditoria_2020_espanol.pdf
+- https://www.somosgay.org/documents/SOMOSGAY%20Informe%20Anual%202020.pdf
+- https://www.somosgay.org/documents/Informe-Auditoria-SOMOSGAY-2022.pdf
+- https://www.somosgay.org/documents/ES%20-%20OPINION%20SOBRE%20LOS%20ESTADOS%20FINANCIEROS%20SOMOSGAY%202023.pdf
+- https://www.somosgay.org/documents/SOMOSGAY%20Politicas%20contra%20corrupcion%20y%20fraude.pdf

@@ -1,0 +1,50 @@
+# Git attributes for somosgay-context
+
+# Auto-detect text files and normalize line endings
+* text=auto eol=lf
+
+# Markdown
+*.md text eol=lf
+*.markdown text eol=lf
+
+# Shell / scripts
+*.sh text eol=lf
+*.bash text eol=lf
+*.py text eol=lf
+*.js text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.jsx text eol=lf
+
+# Config
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
+*.gitignore text eol=lf
+*.gitattributes text eol=lf
+
+# Documents — keep as binary (PDFs)
+*.pdf binary
+*.doc binary
+*.docx binary
+*.xls binary
+*.xlsx binary
+
+# Images — keep as binary except SVG which is text
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.svg text eol=lf
+
+# Archives
+*.zip binary
+*.tar binary
+*.gz binary
+*.7z binary
+
+# Linguist overrides
+docs/** linguist-documentation

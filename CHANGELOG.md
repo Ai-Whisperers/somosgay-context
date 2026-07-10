@@ -21,11 +21,38 @@ Session-by-session log of what happened in this repo.
 - Wrote 40+ markdown files across 9 numbered folders
 - Pushed to `Ai-Whisperers/somosgay-context` on `main` branch
 
-**Files touched:** all of them (initial commit)
+**Open follow-ups:** see round 2 below.
 
-**Open follow-ups:**
-- Ivan / Kiki: decide engagement model (paid / pro bono / partner / decline)
-- If engagement proceeds: run 08_questionnaires/ pack to fill in the gaps
-- A11y audit was drafted but needs a real browser pass
-- No screenshots captured yet from the comparable clinic sites (assets/similar-clinic-screenshots/ is empty)
-- No screenshots captured yet from SOMOSGAY's own site (assets/brand-photos/ is empty)
+---
+
+## 2026-07-11 — Round 2 deep research
+
+**Trigger:** User asked for ALL tiers of research, not just gaps.
+
+### Tier A — critical gaps filled
+- **Leadership transition documented:** Cazal was DE through 2020 (Informe Anual 2020 + Reuters 2018 + IBA 2019). Paloma Vera is confirmed ED from 2023+ (ABC Color 2023, 2025). **No public evidence of Cazal formal role 2024-2026** — likely founder/strategic advisor. Consejo Directivo exists per a (now-broken) news article snippet.
+- **Plataforma AMI + Equis clarified:** Two related products. Equis = 2014 Android app. AMI = 2020 virtual platform (at-home testing + PrEP + employment + legal aid). AMI may have absorbed Equis booking. **[VERIFY]** current Play Store / web presence.
+- **Audit + annual PDFs downloaded:** 7 of 8 PDFs recovered (~26MB) from `https://www.somosgay.org/documents/...` (found via JS chunk in `/about`). Auditor: Account Control & Asociados (San Lorenzo PY). Legal form: Asociación Civil sin fines de lucro. All opinions unqualified ("sin salvedades"). 2020 Informe Anual has rich program data (1,300+ HIV tests, 100K+ social reach, **3 community centres** in 2020).
+- **2020 impact numbers extracted** from Informe Anual.
+- **Equis X is its own report** (2019, 15MB) — likely the EQUIS X financial breakdown.
+
+### Local artifacts added
+- `assets/financials/` — 7 PDFs + OCR'd text extracts
+- `assets/logos/` — current + 2018 Wayback logos
+- `assets/brand-photos/funders-2018/` — 9 funder logos from 2018 Wayback
+- `assets/screenshots-current/` — 20 screenshots at 4 viewports × 5 pages
+- `assets/screenshots-comparable/` — 6 of 8 comparable sites captured
+- `assets/research-sources/wayback/` — 5 Wayback Machine snapshots
+- `docs/05_website-audit/home-lighthouse.json` + `about-lighthouse.json` — real Lighthouse audits
+
+### Repo hygiene
+- `LICENSE` (MIT) added
+- `CONTRIBUTING.md` added
+- `.gitattributes` added (LF endings, binary detection, linguist overrides)
+
+### Pending subagent deliverables (in background)
+- Tier A peer roster (Panambi + others)
+- Tier B (PrEP/education ban/mobile/hosting/LATAM clinics)
+- Tier C+D (CRM/WhatsApp/Cal.com/RFPs/crypto/multi-tenant/LATAM HIV/impact)
+
+**Files touched:** all of round 2 + 60+ new files

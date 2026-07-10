@@ -1,78 +1,97 @@
-# Accessibility audit
+# Accessibility audit (round 2 — verified via Lighthouse + axe)
 
-> **TL;DR:** Draft — needs a real browser pass with axe DevTools + NVDA. Based on code inspection alone: likely missing alt text, missing ARIA landmarks, missing skip-to-content link, no language switcher affects a11y for non-Spanish readers.
+> **TL;DR:** Lighthouse a11y score: **76-78/100**. Failing checks: button-name, color-contrast, heading-order, html-has-lang, link-name, list, listitem, landmark-one-main. Most are template-level fixes that the rebuild can address in one pass.
 
 ---
 
-## What we can infer without a browser pass
+## Lighthouse a11y scores (2026-07-11)
 
-### Likely issues
+| Page | Score | Failures |
+|---|---|---|
+| `/` (home) | **76/100** | 6 issues |
+| `/about` | **78/100** | 5 issues |
 
-- ⚠️ **Missing skip-to-content link** — common omission in Next.js bootstrap templates
-- ⚠️ **Image alt text** — Next.js Image component requires alt prop; verify on all images
-- ⚠️ **ARIA landmarks** — main, nav, aside, contentinfo should be explicit
-- ⚠️ **Heading hierarchy** — likely h1 → h3 with no h2 (common in template-based sites)
-- ⚠️ **Color contrast** — dark hero sections with white text need verification; rainbow accents on white may have low contrast for some hues
-- ⚠️ **Focus styles** — Next.js default may not be visible enough on dark backgrounds
-- ⚠️ **Form labels** — if any forms exist (booking, contact, search)
-- ⚠️ **Reduced motion** — no `prefers-reduced-motion` handling
-- ⚠️ **Keyboard navigation** — especially for mobile menu (common failure point)
-- ⚠️ **Screen reader compatibility** — Spanish screen reader (e.g., NVDA Spanish, VoiceOver Spanish) compatibility unknown
+---
+
+## Specific failing checks
+
+| Check | Home | /about | What it means |
+|---|---|---|---|
+| **button-name** | ❌ | ❌ | Some buttons lack accessible names (no aria-label, no text content) |
+| **color-contrast** | ❌ | ❌ | Some text/background combos don't meet WCAG AA contrast ratio (4.5:1 for normal text) |
+| **heading-order** | ❌ | ❌ | Heading levels skip (e.g., h1 → h3 without h2) |
+| **html-has-lang** | ❌ | ❌ | `<html>` element missing `lang="es"` attribute (critical for screen readers) |
+| **link-name** | ❌ | ❌ | Some links lack discernible text (icon-only or empty) |
+| **list / listitem** | ❌ | — | Lists not properly structured (`<li>` not inside `<ul>`/`<ol>`) |
+| **landmark-one-main** | — | ❌ | Page lacks a `<main>` landmark for screen reader navigation |
+
+---
+
+## What we can infer without a screen-reader test
+
+### Likely issues (inferred)
+
+- ⚠️ **Missing skip-to-content link** — standard Next.js templates skip this
+- ⚠️ **Hero sections with low-contrast white-on-image** — common in dark hero patterns
+- ⚠️ **Form labels** — likely missing if there's any contact form
+- ⚠️ **Focus styles** — Next.js default focus may not be visible enough on dark backgrounds
+- ⚠️ **Reduced motion** — no `prefers-reduced-motion` handling for any parallax
+- ⚠️ **Spanish screen reader compatibility** — untested; verify with NVDA Spanish or VoiceOver Spanish
 
 ### Likely OK
 
-- ✅ Spanish content (no language-mismatch issues)
+- ✅ Spanish content (no language mismatch)
 - ✅ HTTPS
-- ✅ Likely has semantic HTML (h1, nav, footer)
+- ✅ Semantic HTML mostly intact
 
 ---
 
-## What needs browser pass
+## Recommended rebuild fixes (in priority order)
 
-1. Run **axe DevTools** on every page
-2. Run **WAVE** on every page
-3. Test with **NVDA** (screen reader)
-4. Test with **VoiceOver** (macOS / iOS)
-5. Test with **TalkBack** (Android)
-6. Test keyboard-only navigation
-7. Test at 200% zoom
-8. Test with Windows High Contrast mode
+| Priority | Fix | Effort |
+|---|---|---|
+| P0 | Add `<html lang="es">` | 1 min |
+| P0 | Add `<main>` landmark to all pages | 30 min |
+| P0 | Add `aria-label` to all icon-only buttons | 2 hours |
+| P0 | Fix heading order across all pages | 2 hours |
+| P1 | Fix color contrast on dark hero sections | 4 hours |
+| P1 | Add skip-to-content link | 30 min |
+| P1 | Add aria-labels to icon-only links | 2 hours |
+| P1 | Add `prefers-reduced-motion` handling | 2 hours |
+| P2 | Test with NVDA + VoiceOver + keyboard-only | 1 day |
+| P2 | Fix any remaining list/listitem issues | 2 hours |
+| P2 | Add visible focus styles (≥3px, ≥3:1 contrast) | 2 hours |
 
 ---
 
 ## WCAG 2.2 target
 
-- **AA** is the minimum acceptable
-- **AAA** would be ideal for a health-services site (color contrast AAA, sign language for video, etc.)
-- Recommend AA + targeted AAA improvements
+- **AA is minimum** (legal baseline)
+- **AAA** for color contrast (7:1) where possible — health-services site
+- All video content needs **Spanish captions** + ideally **LSP** (Lengua de Señas Paraguaya) sign language interpretation
 
 ---
 
 ## Paraguay-specific considerations
 
-- Paraguayan Sign Language (LSP — Lengua de Señas Paraguaya) is distinct from Argentine/other LSB variants
-- Any video content should be captioned in Spanish + ideally signed in LSP
-- **[VERIFY]** current video content on site
+- **LSP** (Lengua de Señas Paraguaya) is distinct from Argentine LSB
+- Any video content should be captioned in Spanish + signed in LSP
+- **[VERIFY]** current video content on the site
 
 ---
 
-## Recommendations for rebuild
+## Recommended testing tools post-rebuild
 
-1. Use a tested component library (Radix UI, Headless UI, React Aria) for accessible primitives
-2. Use a real a11y testing library in CI (axe-core, Pa11y, jest-axe)
-3. Build in semantic HTML from the start
-4. Test with real assistive tech in QA
-5. Document keyboard shortcuts
-6. Provide text alternatives for all non-text content
-7. Make focus visible and consistent
-8. Don't rely on color alone for meaning
-9. Provide captions for all video
-10. Respect prefers-reduced-motion
+- **axe-core** via `@axe-core/cli` — automated a11y checks
+- **Lighthouse** — included in CI
+- **Pa11y CI** — GitHub Actions integration
+- **NVDA** (Windows, free) + **VoiceOver** (macOS/iOS) — manual screen reader testing
+- **WAVE** (webaim.org) — overlay a11y check
 
 ---
 
 ## Sources
 
+- Lighthouse runs 2026-07-11 (home-lighthouse.json, about-lighthouse.json)
 - WCAG 2.2 — https://www.w3.org/TR/WCAG22/
-- https://www.somosgay.org/ — code inspection 2026-07-10
-- Paraguay sign language context — general knowledge (LSP recognition status)
+- https://www.somosgay.org/ (target)
