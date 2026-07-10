@@ -1,0 +1,44 @@
+name: repo-validation
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check every numbered folder has a README.md
+        run: |
+          set -e
+          for d in $(ls -d docs/[0-9][0-9]_* 2>/dev/null); do
+            if [ ! -f "$d/README.md" ]; then
+              echo "::error file=$d/README.md::Missing README.md in $d"
+              exit 1
+            fi
+          done
+          echo "✓ all numbered folders have README.md"
+
+      - name: Check INDEX.md STATUS flags are present
+        run: |
+          set -e
+          for required in "STATUS" "complete" "draft" "pending"; do
+            if ! grep -q "$required" INDEX.md; then
+              echo "::error file=INDEX.md::INDEX.md missing STATUS token: $required"
+              exit 1
+            fi
+          done
+          echo "✓ INDEX.md has STATUS flags"
+
+      - name: Check CHANGELOG.md was updated this week
+        run: |
+          set -e
+          LAST=$(grep -E '^## [0-9]{4}-[0-9]{2}-[0-9]{2}' CHANGELOG.md | head -1)
+          if [ -z "$LAST" ]; then
+            echo "::error file=CHANGELOG.md::No dated entries in CHANGELOG.md"
+            exit 1
+          fi
+          echo "✓ last dated entry: $LAST"

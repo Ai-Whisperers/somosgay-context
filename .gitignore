@@ -1,0 +1,44 @@
+# OS noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.cache/
+
+# Editor noise
+.vscode/
+.idea/
+*.iml
+
+# Node (in case)
+node_modules/
+.next/
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Env / secrets (defense in depth)
+.env
+.env.*
+!.env.example
+**/.env
+**/secrets/
+
+# Scratch / drafts
+_tmp/
+drafts/
+scratch/
+
+# Heavy assets we don't want to commit
+*.pdf
+!docs/**/*.pdf
+!assets/**/*.pdf
+*.zip
+*.tar.gz
+
+# OS X quarantine
+._*
