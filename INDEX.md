@@ -1,28 +1,30 @@
 # INDEX — full table of contents
 
-> **Last full pass: 2026-07-11 (round 9 — comprehensive research + assets + repo hygiene)**
+> **Last full pass: 2026-07-10 (round 14 — live HTTP probing caught site is currently 50% broken; cleanup + corrections)**
 
 ## Repository scale
 
-- **110+ markdown files** across 9 numbered folders + root + assets
-- **50+ binary assets** (7 PDFs, 6 OCR'd text extracts, 5 logos, 9 funder logos, 20 site screenshots, 6 comparable-site screenshots, 5 Wayback snapshots, 2 Lighthouse JSON reports)
-- **9 commits** since round 1 (2026-07-10)
+- **115+ markdown files** across 9 numbered folders + root + assets
+- **50+ binary assets** (11 PDFs, 6 OCR'd text extracts, 7 logos, 9 funder logos, 20 site screenshots, 6 comparable-site screenshots, 5 Wayback snapshots, 2 Lighthouse JSON reports)
+- **14 commits** since round 1 (2026-07-10)
 - **Single branch:** `main`
 - **0/0 ahead/behind origin**
 
-## Round-by-round additions (2026-07-10 → 2026-07-11)
+## Round-by-round additions (2026-07-10)
 
 | Round | Date | Highlights |
 |---|---|---|
 | **R1** | 2026-07-10 | Initial reconnaissance — 72 markdown files, repo skeleton |
-| **R2** | 2026-07-11 | 7 audit PDFs downloaded + OCR'd, Lighthouse runs, screenshots, logos |
-| **R3** | 2026-07-11 | Panambi + AIREANA + PrEP 2025 + mobile/internet stats + Constitution + Peña flip-flop |
-| **R4** | 2026-07-11 | Fundación Huésped detail + Cloudflare Pages + hosting/domain + cautionary precedents |
-| **R5** | 2026-07-11 | WhatsApp Business API BSP comparison + Cal.com vs TidyCal vs Calendly |
-| **R6** | 2026-07-11 | Active grant RFPs + multi-tenant architecture |
-| **R7** | 2026-07-11 | Equis app confirmed dead + HubSpot for Nonprofits + crypto deferral |
-| **R8** | 2026-07-11 | Per-patient ART cost $880 + extended LATAM orgs + positioning |
-| **R9** | 2026-07-11 | Deep 108 history (Bernardo Aranda + Carta de un Amoral pre-Stonewall) + memoria-108.md |
+| **R2** | 2026-07-10 | 7 audit PDFs downloaded + OCR'd, Lighthouse runs, screenshots, logos |
+| **R3** | 2026-07-10 | Panambi + AIREANA + PrEP 2025 + mobile/internet stats + Constitution + Peña flip-flop |
+| **R4** | 2026-07-10 | Fundación Huésped detail + Cloudflare Pages + hosting/domain + cautionary precedents |
+| **R5** | 2026-07-10 | WhatsApp Business API BSP comparison + Cal.com vs TidyCal vs Calendly |
+| **R6** | 2026-07-10 | Active grant RFPs + multi-tenant architecture |
+| **R7** | 2026-07-10 | Equis app confirmed dead + HubSpot for Nonprofits + crypto deferral |
+| **R8** | 2026-07-10 | Per-patient ART cost $880 + extended LATAM orgs + positioning |
+| **R9** | 2026-07-10 | Deep 108 history (Bernardo Aranda + Carta de un Amoral pre-Stonewall) + memoria-108.md |
+| **R10-R13** | 2026-07-10 | Comprehensive INDEX + CHANGELOG + README + questionnaires upgrade |
+| **R14** | 2026-07-10 | **Live HTTP probe** → discovered `/news` + `/nanderekora` returning HTTP 500 and `/nangareko` returning 404. Created `docs/06_website_status/`. Added DP-2026-07-10-14 (urgent outreach timing decision). Cleaned up 5 empty TXT placeholders in `assets/financials/`. Fixed false "168 news pages" claim (now unverifiable). Updated sitemap-actual.md (5 → 6 pages). |
 
 ## Root
 
@@ -129,7 +131,14 @@
 |---|---|---|
 | `README.md` | Folder index | complete |
 | `decisiones-tomadas.md` | Decisions made | complete |
-| `decisiones-pendientes.md` | 13 decisions pending Ivan/Kiki | complete |
+| `decisiones-pendientes.md` | **14** decisions pending Ivan/Kiki *(R14: added DP-2026-07-10-14 — site currently 500/404, outreach timing)* | complete |
+
+## docs/06_website_status — NEW R14
+
+| File | Purpose | STATUS |
+|---|---|---|
+| `README.md` | Folder index + probe convention | complete |
+| `alive-now.md` | Live HTTP probe results (2026-07-10) — 2 pages 500, 1 page 404, 1 sitemap 404, 4 pages 200 | complete |
 
 ## docs/07_backlog
 

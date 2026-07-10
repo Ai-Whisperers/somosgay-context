@@ -122,6 +122,29 @@
 
 ---
 
+## DP-2026-07-10-14 — ⚠️ URGENT: site is currently serving 500s on 2 of 6 pages
+
+> **New in round 14 (2026-07-10).** This decision must be made **before** DP-02 (first contact channel) and DP-03 (proposal format).
+
+- **Question:** Live HTTP probe at 2026-07-10 14:35 UTC shows:
+  - `/news` → **HTTP 500** (9,992 bytes, `<title>500: Internal Server Error</title>`)
+  - `/nanderekora` → **HTTP 500** (same 9,992B 500 page)
+  - `/nangareko` → **HTTP 404** (linked from homepage nav but missing)
+  - `/sitemap.xml` → **HTTP 404** (returns HTML, not XML)
+  - `/`, `/about`, `/mpox`, `/robots.txt` → 200 OK
+  - Full probe results + script: [`docs/06_website_status/alive-now.md`](../06_website_status/alive-now.md)
+
+  How do we handle first contact given the site is currently 40% broken?
+- **Options:**
+  1. **Lead with empathy / debugging offer** (recommended): open the email with "Notamos que /news y /nanderekora están sirviendo 500 hoy — ¿es un problema conocido o lleva así? Si quieren, podemos ayudar a diagnosticar mientras tanto." Shows we checked. Low cost. High signal.
+  2. **Wait until site recovers, then outreach with a clean story.** Avoids the awkwardness but may take weeks.
+  3. **Outreach ignoring the issue.** Worst option — looks careless.
+- **Default recommendation:** **Option 1 — lead with empathy.** Even if they decline our offer, the relationship starts with proof we did our homework.
+- **Owner:** Kiki
+- **Deadline:** **Before any outreach email is sent.** If we send a generic pitch today while the site is broken, we lose credibility.
+
+---
+
 ## Sources
 
 - This repo (initial reconnaissance)

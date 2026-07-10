@@ -14,7 +14,7 @@ This repo is **pre-engagement reconnaissance**. Ai-Whisperers has identified SOM
 - **Funded by:** amfAR, UNAIDS, AHF, Global Fund, ViiV, OPS/OMS, PRONASIDA, All Out, GlobalGiving/Benevity, Red GayLatino (co-founder + secretariat)
 - **Current leadership:** Executive Director **Paloma Vera** (2023+); co-founder **Simón Cazal** (DE 2009-2020, now public face)
 - **Environment:** Hostile — Santiago Peña presidency (2023-), no marriage equality, 2017 Education Ban Resolution 29664 still in force
-- **Current site (somosgay.org):** Next.js static export, 5 pages, deprecated Universal Analytics, no booking flow, no EN switch, no service descriptions, no app store integration for Equis (Equis not on Play Store 2026-07-11)
+- **Current site (somosgay.org):** Next.js static export, 6 nav pages, deprecated Universal Analytics, no booking flow, no EN switch, no service descriptions, no app store integration for Equis (Equis not on Play Store 2026-07-11). **⚠️ 2026-07-10: /news and /nanderekora return HTTP 500; /nangareko returns 404. Site is 50% broken right now.** See [`docs/06_website_status/alive-now.md`](docs/06_website_status/alive-now.md).
 - **Massive gap between what they do and what their website shows**
 
 ---
@@ -56,23 +56,24 @@ somosgay-context/
 │   ├── screenshots-current/        — 20 screenshots at 4 viewports × 5 pages
 │   ├── screenshots-comparable/     — 6 comparable-site screenshots
 │   └── research-sources/wayback/   — 5 Wayback snapshots
-└── docs/
-    ├── 00_brief/                   — client snapshot, engagement status, fact-vs-guess
-    ├── 01_organization/            — history, leadership, programs, governance
-    │   └── programas/              — one file per program
-    ├── 02_research/                — 12 files: HIV, political, mobile, hosting, WhatsApp,
-    │                                 booking, RFPs, multi-tenant, CRM, crypto, impact
-    ├── 03_competitors-and-peers/   — 7 files: AIREANA, Panambi, LATAM orgs, regional compare,
-    │                                 design patterns, comparable clinic sites
-    ├── 04_brand/                   — 6 files: visual identity, voice, Guaraní glossary,
-    │                                 estandartes, memoria-108 (NEW R9)
-    ├── 05_website-audit/           — 7 markdown + 2 Lighthouse JSON reports
-    ├── 06_decisions/               — 9 taken, 13 pending
-    ├── 07_backlog/                 — prioritized TODO
-    ├── 08_questionnaires/          — 6 packs ready for first client session
-    ├── 09_deliverables/            — PACK_PARA_CLIENTE (engagement options)
-    ├── HANDOFF/                    — Luana quickstart, engineer brief, round-1 summary
-    └── _archive/2026-07-10_recon_inicial/  — first session dump
+├── docs/
+│   ├── 00_brief/                   — client snapshot, engagement status, fact-vs-guess
+│   ├── 01_organization/            — history, leadership, programs, governance
+│   │   └── programas/              — one file per program
+│   ├── 02_research/                — 12 files: HIV, political, mobile, hosting, WhatsApp,
+│   │                                 booking, RFPs, multi-tenant, CRM, crypto, impact
+│   ├── 03_competitors-and-peers/   — 7 files: AIREANA, Panambi, LATAM orgs, regional compare,
+│   │                                 design patterns, comparable clinic sites
+│   ├── 04_brand/                   — 6 files: visual identity, voice, Guaraní glossary,
+│   │                                 estandartes, memoria-108 (NEW R9)
+│   ├── 05_website-audit/           — 7 markdown + 2 Lighthouse JSON reports
+│   ├── 06_decisions/               — 14 entries (13 prior + DP-2026-07-10-14 emergency, R14)
+│   ├── 06_website_status/          — NEW R14: live HTTP probe results + script
+│   ├── 07_backlog/                 — prioritized TODO
+│   ├── 08_questionnaires/          — 6 packs ready for first client session
+│   ├── 09_deliverables/            — PACK_PARA_CLIENTE (engagement options)
+│   ├── HANDOFF/                    — Luana quickstart, engineer brief, round-1 summary
+│   └── _archive/2026-07-10_recon_inicial/  — first session dump
 ```
 
 Numbering scheme follows `dentist` + `sarah-lubricants` + `pierce-charm-context` conventions.
@@ -122,9 +123,10 @@ Numbering scheme follows `dentist` + `sarah-lubricants` + `pierce-charm-context`
 - Operational risk: Russia 2023 "extremist" label precedent + Uganda 2016/2023 NGO laws
 
 ### Tech (verified)
-- Current site Lighthouse: Perf **48-50/100** (FAIL — LCP 18.8s on /about), A11y **76-78**, BP **100**, SEO **92**
+- Current site Lighthouse: Perf **48-50/100** (FAIL — LCP 18.8s on /about, **TTI 35.8s on home = effectively unusable for 36s**), A11y **76-78**, BP **100**, SEO **92**
 - 81.3% Paraguay internet penetration, 90% mobile-only, 97.5% messaging
 - Recommended stack: Cloudflare Pages + Next.js 15 + Tailwind v4 + next-intl + Cal.com self-hosted + Plausible + HubSpot for Nonprofits
+- **⚠️ Live status (2026-07-10):** `/news` and `/nanderekora` return HTTP 500; `/nangareko` 404; `/sitemap.xml` 404. See [`docs/06_website_status/alive-now.md`](docs/06_website_status/alive-now.md).
 
 ### 108 history (verified deep)
 - **Bernardo Aranda Valdez**, 25, Radio Comuneros announcer, murdered 1 September 1959

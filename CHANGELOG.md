@@ -254,3 +254,58 @@ Every single question across all 8 questionnaires now has:
 **Q08 §1.1 (Engagement model):**
 > [ ] B) Pro-bono parcial 🟢 🟢 Recomendado
 
+
+---
+
+## 2026-07-10 — Round 14: live HTTP probe + corrections + cleanup
+
+**Trigger:** User requested a roast / audit of the repo to find gaps and fix them.
+
+**What was done:**
+
+### Live HTTP probing (new methodology)
+- Ran `curl -sS -w "%{http_code}"` against `https://www.somosgay.org/{,/about,/news,/nanderekora,/mpox,/nangareko,/sitemap.xml,/robots.txt}` on 2026-07-10.
+- **Found the site is currently 50% broken:**
+  - `/news` → HTTP 500 (9,992B body, `<title>500: Internal Server Error</title>`)
+  - `/nanderekora` → HTTP 500 (same body)
+  - `/nangareko` → HTTP 404 (linked from homepage nav but missing)
+  - `/sitemap.xml` → HTTP 404 (returns HTML, not XML)
+  - `/`, `/about`, `/mpox`, `/robots.txt` → 200 OK
+- Created new folder `docs/06_website_status/` with `alive-now.md` (full probe results + re-runnable bash script) and `README.md` (convention).
+
+### Corrections to existing claims
+- `whats-broken.md`: removed "168 news pages = real history" from "What's working well" (claim now unverifiable). Added **Category 0** with the 3 live-status issues (0a, 0b, 0c). Updated TL;DR count (22 → 29 to match actual list). Updated P0 ranking to include live 500/404 issues.
+- `sitemap-actual.md`: page count 5 → 6 (`/nangareko` was missing). Added HTTP status column. Noted RSS feed `/noticias/rss` is also missing from sitemap.
+- `performance-audit.md`: called out **TTI 35.8s** explicitly as "page unusable for 36 seconds" in TL;DR.
+- `README.md`: TL;DR updated to mention 6 nav pages + site 50% broken warning + link to `06_website_status/`.
+
+### New urgent decision
+- Added `DP-2026-07-10-14` to `decisiones-pendientes.md` — blocks on any outreach email. Recommends Option 1: lead with empathy / debugging offer ("Notamos que /news y /nanderekora están sirviendo 500 hoy...").
+
+### Repo hygiene
+- Deleted 5 empty/placeholder TXT files in `assets/financials/` (3-byte stubs from OCR'ing that never happened). Kept 6 real OCR'd TXTs and 11 PDFs (the OCR_ PDFs are different versions from originals; both kept with distinct hashes).
+- Created `docs/_archive/README.md` (index + convention). Updated `docs/_archive/2026-07-10_recon_inicial/README.md` with `STATUS: deprecated` flag.
+
+### Updated indexes
+- `INDEX.md`: bumped scale (110→115+ md files, 9→14 commits), added Round 14 row, added `docs/06_website_status/` section, bumped decisiones-pendientes from 13 → 14.
+- `AGENTS.md` and `CLAUDE.md` not touched (they correctly prohibit committing RUC, employee lists, patient data, donor names — followed).
+
+**Open follow-ups:**
+- DP-2026-07-10-14: outreach timing decision (Ivan + Kiki)
+- Live probe script should be added to `.github/workflows/` (decision-gated per AGENTS.md "Do not add tooling without explicit user direction")
+- Consider a `hermes cron` weekly probe job with Telegram alert (see `hermes-gateway-ops` skill)
+- The "168 news pages" count needs to be re-verified once `/news` recovers
+
+**Files touched (round 14):**
+- `assets/financials/*.txt` — 5 deletions
+- `docs/06_website_status/README.md` — new
+- `docs/06_website_status/alive-now.md` — new
+- `docs/05_website-audit/whats-broken.md` — TL;DR + Category 0 + 22→29 fix + remove "168" claim
+- `docs/05_website-audit/performance-audit.md` — TL;DR update
+- `docs/05_website-audit/sitemap-actual.md` — 5→6 pages + HTTP status column
+- `docs/06_decisions/decisiones-pendientes.md` — DP-2026-07-10-14 added
+- `docs/_archive/README.md` — new
+- `docs/_archive/2026-07-10_recon_inicial/README.md` — deprecated flag
+- `README.md` — TL;DR + layout diagram
+- `INDEX.md` — scale + Round 14 row + new section
+- `CHANGELOG.md` — this entry

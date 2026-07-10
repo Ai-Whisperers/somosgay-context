@@ -1,6 +1,8 @@
 # Performance audit (round 2 — verified via Lighthouse)
 
 > **TL;DR:** Lighthouse score on the current site: **Performance 48-50/100** (failing). LCP 3.2s on home, **18.8s on /about** (very bad). TBT 6,080ms on home (also very bad). Speed Index 11.9s. Interactive 35.8s. **The rebuild needs to hit LCP < 2.5s, TBT < 200ms, Speed Index < 5s.**
+>
+> **Round 14 update (2026-07-10):** The "very bad" TTI of 35.8s on home = **the page is unusable for 36 seconds on first load**. For an audience that is 90% mobile-only (per `docs/02_research/mobile-internet-paraguay.md`), this is effectively "site is down" on the dominant device class.
 
 ---
 
