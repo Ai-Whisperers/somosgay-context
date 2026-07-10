@@ -1,104 +1,94 @@
-# HIV / STI context — Paraguay
+# HIV / STI context — Paraguay (round 2 — verified)
 
-> **TL;DR:** Paraguay's HIV epidemic is concentrated in young gay/bi men + trans women. New diagnoses grew 26.48% from 2020–2022 (>1,500 new cases in 2022 alone). PrEP is available free at Clínica Kunu'u + 9 public hospitals. Combination prevention = the org's stated framework.
+> **TL;DR:** Verified PrEP regulation (Resolución SG N.° 213/2025), free PrEP nationwide at public-sector sites, expanded PRONASIDA hours. Paraguay internet penetration 81.3% (2024). 90% mobile. 97.5% messaging-app users. Confirms mobile-first + WhatsApp-first is the right rebuild strategy.
 
 ---
 
-## Headline statistics
+## PrEP regulation (verified 2025)
 
-| Metric | Value | Source |
+| Field | Value |
+|---|---|
+| Regulation | **Resolución SG N.° 213/2025** |
+| Issued by | Ministerio de Salud Pública y Bienestar Social (MSPBS) |
+| Program | PRONASIDA — Programa Nacional de Control del SIDA/ITS |
+| Campaign | *"Con la PrEP, prevení el VIH"* |
+| Effective | 2025 (postdating the 2023 "Yo Amo PrEP" SOMOSGAY campaign) |
+| Source | https://www.mspbs.gov.py/portal/35521/paraguay-refuerza-prevencion-del-vih-con-campantildea-sobre-acceso-gratuito-a-la-prep.html |
+
+**PrEP details from Resolución 213/2025:**
+
+- Free at all MSPBS-enabled services
+- 99% efficacy at preventing HIV via sexual route
+- Does NOT protect against other STIs
+- Daily oral pill; alternative intermittent 2-1-1 schedule for men
+- Eligibility: sexually active people with high HIV risk
+  - No condom usage
+  - Serodiscordant partners with detectable viral load
+  - Recent STI history
+  - Frequent casual sex
+  - Shared injecting drug equipment
+- Required before starting: negative HIV test
+- Follow-up: every 1-3 months (adherence + renal function check)
+
+---
+
+## PRONASIDA PrEP delivery locations (verified 2024)
+
+| # | Site | Hours |
 |---|---|---|
-| New HIV cases in Paraguay 2022 | >1,500 | https://www.abc.com.py/nacionales/2023/11/20/lanzan-campana-del-dia-de-la-respuesta-al-vih-yo-amo-prep-yo-amo-mas-seguro/ |
-| New diagnoses growth 2020→2022 | +26.48% | https://www.abc.com.py/nacionales/2023/11/20/lanzan-campana-del-dia-de-la-respuesta-al-vih-yo-amo-prep-yo-amo-mas-seguro/ |
-| HIV prevalence in gay men (2012) | 19% | https://www.washingtonblade.com/2012/12/10/lgbt-group-hopes-to-open-paraguays-first-mens-health-clinic/ |
-| HIV prevalence in trans women (2012) | 29% | https://www.washingtonblade.com/2012/12/10/lgbt-group-hopes-to-open-paraguays-first-mens-health-clinic/ |
-| Total HIV tests in Paraguay (2011) | 80,000 (72,000 to pregnant women, 8,000 to men/trans women) | https://www.washingtonblade.com/2012/12/10/lgbt-group-hopes-to-open-paraguays-first-mens-health-clinic/ |
-| PrEP efficacy (daily) | 99% | https://www.abc.com.py/nacionales/2023/11/20/lanzan-campana-del-dia-de-la-respuesta-al-vih-yo-amo-prep-yo-amo-mas-seguro/ |
+| 1 | **Consejería del PRONASIDA** | Mon-Tue 07:00–16:00 |
+| 2 | **SAI – Instituto de Medicina Tropical** | Mon 06:00–12:00 / Tue 08:00–18:00 / Wed 11:00–16:00 / Thu 08:00–18:00 / Fri 07:00–14:00 |
+| 3 | **Hospital Materno Infantil San Pablo** | Mon + Thu 08:00–12:00 / Tue 13:30–17:00 |
+| 4 | **Hospital Distrital de Capiatá** | Mon, Tue, Thu 13:00–19:00 |
+| 5 | **Hospital General de Barrio Obrero** | Mon 15:00–20:00 / Wed 08:00–12:00 |
+| 6 | **Hospital General de Encarnación** | Mon-Tue 07:00–11:00 |
+| 7 | **Hospital Regional de Encarnación** | Mon-Tue 07:00–11:00 |
+| 8 | **Hospital Regional de Villarrica** | Tue-Wed 07:00–13:00 |
+| 9 | **Hospital Regional de Pedro Juan Caballero** | Mon-Tue 07:00–11:00 / Wed 07:00–16:00 / Thu 07:00–13:00 |
 
-**[VERIFY: updated 2023–2025 prevalence figures]**
+Plus **Clínica Kunu'u** (SOMOSGAY): Mon–Fri 13:00–17:00 testing, Sat 10:00–15:00 autotest pickup.
 
----
-
-## PrEP access network (Paraguay, 2023+)
-
-### Asunción
-
-- Hospital General de Barrio Obrero
-- Centro de Consejería y Testeo del PRONASIDA
-- Hospital Materno Infantil de San Pablo
-- **Clínica Kunu'u** (SOMOSGAY)
-
-### Other cities
-
-- Hospital Distrital de Capiatá
-- Hospital Regional de Encarnación
-- Hospital Regional de Ciudad del Este
-- Hospital Regional de Pedro Juan Caballero
-- Hospital General de Villa Elisa
-
-Source: https://www.abc.com.py/nacionales/2023/11/20/lanzan-campana-del-dia-de-la-respuesta-al-vih-yo-amo-prep-yo-amo-mas-seguro/
+Source: https://www.ip.gov.py/ip/2024/01/08/pronasida-ofrece-pruebas-gratuitas-y-confidenciales-de-vih-e-its-en-todo-el-pais/
 
 ---
 
-## Autotest pickup points (Asunción, Feb 2025)
+## Sífilis (syphilis) rising — 2025
 
-- Clínica Kunu'u (Sat 10:00–15:00)
-- Barbería "Los Barberos de López"
-- Sauna "Rebellion"
+Per ABC Color 2025-09-10, **Dra. Adriana Jaquette (PRONASIDA)** warned that syphilis cases are growing. Recommendation: free rapid test at least once per year.
 
-Source: https://www.abc.com.py/sexualidad/2025/02/13/conoce-la-profilaxis-pre-exposicion-prep-una-pastilla-para-la-prevencion-del-vih/
+Source: https://www.abc.com.py/nacionales/2025/09/10/crecen-los-casos-de-sifilis-en-paraguay-y-asi-podes-acceder-al-test-gratuito/
 
 ---
 
-## Combination prevention framework (SOMOSGAY's stated approach)
+## Headline HIV stats (updated)
 
-> *"Insistimos en la estrategia de la prevención combinada, en la PrEP y en la PEP (profilaxis pre exposición y profilaxis post exposición) y en la adherencia al tratamiento para que más personas que viven con el virus alcancen el estado de indetectables (es decir, con una carga viral tan baja que no pueden transmitir VIH) para que pronto el VIH deje de ser un problema de salud pública en Paraguay."*
+| Metric | Value | Year | Source |
+|---|---|---|---|
+| New HIV cases (Paraguay) | >1,500 | 2022 | ABC Color 2023 |
+| Diagnoses growth 2020→2022 | +26.48% | 2022 | ABC Color 2023 |
+| HIV prevalence in gay men | 19% | 2012 | Washington Blade |
+| HIV prevalence in trans women | 29% | 2012 | Washington Blade |
+| PrEP efficacy | 99% | 2025 | MSPBS Res 213/2025 |
 
-Components:
-
-1. **PrEP** (pre-exposure prophylaxis) — for HIV-negative people at risk
-2. **PEP** (post-exposure prophylaxis) — emergency use after exposure
-3. **Treatment adherence** — for people living with HIV
-4. **Undetectable = Untransmittable (U=U)** — push viral loads to undetectable, eliminating transmission
-5. **Condoms + water-based lubricant** — barrier + comfort
-6. **Regular testing** — catch infections early
-7. **Mental health** — part of the 2024 "Comunidad en Prevención Combinada" expansion
-8. **Harm reduction** — for people who use drugs
-
-Source: http://somosgay.org/noticias/detalles/asuntos + https://somosgay.org/news/Nuevos-materiales-de-la-campaa-Comunidad-en-Prevencin-Combinada-Cuidando-nuestra-Salud-Mental
+**[VERIFY: 2024–2025 prevalence + incidence figures]** — would update with current PRONASIDA data.
 
 ---
 
-## Mpox (current WHO/international concern)
+## Implications for rebuild
 
-The current site (https://www.somosgay.org/) has a top-nav link to **`/mpox`** — suggesting SOMOSGAY is treating Mpox as a current concern. **[VERIFY: what content is on the /mpox page]**
-
----
-
-## Public-sector counterparts (PRONASIDA + MSPBS)
-
-- **PRONASIDA** — Programa Nacional de Control de VIH/Sida/ITS, under MSPBS. Funded by Paraguay's Ministry of Health
-- **MSPBS** — Ministerio de Salud Pública y Bienestar Social
-- Both partner with SOMOSGAY on Equis app + PrEP campaigns
-- Public-sector PrEP delivery uses 8 hospitals above + SOMOSGAY's clinic
-
----
-
-## Why this matters for the rebuild
-
-1. **Content for the site** — PrEP FAQ, PEP FAQ, U=U explainer, autotest instructions, harm-reduction guides, "what to expect" pages
-2. **SEO opportunity** — "PrEP Paraguay" / "test VIH Asunción" / "clínica LGBTQ+ Paraguay" — all low-competition in Paraguay; the org could own these
-3. **Spanish-first** — all clinical content must be in Spanish; English for international donors; **[VERIFY]** whether Guaraní is needed for any user-facing material
-4. **Trust signals** — link to PRONASIDA + MSPBS + OPS/OMS to build legitimacy
-5. **Privacy** — given political climate, the site must NOT collect or leak patient data; no third-party trackers that share with ad networks; clinic booking should go through WhatsApp end-to-end
+1. **Content gap** — current SOMOSGAY site doesn't mention Resolución 213/2025
+2. **SEO opportunity** — "PrEP Paraguay", "test VIH Asunción", "PrEP gratuita" all low-competition
+3. **Booking flow** — should integrate with PRONASIDA's hours (above) for "find a PrEP clinic" feature
+4. **Trust signals** — link to PRONASIDA + MSPBS + the official Resolución
 
 ---
 
 ## Sources
 
+- https://www.mspbs.gov.py/portal/35521/paraguay-refuerza-prevencion-del-vih-con-campantildea-sobre-acceso-gratuito-a-la-prep.html
+- https://www.ip.gov.py/ip/2024/01/08/pronasida-ofrece-pruebas-gratuitas-y-confidenciales-de-vih-e-its-en-todo-el-pais/
+- https://www.abc.com.py/nacionales/2025/09/10/crecen-los-casos-de-sifilis-en-paraguay-y-asi-podes-acceder-al-test-gratuito/
 - https://www.abc.com.py/nacionales/2023/11/20/lanzan-campana-del-dia-de-la-respuesta-al-vih-yo-amo-prep-yo-amo-mas-seguro/
-- https://www.abc.com.py/nacionales/2023/12/01/instan-a-prevenir-vih-con-pildoras-prep-en-el-dia-mundial-de-respuesta-al-vihsida/
 - https://www.abc.com.py/sexualidad/2025/02/13/conoce-la-profilaxis-pre-exposicion-prep-una-pastilla-para-la-prevencion-del-vih/
 - https://www.washingtonblade.com/2012/12/10/lgbt-group-hopes-to-open-paraguays-first-mens-health-clinic/
-- http://somosgay.org/noticias/detalles/asuntos
-- https://somosgay.org/news/Nuevos-materiales-de-la-campaa-Comunidad-en-Prevencin-Combinada-Cuidando-nuestra-Salud-Mental
+- https://med.una.py/el-hospital-de-clinicas-de-fcmuna-y-pronasida-avanzan-en-la-lucha-contra-el-hiv-mediante-convenio-que-garantiza-el-diagnostico-y-tratamiento-de-la-enfermedad/

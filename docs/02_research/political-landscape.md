@@ -1,130 +1,100 @@
-# Political landscape — Paraguay LGBTQ+ rights
+# Political landscape — Paraguay LGBTQ+ rights (round 2 — verified)
 
-> **TL;DR:** Paraguay is the only South American country without marriage equality. The sitting president (Santiago Peña, since 2023) is openly hostile. Education Ban Resolution 29664 (2017) still prohibits "gender ideology" materials in public schools. The 1959 "108" police raids remain an iconic reference for the community. SOMOSGAY is the country's primary civil-society counterweight.
-
----
-
-## The "108" — historical scar
-
-In 1959, under Stroessner's dictatorship, police used the unsolved murder of a radio personality as a pretext to:
-
-- Detain, torture, and kill gay men
-- First round-up = 108 men alleged to be gay
-- Taken from homes, tortured
-
-The number **108** became:
-
-- **For non-LGBTQ+ Paraguayans:** A mark of shame. People petition to change addresses, licence plates, phone numbers containing 108
-- **For LGBTQ+ Paraguayans:** As iconic as Stonewall is for US LGBTQ+ community. Used as identity marker, in SOMOSGAY's visual identity (the youth shelter's fountain has 108 rainbow tiles), and in political messaging
-
-Source: https://www.ibanet.org/article/3263508E-230C-4B0C-8DD5-6CCB9D203774
+> **TL;DR:** Marriage equality legally blocked by **Constitution Art. 49-52 + Civil Code Art. 140**. Peña — currently president — **initially supported marriage equality in 2017 as candidate, then retracted under pressure**, and is now openly hostile (2023+). Education ban Resolution 29664 still likely in force. Marriage equality case likely stuck at Supreme Court since 2018.
 
 ---
 
-## Constitutional & legal status
+## Constitutional + legal blocks
 
-| Item | Status |
+| Source | Provision | What it says |
+|---|---|---|
+| **Constitution Art. 49** | De la protección de la familia | Family is "stable union of man and woman" + children |
+| **Constitution Art. 50** | Del derecho a constituir familia | Right to form family = man + woman with same rights + obligations |
+| **Constitution Art. 51** | Del matrimonio y de los efectos de las uniones de hecho | Marriage law = between man and woman; cohabitation = same-sex sex not recognized |
+| **Constitution Art. 52** | De la unión en matrimonio | "Union in marriage of man and woman is one of the fundamental components of family formation" |
+| **Civil Code Art. 140** | (Not Constitution) | **Expressly prohibits same-sex marriage** |
+
+Source: https://es.wikipedia.org/wiki/Matrimonio_igualitario_en_Paraguay
+
+**Implication:** Changing marriage equality requires either:
+1. Constitutional reform (Art. 49-52) — very hard, requires 2/3 of Congress + constitutional convention
+2. Supreme Court ruling that the 2018 CIDH opinion supersedes the Constitution — possible but politically unlikely under Peña
+3. New legislation recognizing civil unions (separate from marriage) — easier but still faces Art. 140
+
+---
+
+## Santiago Peña — flip-flop on marriage equality (verified)
+
+| Date | Position | Source |
+|---|---|---|
+| **May 2017** (as presidential candidate) | **Announced support** for same-sex marriage | https://es.wikipedia.org/wiki/Matrimonio_igualitario_en_Paraguay |
+| **May 2017** (after criticism) | **Retracted** — *"el matrimonio igualitario es inmoral"* | ABC Color / Última Hora |
+| **2018** | President **Horacio Cartes** (predecessor) — *"me pego un tiro en las bolas si mi hijo quiere casarse con otro hombre"* | Hoy.com.py |
+| **2023-** (current presidency) | Openly hostile to LGBT rights | https://www.abc.com.py/nacionales/2024/06/28/derechos-lgbt-en-paraguay-matrimonio-igualitario-a-la-vista/ |
+
+**Implication for rebuild:** Do not expect any legislative progress under Peña's presidency (2023-2028).
+
+---
+
+## Senate "provida y profamilia" declaration (March 2019)
+
+- 24 senators voted to declare themselves "provida y profamilia"
+- Explicitly opposed same-sex marriage + abortion
+- Critics noted: violates Paraguay's secular constitution
+- Source: Radio Marandú via Wikipedia citation
+
+---
+
+## Itaipú Binational Dam (2011) — limited recognition
+
+- **Resolución 6207/11** (August 2011)
+- Same-sex partner benefits for Itaipú employees
+- Includes private health insurance for partner
+- Requires 6-month cohabitation declaration
+- Equates Itaipú (PY side) employees with Brazilian employees where same-sex unions are legal
+- Limited scope: only Itaipú's ~3,000 employees
+- Source: ABC Color August 2011
+
+---
+
+## Marriage equality litigation timeline
+
+| Date | Event |
 |---|---|
-| Constitution (1992) | Technically egalitarian in text; interpretation blocks marriage equality |
-| State religion | None named (unlike many neighbors) |
-| Same-sex marriage | **NOT legal** — only South American country without it |
-| Same-sex civil union | **NOT recognised** |
-| Marriage equality lawsuit (Cazal/López 2013) | Rejected by Judge Nery Kunzle, 4 April 2013 |
-| CIDH ruling (2018) | Said family ties can derive from same-sex relationships — Paraguay ignores |
-| Adoption by same-sex couples | Not legal |
-| Gender identity recognition (legal) | No government right to change official records |
-| Name change to align with gender identity | Socially accepted, no legal framework |
-| National university ethics code | Protects sexual orientation, not gender identity |
-| Conversion therapy | Not banned |
+| **2010 July** | SOMOSGAY announced intent to present bill to Congress (never voted) |
+| **2012 March 23** | Cazal + López marry in Rosario, Argentina |
+| **2013 March 22** | Cazal + López file suit in Asunción to register marriage |
+| **2013 April 4** | Judge Nery Kunzle rejects — Constitution doesn't allow |
+| **2018 January 9** | CIDH (Inter-American Court) ruling OC-24/17 obligates signatory states to allow same-sex marriage |
+| **2018 January 12** | SOMOSGAY announces intent to file Supreme Court petition citing CIDH |
+| **2018 March** | Presidential candidate Mario Abdo Benítez vows to veto any pro-gay law; wins election |
+| **2019 March** | Senate declares "provida y profamilia" (24 votes) |
+| **2020-2024** | No legislative movement |
+| **2024-2026** | Current Peña presidency openly hostile; SOMOSGAY continues advocacy |
 
 ---
 
-## Education Ban — Ministry of Education Resolution 29664 (2017)
+## Education ban — Resolution 29664 (2017) status
 
-- Signed 5 October 2017 by Minister of Education Enrique Riera
-- Bans **any** distribution of materials promoting "non-traditional families" through "gender ideology" in public schools
-- Effectively silences discussion of gender equality, sexual orientation, or gender identity in schools
-- Includes potentially life-saving conversations about sexual health, diversity, non-discrimination
-- Per Paloma Vera (2024): still in force under Peña presidency
-
-Source: https://www.gaytimes.com/life/anti-lgbtq-hate-in-paraguay/ + https://www.abc.com.py/nacionales/2024/06/28/derechos-lgbt-en-paraguay-matrimonio-igualitario-a-la-vista/
+**[VERIFY]** — still in force as of 2026? The Resolution hasn't been publicly revoked per our research, and Peña's hostile stance suggests it remains. LA Times 2024-09-03 article confirmed it's still being enforced.
 
 ---
 
-## Current administration — Santiago Peña (since 2023)
+## Implications for rebuild
 
-- Per Paloma Vera (ABC Color 2024): openly homophobic statements come from the President himself and from aligned media
-- Government framing (per Cazal 2024): "stronista, castrense, heteropatriarcal" — i.e., continuity of Stroessner-era authoritarianism
-- Civil society: SOMOSGAY, AIREANA, plus Panambi (trans org) and others operate in adversarial relationship with the state
-
----
-
-## Marriage equality — regional context
-
-| Country | Marriage equality |
-|---|---|
-| Argentina | 2010 |
-| Uruguay | 2013 |
-| Brazil | 2013 |
-| Colombia | 2016 |
-| Ecuador | 2019 |
-| Chile | 2022 |
-| **Paraguay** | **Not legal — regional outlier** |
-
-Source: https://somosgay.org/news/Despus-de-Chile-Paraguay-ser-el-prximo-en-garantizar-el-matrimonio-igualitario
-
----
-
-## Religious + political dynamics
-
-- No religion in constitution (theoretically secular)
-- In practice: dominant right-wing clergy have unlimited media access to attack LGBTQ+ rights
-- Politicians use same playbook as US evangelicals: paedophilia, recruitment, "biblical" injunctions
-- No consequences for anti-LGBTQ+ vitriol in public discourse
-- LGBTQ+ community not given equal opportunity to refute
-
-Source: https://www.ibanet.org/article/3263508E-230C-4B0C-8DD5-6CCB9D203774
-
----
-
-## "Gender ideology" — the anti-LGBTQ+ framing
-
-The phrase "ideología de género" is used by opponents to:
-
-- Dismiss gender studies, queer theory, sexual education
-- Frame LGBTQ+ rights as foreign ideological import rather than human rights
-- Justify bans in schools, media, public discourse
-- Mirror anti-LGBTQ+ movements in other LATAM countries (especially Colombia, Peru, Brazil under Bolsonaro)
-
----
-
-## SOMOSGAY's response
-
-- Litigation: Cazal/López marriage recognition case (lost 2013; appeal pending)
-- International pressure: IACHR / CIDH ruling 2018 (ignored)
-- Public advocacy: Marcha del Orgullo, Besatón, press campaigns
-- Service delivery: HIV/PrEP/TARV + youth shelter + community centre = "show, don't just tell"
-- Religious engagement: Cazal met Pope Francis 2015 (first openly married gay activist to do so publicly)
-- Cultural framing: tekoporã, 108, Guaraní heritage — reclaim Paraguayan identity as inclusive
-
----
-
-## Why this matters for the rebuild
-
-1. **OPSEC** — site should not leak visitor data; minimize trackers; encrypted by default; no third-party CDNs that could be pressured
-2. **Branding** — community-owned, community-built; minimize foreign corporate logos
-3. **Content for advocacy** — explainer pages for marriage equality, the 1959 raids, the education ban — all SEO wins
-4. **Multilingual** — Spanish primary; English for international pressure / donors; Guaraní optional for cultural authenticity
-5. **Donor / funder reach** — international audience needs to see impact clearly to fund
-6. **Resilience** — site should be hard to take down or deface; Cloudflare Pages + simple Next.js static + version-controlled content fits
+1. **Marriage equality campaign page** — content needs to acknowledge the multi-year struggle + the CIDH angle + the Peña flip-flop (transparency about why it's stuck)
+2. **Cazal's marriage is personal testimony** — could be featured as a case study
+3. **Itaipú Resolution 6207/11** is a useful precedent (state-owned enterprise recognized partner benefits)
+4. **Constitutional reform** is the long-term goal — content can position SOMOSGAY's work as part of a multi-decade campaign
+5. **OPSEC** — be aware that anti-LGBT political activity is ongoing; site content should be careful about not inciting specific actions in ways that could be used against the org
 
 ---
 
 ## Sources
 
-- https://www.ibanet.org/article/3263508E-230C-4B0C-8DD5-6CCB9D203774
-- https://www.gaytimes.com/life/anti-lgbtq-hate-in-paraguay/
+- https://es.wikipedia.org/wiki/Matrimonio_igualitario_en_Paraguay (primary)
 - https://www.abc.com.py/nacionales/2024/06/28/derechos-lgbt-en-paraguay-matrimonio-igualitario-a-la-vista/
 - https://somosgay.org/news/Despus-de-Chile-Paraguay-ser-el-prximo-en-garantizar-el-matrimonio-igualitario
+- https://www.gaytimes.com/life/anti-lgbtq-hate-in-paraguay/
 - https://www.latimes.com/espanol/internacional/articulo/2024-09-03/los-condones-no-son-confiables-en-el-1er-programa-de-educacion-sexual-del-paraguay-catolico
-- https://www.eluniverso.com/2013/04/04/1/1361/juez-paraguayo-rechaza-inscripcion-matrimonio-gay-contraido-argentina.html
+- https://www.hoy.com.py/nacionales/corte-interamericana-llama-a-paraguay-a-legalizar-matrimonio-gay/amp
