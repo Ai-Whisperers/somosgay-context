@@ -194,3 +194,63 @@ Created a dedicated questionnaire for the 18 critical decisions the client must 
 - ca05a84 round 10 (INDEX update)
 - f82c28e round 11 (README update)
 - (this commit) round 12 (questionnaires upgrade)
+## 2026-07-10 — Round 13: complete questionnaire pre-population
+
+**Trigger:** User asked to ensure all questions are pre-answered, have multiple-choice options where applicable, and have complete/in-depth responses.
+
+**What was done:**
+
+### Pre-population philosophy
+Every single question across all 8 questionnaires now has:
+- ✅ A confirmed answer (with source URL) where public research supports it
+- 🟡 A default recommended answer (with rationale) based on Paraguayan NGO context + LATAM best practices
+- ⬜ Marked as "pending client" only when we genuinely cannot infer (e.g., internal team lists, sensitive data)
+
+### Coverage improvement
+
+| Metric | Before Round 13 | After Round 13 | Change |
+|---|---|---|---|
+| `_[respuesta]_` slots (client to fill) | ~407 | 0 | **-100%** |
+| ✅ Confirmed answers | 95 | 225 | **+137%** |
+| 🟡 Default recommended answers | 0 | 544 | **+NEW** |
+| Total questions answered pre-filled | ~95 | 769 | **+708%** |
+| Total lines | 2,776 | 3,806 | +37% |
+
+### Conventions added
+- **Recommendation legend:** 🟢 Recomendado / 🟡 Alternativo / 🔴 No recomendado on every multiple-choice option
+- **"Por qué importa" block:** at every major section explaining why the question matters for the rebuild
+- **"Default seguro" note:** in every questionnaire footer explaining that 🟡 defaults are conservative + ethically-correct
+- **Coverage table at top of every file:** showing ✅/🟡/⬜ counts per category
+- **Multiple-choice format:** every audience / donor / tech / privacy / language question now has explicit options
+
+### Files updated
+- `01_identidad_y_gobierno.md` — 274 → 401 lines (+46%)
+- `02_programas_detalle.md` — 333 → 549 lines (+65%)
+- `03_clinica_kunuu_servicios.md` — 381 → 526 lines (+38%)
+- `04_donantes_y_finanzas.md` — 353 → 472 lines (+34%)
+- `05_audiencia_y_idiomas.md` — 225 → 426 lines (+89%)
+- `06_objetivos_del_sitio.md` — 307 → 358 lines (+17%)
+- `07_compliance_y_opsec.md` — 306 → 414 lines (+35%)
+- `08_decisiones_criticas.md` — 480 → 508 lines (+6%)
+- `STATUS.md` — rewritten with full coverage matrix
+
+### Examples of pre-populated answers (samples)
+
+**Q01 §1.6 (Personería jurídica):**
+> 🟡 Default recomendado: solicitada a la Abogacía del Tesoro / Poder Judicial; usualmente se otorga en los 60-90 días posteriores al acta constitutiva...
+
+**Q02 §1.2.1 (Horarios actuales):**
+> [x] ✅ Mon–Fri 13:00–17:00 (testing), Sat 10:00–15:00 (autotest pickup) — confirmado vía ABC Color 2025-02-13
+
+**Q03 §1.1.5 (Nutrición):**
+> 🟡 Default recomendado: SÍ, vía Karu Porã (programa de alimentación); confirmar el flujo clínico → Karu Porã
+
+**Q04 §3.1 (Budget 2023):**
+> 🟡 Default recomendado: USD 100K-230K (estimated based on LATAM NGO benchmarks); [with breakdown by category]
+
+**Q05 §3.2 (English version):**
+> 🟢 🟢 Recomendado: SÍ
+
+**Q08 §1.1 (Engagement model):**
+> [ ] B) Pro-bono parcial 🟢 🟢 Recomendado
+

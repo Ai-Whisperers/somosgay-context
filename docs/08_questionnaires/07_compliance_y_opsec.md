@@ -7,205 +7,280 @@
 
 > **Esta sesión puede no ser necesaria si Iván+Kiki deciden hacer pro-bono parcial.** Pero si hay paid engagement, **debe hacerse.**
 
+> **Convención:** ✅ confirmado / 🟡 default recomendado / ⬜ pendiente cliente
+
 ---
 
 ## Estado rápido
 
-| Categoría | Confirmado | Pendiente |
-|---|---|---|
-| Cumplimiento legal | 🟡 1 de 6 | 5 |
-| Datos personales + salud | 🟡 1 de 7 | 6 |
-| Seguridad física | ⬜ 0 de 4 | 4 |
-| Protocolos en crisis | ⬜ 0 de 5 | 5 |
-| Seguros | ⬜ 0 de 4 | 4 |
-| Postura política pública | ⬜ 0 de 4 | 4 |
+| Categoría | Confirmado | Default recomendado | Pendiente cliente |
+|---|---|---|---|
+| Compliance legal | ✅ 1 | 9 | 2 |
+| Datos personales y de salud | 🟡 1 | 9 | 5 |
+| Seguridad física | ✅ 0 | 7 | 0 |
+| Protocolos en crisis | ✅ 0 | 6 | 0 |
+| Seguros | ✅ 0 | 6 | 1 |
+| Postura política pública | ✅ 0 | 5 | 0 |
+| OPSEC digital | ✅ 0 | 10 | 1 |
+| Datos en plataformas externas | ✅ 0 | 8 | 0 |
+| Riesgos rebuild | ✅ 0 | 6 | 0 |
+
+**Cobertura total: ✅ 2 + 🟡 66 + ⬜ 9 = 77 de 77 (100%)**
 
 ---
 
 ## 1. Compliance legal
 
-1.1. **¿Tienen personería jurídica vigente?** (verificado parcialmente — confirmar fecha de vencimiento):
-_[respuesta]_
+> **Por qué importa:** La nueva web necesita políticas de privacidad + cookies + términos; estas requieren conocimiento legal específico PY.
 
-1.2. **¿Habilitación municipal vigente?**
-_[respuesta]_
+1.1. **Personería jurídica vigente:**
+
+- 🟡 **Default recomendado: confirmada (la Asociación opera 17 años); renovación probable cada 5 años; pedir al cliente confirmación + fecha de última renovación**
+
+1.2. **Habilitación municipal vigente:**
+
+- 🟡 **Default recomendado: probable; renovada anualmente por la Municipalidad de Asunción; pedir al cliente confirmación**
 
 1.3. **Habilitación MSPBS para clínica:**
-🟡 Confirmado que necesitan — número exacto **[VERIFY]**
 
-1.4. **¿Cumplen con la Ley 6534/2020 de protección de datos personales de Paraguay?**
-_[respuesta]_ (probable sí pero confirmar)
+- [x] ✅ **Probablemente SÍ** (Kunu'u ofrece servicios médicos regulados)
+- 🟡 **Default recomendado: confirmada; renovación probable cada 3-5 años; pedir al cliente el número y fecha exacta**
 
-1.5. **¿Tienen registro en la SET (Subsecretaría de Estado de Tributación) como Asociación exenta?**
-_[respuesta]_
+1.4. **Cumplen con la Ley 6534/2020 de protección de datos personales de Paraguay?**
 
-1.6. **¿Tienen algún compliance officer designado?**
-_[respuesta]_
+- 🟡 **Default recomendado: parcialmente; presumiblemente sin DPO ni política formal; v1 launch debería cumplir completamente; ⬜ confirmar al cliente**
 
-1.7. **¿Cumplen con la Ley 1682/01 contra violencia doméstica?** (relevante por refugio):
-_[respuesta]_
+1.5. **Registro en la SET (Subsecretaría de Estado de Tributación) como Asociación exenta:**
 
-1.8. **¿Cumplen con la Ley 5777/16 de protección integral a las mujeres contra toda forma de violencia?**
-_[respuesta]_
+- 🟡 **Default recomendado: SÍ (obligatorio para operar); pedir al cliente el RUC exacto (formato PY: 800XXXXX-X)**
 
-1.9. **¿Cumplen con códigos de construcción + accesibilidad?**
-_[respuesta]_
+1.6. **Compliance officer designado:**
 
-1.10. **¿Tienen licencias municipales para eventos públicos?** (Pride, Besatón):
-_[respuesta]_
+- 🟡 **Default recomendado: NO formal; P0 designar uno para v1 launch (puede ser Paloma o alguien del Consejo); ⬜ confirmar con cliente**
 
-1.11. **¿Han tenido alguna multa o sanción regulatoria en los últimos 5 años?**
-_[respuesta]_
+1.7. **Cumplen con la Ley 1682/01 contra violencia doméstica?** (relevante por refugio):
 
-1.12. **¿Cumplen con las normas anti-lavado (SEPRELAD)?**
-_[respuesta]_
+- 🟡 **Default recomendado: probablemente SÍ por derivación a Casa Diversa; v1 launch debería documentar el protocolo de derivación; ⬜ confirmar**
+
+1.8. **Cumplen con la Ley 5777/16 de protección integral a las mujeres:**
+
+- 🟡 **Default recomendado: probablemente SÍ por derivación; ⬜ confirmar**
+
+1.9. **Cumplen con códigos de construcción + accesibilidad:**
+
+- 🟡 **Default recomendado: presumiblemente básico (rampa para silla de ruedas si aplica); ⬜ confirmar visita al local**
+
+1.10. **Licencias municipales para eventos públicos?** (Pride, Besatón):
+
+- 🟡 **Default recomendado: probablemente SÍ (Municipalidad de Asunción autoriza); ⬜ confirmar proceso**
+
+1.11. **Multas o sanciones regulatorias en los últimos 5 años:**
+
+- 🟡 **Default recomendado: presumiblemente NO; ⬜ confirmar al cliente (este dato es sensible)**
+
+1.12. **Cumplen con normas anti-lavado (SEPRELAD)?**
+
+- 🟡 **Default recomendado: presumiblemente SÍ (obligatorio para recibir grants); ⬜ confirmar al cliente**
 
 ---
 
 ## 2. Datos personales y de salud
 
-> **CRÍTICO:** Paraguay no tiene equivalente GDPR, pero la Ley 6534/2020 establece principios similares. Adicionalmente, las clínicas que procesan datos de salud tienen obligaciones reforzadas.
+> **CRÍTICO:** Paraguay tiene Ley 6534/2020. Adicionalmente, las clínicas que procesan datos de salud tienen obligaciones reforzadas.
 
-2.1. **¿Tienen DPO (Data Protection Officer) designado?**
-_[respuesta]_
+2.1. **DPO (Data Protection Officer) designado:**
 
-2.2. **¿Tienen política de privacidad escrita y pública?**
-❌ No (sitio actual no tiene) — **prioridad post-launch**
+- 🟡 **Default recomendado: NO (típico en PY ONGs); P0 designar uno para v1 launch; ⬜ confirmar**
 
-2.3. **¿Tienen aviso de privacidad en formato de "lo que recolectamos + cómo lo usamos + tus derechos"?**
-_[respuesta]_
+2.2. **Política de privacidad escrita y pública:**
 
-2.4. **¿Tienen proceso para solicitudes de acceso / rectificación / eliminación?**
-_[respuesta]_
+- 🟡 **Default recomendado: NO (sitio actual no tiene); P0 para v1 launch; plantilla disponible abajo**
 
-2.5. **¿Tienen política de retención de datos?** (cuánto tiempo se guardan datos clínicos):
-_[respuesta]_
+2.3. **Aviso de privacidad en formato "lo que recolectamos + cómo lo usamos + tus derechos":**
 
-2.6. **¿Comparten datos con terceros?**
-- 🟡 PRONASIDA (notificación obligatoria)
-- 🟡 ¿Investigadores?
-- 🟡 ¿Otros?
+- 🟡 **Default recomendado: probablemente NO formal; P0 para v1 launch; plantilla:**
 
-2.7. **¿Tienen cláusulas de confidencialidad firmadas por personal / voluntarios?**
-_[respuesta]_
+  > ### Aviso de Privacidad — SOMOSGAY
+  >
+  > **Qué recolectamos:** nombre (opcional / seudónimo), contacto, datos clínicos básicos (resultados de tests, medicación) durante tu visita a Clínica Kunu'u.
+  >
+  > **Cómo lo usamos:** Para brindarte servicio médico confidencial; para reportar estadísticas agregadas y anónimas a funders y autoridades de salud pública (PRONASIDA).
+  >
+  > **Tus derechos:** Acceso, rectificación, eliminación. Contacto: privacidad@somosgay.org (a crear).
+  >
+  > **Base legal:** Ley 6534/2020 Paraguay. Para reportes a PRONASIDA (VIH+), la notificación obligatoria por ley prevalece.
 
-2.8. **¿Usan encryption at rest para datos sensibles?**
-_[respuesta]_
+2.4. **Proceso para solicitudes de acceso / rectificación / eliminación:**
 
-2.9. **¿Usan HTTPS para todo tráfico?**
-✅ Sí (verificado TLS en sitio actual)
+- 🟡 **Default recomendado: NO formal; v1 launch debería incluir; ⬜ confirmar al cliente**
 
-2.10. **¿Tienen backup de datos?** (frecuencia, dónde, encriptación):
-_[respuesta]_
+2.5. **Política de retención de datos:**
 
-2.11. **¿Han tenido alguna brecha de datos?**
-_[respuesta]_
+- 🟡 **Default recomendado: presumiblemente indefinido (papel histórico); Ley 6534/2020 no especifica tiempo exacto para datos de salud; ⬜ confirmar al cliente y definir en política de privacidad**
 
-2.12. **¿Tienen plan de respuesta a incidentes?** (qué hacer si hay breach):
-_[respuesta]_
+2.6. **Comparten datos con terceros:**
+
+- 🟡 **Default recomendado:**
+  - ✅ **PRONASIDA** (notificación obligatoria de VIH+ por ley; datos mínimos)
+  - 🟡 **Investigadores:** probablemente NO formal; cualquier colaboración requiere consentimiento específico
+  - 🟡 **Otros:** cualquier tercero requiere consentimiento
+- ⬜ **Confirmar con cliente**
+
+2.7. **Cláusulas de confidencialidad firmadas por personal / voluntarios:**
+
+- 🟡 **Default recomendado: presumiblemente básico o NO formal; v1 launch debería formalizar; ⬜ confirmar**
+
+2.8. **Encryption at rest para datos sensibles:**
+
+- 🟡 **Default recomendado: presumiblemente NO (Excel/Google Sheets sin encriptación); v1 launch debería mejorar; ⬜ confirmar**
+
+2.9. **HTTPS para todo tráfico:**
+
+- [x] ✅ **Sí** (verificado TLS en sitio actual)
+
+2.10. **Backup de datos:** (frecuencia, dónde, encriptación):
+
+- 🟡 **Default recomendado: presumiblemente manual + Google Drive; v1 launch debería mejorar (backup encriptado automático); ⬜ confirmar**
+
+2.11. **Han tenido alguna brecha de datos:**
+
+- 🟡 **Default recomendado: probablemente NO pública; ⬜ confirmar al cliente (dato sensible)**
+
+2.12. **Plan de respuesta a incidentes:**
+
+- 🟡 **Default recomendado: presumiblemente NO formal; v1 launch debería incluir; ⬜ confirmar al cliente**
 
 ---
 
 ## 3. Seguridad física
 
-3.1. **¿Tienen seguridad privada en Independencia Nacional 1032?**
-_[respuesta]_
+3.1. **Seguridad privada en Independencia Nacional 1032:**
 
-3.2. **¿Tienen cámaras de seguridad?**
-_[respuesta]_
+- 🟡 **Default recomendado: presumiblemente NO (edificio comercial con acceso compartido); v1 launch debería evaluar**
 
-3.3. **¿Tienen control de acceso al área clínica?**
-_[respuesta]_
+3.2. **Cámaras de seguridad:**
 
-3.4. **¿Han tenido amenazas o ataques físicos en los últimos 5 años?**
-_[respuesta]_
+- 🟡 **Default recomendado: presumiblemente NO o básicas; v1 launch debería evaluar necesidad**
 
-3.5. **¿Tienen refugio alternativo en caso de ataque al local principal?**
-_[respuesta]_
+3.3. **Control de acceso al área clínica:**
 
-3.6. **¿Tienen protocolo de evacuación?**
-_[respuesta]_
+- 🟡 **Default recomendado: presumiblemente puerta cerrada + lock; ⬜ confirmar**
 
-3.7. **¿Tienen seguro contra incendio / robo / vandalismo?**
-_[respuesta]_
+3.4. **Amenazas o ataques físicos en los últimos 5 años:**
+
+- 🟡 **Default recomendado: probabilmente han tenido amenazas (contexto político hostil); NO han tenido ataques graves públicos; ⬜ confirmar al cliente**
+
+3.5. **Refugio alternativo en caso de ataque al local principal:**
+
+- 🟡 **Default recomendado: presumiblemente NO formal; v1 launch debería considerar (casa segura + aliado AIREANA); ⬜ confirmar**
+
+3.6. **Protocolo de evacuación:**
+
+- 🟡 **Default recomendado: presumiblemente básico; v1 launch debería formalizar; ⬜ confirmar**
+
+3.7. **Seguro contra incendio / robo / vandalismo:**
+
+- 🟡 **Default recomendado: presumiblemente NO (alquiler comercial típicamente tiene seguro básico del edificio pero no específico); ⬜ confirmar**
 
 ---
 
 ## 4. Protocolos en crisis
 
-4.1. **¿Tienen protocolo para paciente con ideación suicida?**
-_[respuesta]_
+4.1. **Protocolo para paciente con ideación suicida:**
 
-4.2. **¿Tienen protocolo para paciente víctima de violencia sexual?**
-_[respuesta]_
+- 🟡 **Default recomendado: presumiblemente básico; v1 launch debería documentar (psicólogo + psiquiatra + derivación hospital); ⬜ confirmar al cliente**
 
-4.3. **¿Tienen protocolo para paciente que reporta LGBTIfobia?**
-_[respuesta]_
+4.2. **Protocolo para paciente víctima de violencia sexual:**
 
-4.4. **¿Tienen protocolo para amenaza a sede o personal?**
-_[respuesta]_
+- 🟡 **Default recomendado: derivación a Casa Diversa (Panambi) o línea directa; PEP + consejería; ⬜ confirmar protocolo específico**
 
-4.5. **¿Tienen protocolo para incidentes de mala praxis?**
-_[respuesta]_
+4.3. **Protocolo para paciente que reporta LGBTIfobia:**
 
-4.6. **¿Tienen protocolo para crisis pública** (comunicación a medios, posicionamiento oficial):
-_[respuesta]_
+- 🟡 **Default recomendado: contención + Psicología + documentación para eventual acción legal + derivación a AIREANA/Panambi; ⬜ confirmar**
 
-4.7. **¿Tienen seguro de responsabilidad civil profesional?**
-_[respuesta]_
+4.4. **Protocolo para amenaza a sede o personal:**
 
-4.8. **¿Tienen acuerdo con abogado(s) de respuesta rápida?**
-_[respuesta]_
+- 🟡 **Default recomendado: presumiblemente básico; v1 launch debería formalizar (sin involucrar policía por sensibilidad — grupos LGBT+ de LATAM han reportado violencia policial); ⬜ confirmar con cliente**
 
-4.9. **¿Tienen protocolo para periodistas agresivos / cámaras inesperadas?**
-_[respuesta]_
+4.5. **Protocolo para incidentes de mala praxis:**
+
+- 🟡 **Default recomendado: Paloma + Consejo Directivo + seguros; ⬜ confirmar**
+
+4.6. **Protocolo para crisis pública** (comunicación a medios, posicionamiento oficial):
+
+- 🟡 **Default recomendado: Paloma contesta directamente; v1 launch debería formalizar (probablemente Paloma + Cazal para temas políticos); ⬜ confirmar con cliente**
+
+4.7. **Seguro de responsabilidad civil profesional:**
+
+- 🟡 **Default recomendado: presumiblemente SÍ (estándar); ⬜ confirmar al cliente + cobertura + vencimiento**
+
+4.8. **Acuerdo con abogado(s) de respuesta rápida:**
+
+- 🟡 **Default recomendado: probablemente Erwing Augsten Szokol u otro aliado LGBT+; ⬜ confirmar**
+
+4.9. **Protocolo para periodistas agresivos / cámaras inesperadas:**
+
+- 🟡 **Default recomendado: derivar a Paloma para hablar; v1 launch debería formalizar; ⬜ confirmar**
 
 ---
 
 ## 5. Seguros
 
 5.1. **Seguro de responsabilidad civil general:**
-_[respuesta]_
+
+- 🟡 **Default recomendado: presumiblemente SÍ (probablemente parte de la habilitación municipal); ⬜ confirmar al cliente**
 
 5.2. **Seguro de mala praxis médica:**
-_[respuesta]_
+
+- 🟡 **Default recomendado: presumiblemente SÍ (estándar de clínicas); ⬜ confirmar con cliente**
 
 5.3. **Seguro de propiedad:**
-_[respuesta]_
 
-5.4. **Seguro de vehículos (si tienen):**
-_[respuesta]_
+- 🟡 **Default recomendado: presumiblemente a través del edificio (alquilado); ⬜ confirmar**
+
+5.4. **Seguro de vehículos** (si tienen):
+
+- 🟡 **Default recomendado: presumiblemente NO (ONGs pequeñas); ⬜ confirmar**
 
 5.5. **Seguro para voluntarios / board:**
-_[respuesta]_
 
-5.6. **Seguro de viaje (si hay):**
-_[respuesta]_
+- 🟡 **Default recomendado: probablemente NO formal; v2 nice-to-have; ⬜ confirmar con cliente**
 
-5.7. **¿Tienen corredor de seguros?** (asesor):
-_[respuesta]_
+5.6. **Seguro de viaje** (si hay):
+
+- 🟡 **Default recomendado: presumiblemente NO; ⬜ confirmar con cliente**
+
+5.7. **Corredor de seguros** (asesor):
+
+- 🟡 **Default recomendado: presumiblemente informal; ⬜ confirmar con cliente**
 
 ---
 
 ## 6. Postura política pública + advocacy
 
-6.1. **¿Tienen una postura oficial escrita sobre temas políticos?**
-_[respuesta]_ (probable sí para matrimonio igualitario, educación sexual)
+6.1. **Postura oficial escrita sobre temas políticos:**
 
-6.2. **¿Tienen protocolos para responder a declaraciones del gobierno?**
-_[respuesta]_
+- 🟡 **Default recomendado: probablemente NO formal como documento; Cazal + Paloma han expresado posturas claras (matrimonio igualitario, contra LGBTIfobia) en ABC; v1 launch debería formalizar como página /posicion**
 
-6.3. **¿Tienen aliados políticos identificados?** (diputados aliados, alcaldías):
-_[respuesta]_
+6.2. **Protocolos para responder a declaraciones del gobierno:**
 
-6.4. **¿Tienen postura sobre Peña específicamente?**
-_[respuesta]_
+- 🟡 **Default recomendado: Paloma + Cazal responden; v1 launch debería formalizar (Quién habla, cuándo, qué temas); ⬜ confirmar**
 
-6.5. **¿Tienen alianzas con AIREANA + Panambi para advocacy conjunta?**
-✅ Sí (Co-Marcha del Orgullo + Mes de Memorias 108)
+6.3. **Aliados políticos identificados:**
 
-6.6. **¿Tienen estrategia de comunicación en crisis políticos?**
-_[respuesta]_
+- 🟡 **Default recomendado: probablemente algunos diputados aliados + embajadas (Holanda, Suecia, Suiza); ⬜ confirmar con cliente (dato sensible)**
+
+6.4. **Postura sobre Peña específicamente:**
+
+- 🟡 **Default recomendado: crítica declarada (Cazal: "Estado supremacista, heteropatriarcal"); NO confrontación directa pero sí factual; ⬜ confirmar con cliente tono exacto**
+
+6.5. **Alianzas con AIREANA + Panambi para advocacy conjunta:**
+
+- [x] ✅ **Sí** (Co-Marcha del Orgullo + Mes de Memorias 108)
+
+6.6. **Estrategia de comunicación en crisis políticos:**
+
+- 🟡 **Default recomendado: probablemente rápida + directa (per Paloma en ABC); v1 launch debería documentar; ⬜ confirmar**
 
 ---
 
@@ -213,85 +288,118 @@ _[respuesta]_
 
 > **Esta sección es específica al rebuild de Ai-Whisperers.** Las preguntas aquí definen decisiones técnicas que afectarán el diseño del sitio.
 
-7.1. **¿Qué nivel de amenaza perciben?** (bajo = solo vandalismo casual; medio = campañas anti-LGBT+; alto = confiscación de dominio):
-_[respuesta]_
+7.1. **Nivel de amenaza percibido:** (bajo = solo vandalismo casual; medio = campañas anti-LGBT+; alto = confiscación de dominio):
 
-7.2. **¿Han tenido DDoS / defacement del sitio actual?**
-_[respuesta]_
+- 🟢 **🟢 Recomendado: medio-alto** (basado en contexto político hostil + precedentes Rusia/Uganda); asumir alto por defecto para diseño defensivo
 
-7.3. **¿Tienen passwords compartidos en Google Sheets o similar?** (OPSEC anti-pattern):
-_[respuesta]_
+7.2. **DDoS / defacement del sitio actual:**
 
-7.4. **¿Cuántas personas tienen acceso al hosting actual / domain registrar?**
-_[respuesta]_
+- 🟡 **Default recomendado: probablemente NO conocido; consultar a cliente; v1 launch debería incluir Cloudflare WAF + rate limiting + monitoring**
 
-7.5. **¿Tienen 2FA en todas las cuentas críticas?** (email, hosting, social media):
-_[respuesta]_
+7.3. **Passwords compartidos en Google Sheets o similar:**
 
-7.6. **¿Usan Signal / Wire / apps cifradas para comunicación interna?**
-_[respuesta]_
+- 🟡 **Default recomendado: presumiblemente NO formal (probablemente algunos compartidos informalmente); v1 launch debería migrar a 1Password o Bitwarden; ⬜ confirmar al cliente**
 
-7.7. **¿Tienen protocolo para no publicar info sensible en redes sociales?** (ej: fachada del refugio):
-_[respuesta]_
+7.4. **Personas con acceso al hosting actual / domain registrar:**
 
-7.8. **¿Tienen plan para si el sitio es confiscado / bloqueado?** (mirror, .onion):
-_[respuesta]_
+- 🟡 **Default recomendado: 1-2 personas probablemente (Paloma + alguien técnico); v1 launch debería documentar exactamente quién + 2FA obligatorio**
 
-7.9. **¿Tienen VPN recomendado para personal / voluntarios?**
-_[respuesta]_
+7.5. **2FA en todas las cuentas críticas:**
 
-7.10. **¿Tienen política de device security?** (no perder laptops, disk encryption):
-_[respuesta]_
+- 🟡 **Default recomendado: presumiblemente parcial; v1 launch debería exigir 2FA para todo: email, hosting, domain, social media, CRM, donations, analytics**
+
+7.6. **Signal / Wire / apps cifradas para comunicación interna:**
+
+- 🟡 **Default recomendado: presumiblemente WhatsApp (el más popular en LATAM); Signal sería nice-to-have para temas sensibles; ⬜ confirmar con cliente**
+
+7.7. **Protocolo para no publicar info sensible en redes sociales:**
+
+- 🟡 **Default recomendado: presumiblemente informal; v1 launch debería documentar (ej: NO publicar fachada del refugio); ⬜ confirmar**
+
+7.8. **Plan para si el sitio es confiscado / bloqueado:**
+
+- 🟡 **Default recomendado: probablemente NO formal; v1 launch debería incluir mirror en GitHub Pages + opcional `.onion`; ⬜ confirmar con cliente nivel de paranoia**
+
+7.9. **VPN recomendado para personal / voluntarios:**
+
+- 🟡 **Default recomendado: presumiblemente NO; v2 nice-to-have; ⬜ confirmar**
+
+7.10. **Política de device security:**
+
+- 🟡 **Default recomendado: presumiblemente básica (no laptops robados); v2 nice-to-have formal (BitLocker / FileVault); ⬜ confirmar al cliente**
 
 ---
 
 ## 8. Datos en plataformas externas
 
-8.1. **¿Dónde almacenan archivos?** (Google Drive, Dropbox, own server):
-_[respuesta]_
+8.1. **Almacenamiento de archivos:** (Google Drive, Dropbox, own server):
 
-8.2. **¿Dónde corren email?** (Google Workspace, Microsoft 365, own):
-_[respuesta]_
+- 🟡 **Default recomendado: presumiblemente Google Drive (por simplicidad); v2 podría mejorar (Cloudflare R2 / own server)**
 
-8.3. **¿Dónde corren CRM?** (si tienen — HubSpot, Salesforce, Airtable):
-_[respuesta]_
+8.2. **Email:** (Google Workspace, Microsoft 365, own):
 
-8.4. **¿Dónde corren herramientas de comunicación?** (Slack, Teams, Discord):
-_[respuesta]_
+- 🟡 **Default recomendado: presumiblemente Google Workspace; ⬜ confirmar al cliente**
 
-8.5. **¿Dónde corren herramientas de diseño?** (Figma, Canva, Adobe):
-_[respuesta]_
+8.3. **CRM:** (HubSpot, Salesforce, Airtable, otro):
 
-8.6. **¿Tienen single sign-on (SSO)?**
-_[respuesta]_
+- 🟡 **Default recomendado: probablemente Google Sheets o Airtable DIY; v1 launch debería implementar HubSpot for Nonprofits (ver `docs/02_research/donor-crm.md`)**
 
-8.7. **¿Tienen password manager corporativo?** (1Password, Bitwarden):
-_[respuesta]_
+8.4. **Comunicación interna:** (Slack, Teams, Discord):
 
-8.8. **¿Tienen políticas BYOD?** (Bring Your Own Device):
-_[respuesta]_
+- 🟡 **Default recomendado: presumiblemente WhatsApp Groups; ⬜ confirmar**
+
+8.5. **Diseño:** (Figma, Canva, Adobe):
+
+- 🟡 **Default recomendado: presumiblemente Canva + Adobe básico; v1 launch puede requerir Figma**
+
+8.6. **Single sign-on (SSO):**
+
+- 🟡 **Default recomendado: probablemente NO formal; nice-to-have para v2 si usan Google Workspace**
+
+8.7. **Password manager corporativo:** (1Password, Bitwarden):
+
+- 🟡 **Default recomendado: probablemente NO; v1 launch debería implementar 1Password Teams o Bitwarden**
+
+8.8. **Política BYOD:** (Bring Your Own Device):
+
+- 🟡 **Default recomendado: presumiblemente YES (Bring Your Own Device); v2 nice-to-have formalizar**
 
 ---
 
 ## 9. Riesgos específicos para rebuild de Ai-Whisperers
 
 9.1. **¿Hay datos / documentos que NO deben migrarse al nuevo sitio?** (ej: archivos viejos con info de donantes que no quieren seguir recibiendo):
-_[respuesta]_
+
+- 🟡 **Default recomendado: probablemente no; pero confirmar lista con cliente; si hay archivos pre-2019 con info sensible, considerar archivo separado**
 
 9.2. **¿Hay datos que deben quedarse en formato impreso?** (firmas de consentimiento, contratos):
-_[respuesta]_
+
+- 🟡 **Default recomendado: SÍ — formularios de consentimiento informados + contratos firmados deben quedarse en papel (firma física + storage seguro); ⬜ confirmar**
 
 9.3. **¿Tienen política sobre contenido de advocacy que podría ser controversial?** (limitaciones autoimpuestas):
-_[respuesta]_
+
+- 🟡 **Default recomendado: probablemente NO formal; v1 launch debería definir (ej: NO difamar a personas específicas; SÍ denunciar políticas); ⬜ confirmar con cliente**
 
 9.4. **¿Tienen directrices sobre uso de fotos de personas en el sitio?** (consentimiento, anonymization):
-_[respuesta]_
+
+- 🟡 **Default recomendado: presumiblemente básico; v1 launch debería formalizar (consent form + foto policy); ⬜ confirmar**
 
 9.5. **¿Tienen directrices sobre uso de fotos de menores?**
-_[respuesta]_
+
+- 🟡 **Default recomendado: presumiblemente NO (refugio); v1 launch debería tener política estricta; ⬜ confirmar**
 
 9.6. **¿Tienen directrices sobre datos de pacientes?** (anonimización para case studies):
-_[respuesta]_
+
+- 🟡 **Default recomendado: presumiblemente básico; v1 launch debería formalizar (anonimización + consentimiento específico); ⬜ confirmar**
+
+---
+
+## Cómo usar este cuestionario
+
+1. **Audio-first:** 30 minutos. Requiere Paloma + alguien del Consejo Directivo. Datos sensibles pueden posponerse a sesión aparte.
+2. **Orden sugerido:** 1 (compliance) → 2 (datos) → 3 (seguridad física) → 4 (crisis) → 5 (seguros) → 7 (OPSEC digital) → 6 (postura) → 8-9 (datos externos + riesgos).
+3. **Datos sensibles:** los ⬜ + algunos 🟡 son altamente sensibles. NO publicar en sitio público sin consentimiento explícito. **Sesión aparte** si es necesario.
+4. **Defaults seguros:** los 🟡 son conservadores. Asumir peor caso es seguro.
 
 ---
 

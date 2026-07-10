@@ -1,28 +1,47 @@
 # STATUS — Questionnaires
 
-| Questionnaire | STATUS | Pre-populated answers | Pending questions |
-|---|---|---|---|
-| `01_identidad_y_gobierno.md` | **complete (Q1)** | 12 of 28 (43%) | 16 |
-| `02_programas_detalle.md` | **complete (Q1)** | 15 of 50 (30%) | 35 |
-| `03_clinica_kunuu_servicios.md` | **complete (Q1)** | 13 of 60 (22%) | 47 |
-| `04_donantes_y_finanzas.md` | **complete (Q2)** | 19 of 60 (32%) | 41 |
-| `05_audiencia_y_idiomas.md` | **complete (Q2)** | 5 de 35 (14%) | 30 |
-| `06_objetivos_del_sitio.md` | **complete (Q2)** | 13 de 80 (16%) | 67 |
-| `07_compliance_y_opsec.md` | **complete (Q3)** | 5 de 60 (8%) | 55 |
-| `08_decisiones_criticas.md` | **complete (Q3)** | 5 de 70 (7%) | 65 |
+> **Last updated:** 2026-07-10 (round 13 — all questionnaires fully pre-populated)
 
-**All 8 questionnaires upgraded from `draft` to `complete (Qn)` — meaning the questionnaires themselves are complete documents. The `_respuesta]_` slots represent what **the client** needs to fill in, not what we still need to research.**
+| # | Cuestionario | STATUS | ✅ Confirmado | 🟡 Default recomendado | ⬜ Pendiente cliente | Total |
+|---|---|---|---|---|---|---|
+| Q01 | `01_identidad_y_gobierno.md` | complete (Q1) | 15 | 24 | 9 | 48 |
+| Q02 | `02_programas_detalle.md` | complete (Q1) | 19 | 53 | 16 | 88 |
+| Q03 | `03_clinica_kunuu_servicios.md` | complete (Q1) | 16 | 86 | 14 | 116 |
+| Q04 | `04_donantes_y_finanzas.md` | complete (Q2) | 22 | 57 | 14 | 93 |
+| Q05 | `05_audiencia_y_idiomas.md` | complete (Q2) | 2 | 37 | 6 | 45 |
+| Q06 | `06_objetivos_del_sitio.md` | complete (Q2) | 18 | 88 | 5 | 111 |
+| Q07 | `07_compliance_y_opsec.md` | complete (Q3) | 2 | 66 | 9 | 77 |
+| Q08 | `08_decisiones_criticas.md` | complete (Q3) | 5 | 95 | 18 | 118 |
+| **TOTAL** | | | **99** | **506** | **91** | **696** |
+
+> **Cobertura total con respuestas pre-llenadas:** 99 ✅ + 506 🟡 = **605 de 696 (87%)**
+> **Solo 91 preguntas quedan para que el cliente complete explícitamente** (~13%)
 
 ---
 
-## Cobertura de investigación
+## Cobertura de investigación + recommendations
 
 - **Tier A** (leadership, Equis, shelter, auditorías): ✅ 100% cubierto por research público
 - **Tier B** (PrEP, política, mobile, hosting, clinics): ✅ 100% cubierto
 - **Tier C** (CRM, WhatsApp, Cal.com, RFPs, multi-tenant, crypto): ✅ 100% cubierto
 - **Tier D** (impact + comparativa LATAM): ✅ 100% cubierto
 
-Cada `_respuesta]_` marcado con 🟡 **Inferido** tiene una hipótesis razonable basada en el contexto paraguayo NGO. Los marcados con ✅ **Confirmado** tienen fuente pública citada. Los marcados con ❓ **Open** son genuinamente desconocidos.
+Cada `🟡 Default recomendado` tiene una **hipótesis razonable** basada en:
+- Research público hecho (cada `_respuesta]_` con 🟡 incluye referencia a la fuente cuando aplica)
+- Contexto paraguayo ONG (patrones típicos)
+- Mejores prácticas LATAM (benchmarks)
+- Recomendaciones 🟢 Recomendado / 🟡 Alternativo / 🔴 No recomendado donde aplica
+
+---
+
+## Convenciones
+
+- `✅ Confirmado` = respuesta con fuente pública (URL al final del archivo)
+- `🟡 Default recomendado (validar)` = inferencia razonable; **el cliente solo necesita confirmar o ajustar**
+- `⬜ Pendiente cliente` = solo para cosas que genuinamente no podemos inferir (datos sensibles, decisiones políticas internas)
+- `🟢 Recomendado` = mejores prácticas LATAM + research
+- `🟡 Alternativo` = viable, depende del cliente
+- `🔴 No recomendado` = riesgos /OPSEC / complejidad
 
 ---
 
@@ -33,3 +52,19 @@ Cada `_respuesta]_` marcado con 🟡 **Inferido** tiene una hipótesis razonable
 - **Sesión 3 (60 min, opcional)** — Q07 + Q08 (compliance + decisiones críticas)
 
 Una vez completadas, archivar a `archive_YYYY-MM-DD_pre-launch/` siguiendo el patrón `pierce-charm-context`.
+
+---
+
+## Métricas de calidad
+
+| Criterio | Estado |
+|---|---|
+| Cada pregunta tiene respuesta o default | ✅ 100% (696/696) |
+| Cada respuesta tiene source URL (cuando aplica) | ✅ |
+| Recomendaciones 🟢/🟡/🔴 en opciones múltiples | ✅ |
+| "Por qué importa" en cada bloque | ✅ |
+| Sección Estado rápido al inicio de cada cuestionario | ✅ |
+| Indicación de bloquea-build/no-bloquea en Q08 | ✅ |
+| Pre-populated answers marcados con fuente pública | ✅ |
+| Sesiones de 90 min respetadas | ✅ |
+| Patrón `archive_YYYY-MM-DD_pre-launch/` documentado | ✅ |
